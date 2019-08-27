@@ -10,13 +10,18 @@
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: white;
-  height: 3px;
+  height: 6% !important;
   border-radius: 2px;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: white !important;
+}
+
+.bm-cross {
+  width: 1px !important;
+  height: 30px !important;
 }
 
 .bm-cross-button {
@@ -33,7 +38,8 @@
 
 .bm-cross-button > span > .bm-cross {
   background: white;
-  height: 25px !important;
+  height: 10px;
+  width: 5px;
 }
 
 .bm-menu-wrap {

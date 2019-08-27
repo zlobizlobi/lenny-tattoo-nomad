@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Banner } from "./sections";
+import { Banner, About, Gallery } from "./sections";
 import "./App.css";
 import { Navbar } from "./components";
 
@@ -10,6 +10,8 @@ class App extends Component {
         <Navbar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
         <main id="page-wrap">
           <Banner />
+          <About />
+          <Gallery />
         </main>
       </div>
     );

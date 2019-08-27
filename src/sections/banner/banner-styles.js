@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
-import Call from "@material-ui/icons/Call";
 
 export const Video = styled.video`
   height: 100vh;
@@ -19,7 +18,7 @@ export const Overlay = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 5000;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
 `;
 
 export const Logo = styled.img`

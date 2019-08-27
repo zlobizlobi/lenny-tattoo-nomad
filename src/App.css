@@ -1,0 +1,9 @@
+/* the parent */
+
+.slick-slide > div {
+  margin: 10px 10px;
+}
+
+.slick-track {
+  border: none !important;
+}

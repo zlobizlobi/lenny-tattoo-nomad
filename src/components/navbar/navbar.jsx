@@ -1,7 +1,10 @@
 import * as React from "react";
-import { scaleRotate as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 import { NavLink } from "react-router-dom";
+import { SocialMediaContainer } from "./navbar.styles";
+
 import "./hamburger.css"; // This file as only one has a css file, for the rest - use styled components
+import { CustomIcon } from "../custom-icon";
 
 export const Navbar = () => {
   return (
@@ -12,40 +15,56 @@ export const Navbar = () => {
     >
       <ul>
         <li>
-          <NavLink activeClassName="active" to="/" exact={true}>
+          <NavLink to="/" activeClassName="active" exact={true}>
             <span />
             Home
             <span />
           </NavLink>
         </li>
+
         <li>
-          <NavLink activeClassName="active" to="/about">
+          <NavLink to="/about">
             <span />
             About
             <span />
           </NavLink>
         </li>
+
         <li>
-          <NavLink activeClassName="active" to="/gallery">
+          <NavLink to="/gallery">
             <span />
             Gallery
             <span />
           </NavLink>
         </li>
+
         <li>
-          <NavLink activeClassName="active" to="/faq">
+          <NavLink to="/faq">
             <span />
             FAQ
             <span />
           </NavLink>
         </li>
+
         <li>
-          <NavLink activeClassName="active" to="/contact">
+          <NavLink to="/contact">
             <span />
             Contact
             <span />
           </NavLink>
         </li>
+        <SocialMediaContainer justifyContent="space-between">
+          <CustomIcon
+            link="https://www.instagram.com/lenny.tattoo/"
+            target="_blank"
+            className="fab fa-instagram"
+          />
+          <CustomIcon
+            link="https://www.facebook.com/LennyTattoos/"
+            target="_blank"
+            className="fab fa-facebook"
+          />
+        </SocialMediaContainer>
       </ul>
     </Menu>
   );

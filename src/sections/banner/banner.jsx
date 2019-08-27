@@ -3,7 +3,6 @@ import "firebase/storage";
 import { storageReference } from "../../init-firebase";
 import { Video, Overlay, Logo, Container, Ornament } from "./banner-styles";
 import { SocialMedia } from "./components";
-import Call from "@material-ui/icons/Call";
 
 export const Banner = () => {
   const [bannerUrl, setBannerUrl] = React.useState({ webm: "", mp4: "" });
@@ -19,7 +18,7 @@ export const Banner = () => {
       firebaseUrlWebM = await storageReference
         .child("CuttedVideoCorrectHQ.webm")
         .getDownloadURL();
-      console.log(firebaseUrlMp4, firebaseUrlWebM);
+
       setBannerUrl({ webm: firebaseUrlWebM, mp4: firebaseUrlMp4 });
     }
 

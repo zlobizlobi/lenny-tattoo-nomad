@@ -1,40 +1,43 @@
 import * as React from "react";
 import "firebase/storage";
-import Slider from "react-slick";
 import { images } from "../../imageUrls";
-import { settings } from "./slider-config";
 import { Flex } from "@rebass/grid";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
+import { breakpoint } from "../../breakpoints";
 
 const Image = styled.img`
   filter: grayscale(100%);
-  border: none;
+  border: 2px solid white;
+  width: 230px;
+  height: 230px;
+  border-radius: 2px;
+  margin: 10px;
 `;
 
 const GalleryContainer = styled(Flex)`
-  padding: 0px 200px;
+  flex-direction: column;
+  align-items: center;
+  @media ${breakpoint.mobileL} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
-const Caroussel = styled(Slider)`
-  border-radius: 2px;
-  width: 100%;
-  background-color: none;
-  box-shadow: 0 0 2px;
+const GallerySection = styled.section`
+  padding: 0 130px;
 `;
 
 export const Gallery = () => {
   return (
-    <section>
+    <GallerySection>
       <GalleryContainer justifyContent="center">
-        <Caroussel {...settings}>
-          {images.map(imageUrl => {
-            console.log(imageUrl);
-            return <Image alt="lala" key={imageUrl} src={imageUrl} />;
-          })}
-        </Caroussel>
+        {images.map(imageUrl => {
+          console.log(imageUrl);
+          return <Image alt="lala" key={imageUrl} src={imageUrl} />;
+        })}
       </GalleryContainer>
-    </section>
+    </GallerySection>
   );
 };

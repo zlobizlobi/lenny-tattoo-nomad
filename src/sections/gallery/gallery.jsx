@@ -1,43 +1,48 @@
 import * as React from "react";
 import "firebase/storage";
 import { images } from "../../imageUrls";
-import { Flex } from "@rebass/grid";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styled from "styled-components";
-import { breakpoint } from "../../breakpoints";
+import { Container, Section } from "./gallery.styles";
 
-const Image = styled.img`
-  filter: grayscale(100%);
-  border: 2px solid white;
-  width: 230px;
-  height: 230px;
-  border-radius: 2px;
-  margin: 10px;
-`;
-
-const GalleryContainer = styled(Flex)`
-  flex-direction: column;
-  align-items: center;
-  @media ${breakpoint.mobileL} {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-`;
-
-const GallerySection = styled.section`
-  padding: 0 130px;
-`;
+import { Image } from "../../components";
 
 export const Gallery = () => {
+  const [selections, setSelected] = React.useState([]);
+
+  const galleryRef = React.useRef(null);
+
+  React.useEffect(() => {
+    window.addEventListener("mousedown", handleUserKeyPress, false);
+
+    return () => {
+      window.removeEventListener("mousedown", handleUserKeyPress, false);
+    };
+  }, [handleUserKeyPress]);
+
+  const handleUserKeyPress = event => {
+    if (galleryRef.current.contains(event.target)) {
+      return;
+    }
+    setSelected([]);
+  };
+
+  const handleOnClick = id => {
+    setSelected([id]);
+  };
+
   return (
-    <GallerySection>
-      <GalleryContainer justifyContent="center">
-        {images.map(imageUrl => {
-          console.log(imageUrl);
-          return <Image alt="lala" key={imageUrl} src={imageUrl} />;
-        })}
-      </GalleryContainer>
-    </GallerySection>
+    <Section>
+      <Container ref={galleryRef}>
+        {images.map((imageUrl, index) => (
+          <Image
+            isViewed={selections.includes(index)}
+            onClick={() => handleOnClick(index)}
+            key={imageUrl}
+            src={imageUrl}
+          />
+        ))}
+      </Container>
+    </Section>
   );
 };

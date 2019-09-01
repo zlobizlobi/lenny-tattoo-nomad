@@ -68,7 +68,6 @@
 }
 
 ul.bm-item {
-  font-family: "Cinzel", serif;
   color: grey;
   list-style-type: none;
   padding: 0;
@@ -121,11 +120,11 @@ ul.bm-item > li {
 }
 
 .bm-item > li > a:hover > span:nth-child(1) {
-  top: 0px;
+  top: -2px;
   opacity: 1;
 }
 .bm-item > li > a:hover > span:nth-child(2) {
-  bottom: 0px;
+  bottom: -4px;
   opacity: 1;
 }
 

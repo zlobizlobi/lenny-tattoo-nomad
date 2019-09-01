@@ -29,6 +29,7 @@ export const Image = styled.div`
 
   @media ${breakpoint.laptop} {
     flex: 0 0 100%;
+    margin: 0;
   }
 `;
 
@@ -43,13 +44,3 @@ export const Text = styled.span`
     font-size: 16px;
   }
 `;
-
-//
-// flex: 0 0 100%;
-// background: url("lenny.jpg");
-// background-size: cover;
-// background-repeat: no-repeat;
-// height: 100%;
-// border: 2px solid white;
-// margin: 20px 0px;
-// max-width: 200px;

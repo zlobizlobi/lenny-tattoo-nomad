@@ -45,7 +45,7 @@ const Divider = styled.span`
   @media ${breakpoint.mobileL} {
     transform: rotate(90deg);
     width: 30px;
-    border-top: 2px solid white;
+    border-top: 0.5px solid white;
   }
 `;
 

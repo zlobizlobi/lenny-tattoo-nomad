@@ -1,3 +1,3 @@
-export * from "./custom-icon";
+export * from "./customIcon";
 export * from "./navbar";
 export * from "./image";

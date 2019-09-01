@@ -8,7 +8,7 @@ const SocialMediaContainer = styled(Flex)`
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  top: 34px;
+  top: 24px;
   z-index: 1;
   right: 34px;
   color: white;
@@ -16,6 +16,7 @@ const SocialMediaContainer = styled(Flex)`
   @media ${breakpoint.mobileL} {
     flex-direction: row;
     align-items: center;
+    top: 34px;
   }
 `;
 
@@ -36,7 +37,7 @@ const SMIconBanner = styled(CustomIcon)`
 
 const Divider = styled.span`
   transform: rotate(180deg);
-  border-top: 2px solid white;
+  border-top: 1px solid white;
   width: 105px;
   margin: 5px 0;
   height: 2px;
@@ -44,6 +45,7 @@ const Divider = styled.span`
   @media ${breakpoint.mobileL} {
     transform: rotate(90deg);
     width: 30px;
+    border-top: 2px solid white;
   }
 `;
 

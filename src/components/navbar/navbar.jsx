@@ -1,10 +1,10 @@
 import * as React from "react";
 import { stack as Menu } from "react-burger-menu";
-import { NavLink } from "react-router-dom";
-import { SocialMediaContainer } from "./navbar.styles";
-
+import { Container, MenuLink } from "./components";
 import "./hamburger.css"; // This file as only one has a css file, for the rest - use styled components
-import { CustomIcon } from "../custom-icon";
+import { CustomIcon } from "../customIcon";
+
+const sections = ["home", "about", "gallery", "bookings", "FAQ", "contact"];
 
 export const Navbar = () => {
   return (
@@ -14,46 +14,10 @@ export const Navbar = () => {
       outerContainerId="outer-container"
     >
       <ul>
-        <li>
-          <NavLink to="/" exact={true}>
-            <span />
-            Home
-            <span />
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/about">
-            <span />
-            About
-            <span />
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/gallery">
-            <span />
-            Gallery
-            <span />
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/faq">
-            <span />
-            FAQ
-            <span />
-          </NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/contact">
-            <span />
-            Contact
-            <span />
-          </NavLink>
-        </li>
-        <SocialMediaContainer justifyContent="space-between">
+        {sections.map(section => (
+          <MenuLink section={section} />
+        ))}
+        <Container justifyContent="space-between">
           <CustomIcon
             link="https://www.instagram.com/lenny.tattoo/"
             target="_blank"
@@ -64,7 +28,7 @@ export const Navbar = () => {
             target="_blank"
             className="fab fa-facebook"
           />
-        </SocialMediaContainer>
+        </Container>
       </ul>
     </Menu>
   );

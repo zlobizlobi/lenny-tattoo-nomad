@@ -1,6 +1,7 @@
 import * as React from "react";
 import "firebase/storage";
 import { storageReference } from "../../init-firebase";
+import * as Scroll from "react-scroll";
 import { Video, Overlay, Logo, Container, Ornament } from "./banner-styles";
 import { SocialMedia } from "./components";
 
@@ -26,15 +27,17 @@ export const Banner = () => {
   }, [firebaseUrlWebM, firebaseUrlMp4]);
 
   return (
-    <section id="banner-section">
-      <SocialMedia />
-      <Container>
-        <Overlay>
-          <Logo src="logo-white.png" />
-          <Ornament src="ornament.png" />
-          <Video src={bannerUrl.mp4 || bannerUrl.webm} autoPlay muted loop />
-        </Overlay>
-      </Container>
-    </section>
+    <Scroll.Element name="home-section">
+      <section>
+        <SocialMedia />
+        <Container>
+          <Overlay>
+            <Logo src="logo-white.png" />
+            <Ornament src="ornament.png" />
+            <Video src={bannerUrl.mp4 || bannerUrl.webm} autoPlay muted loop />
+          </Overlay>
+        </Container>
+      </section>
+    </Scroll.Element>
   );
 };

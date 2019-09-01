@@ -15,7 +15,7 @@ export const Navbar = () => {
     >
       <ul>
         <li>
-          <NavLink to="/" activeClassName="active" exact={true}>
+          <NavLink to="/" exact={true}>
             <span />
             Home
             <span />

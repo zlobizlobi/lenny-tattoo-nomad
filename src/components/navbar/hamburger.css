@@ -85,7 +85,7 @@ ul.bm-item > li {
 }
 
 .bm-item > li > a > a {
-  color: #333333;
+  color: grey;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   display: inline-flex;

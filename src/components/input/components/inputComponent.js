@@ -13,6 +13,7 @@ export const InputComponent = styled.input`
   transition: all 0.3s ease;
   background-color: black;
   box-shadow: #a6a6a6 0 1px 3px 0;
+  width: 250px;
 
   :focus {
     background-color: #333333;

@@ -7,10 +7,9 @@ export const PageContainer = styled.section`
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 80px 80px;
+  padding: 0px 100px;
 
   @media ${breakpoint.laptop} {
-    padding: 150px 150px;
     flex-direction: row;
     justify-content: space-around;
 `;

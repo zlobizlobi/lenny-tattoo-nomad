@@ -10,6 +10,7 @@ export const TextArea = styled.textarea`
   margin-top: 5px;
   outline: none;
   height: 100px;
+  width: 250px;
 
   :focus {
     background-color: black;

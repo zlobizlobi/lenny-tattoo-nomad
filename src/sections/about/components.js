@@ -26,9 +26,8 @@ export const Image = styled.div`
   height: 230px;
   border: 2px solid white;
   margin-bottom: 50px;
-
+  display: inline;
   @media ${breakpoint.laptop} {
-    flex: 0 0 100%;
     margin: 0;
   }
 `;

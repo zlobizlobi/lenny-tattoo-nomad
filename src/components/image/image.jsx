@@ -9,7 +9,7 @@ const ImageComponent = styled.img`
   height: ${({ isViewed }) => (isViewed ? "250px" : "180px")}
   border-radius: 5px;
   margin: ${({ isViewed }) => (isViewed ? "30px" : "10px")}
-  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.4) 0s;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.4) 0s;
   cursor: pointer;
 
   @media ${breakpoint.mobileL}{

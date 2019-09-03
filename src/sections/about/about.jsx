@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { Container, Image, Text } from "./about.styles";
+import { Container, Image } from "./components";
+import { Text } from "../../components";
 
 export const About = () => {
   return (
@@ -8,11 +9,8 @@ export const About = () => {
       <Container alignItems="center" justifyContent="center">
         <Image />
         <Text>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here'. It is a
-          long established fact that a reader will be distracted by the readable
+          Hey, I'm Lenny - a special kind of artist 😂 - a travelling tattoo one
+          in fact. I love my work, challenges and fun.
         </Text>
       </Container>
     </Scroll.Element>

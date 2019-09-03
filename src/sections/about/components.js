@@ -32,15 +32,3 @@ export const Image = styled.div`
     margin: 0;
   }
 `;
-
-export const Text = styled.span`
-  line-height: 30px;
-  text-align: center;
-  font-size: 14px;
-
-  @media ${breakpoint.laptop} {
-    margin-left: 40px;
-    text-align: right;
-    font-size: 16px;
-  }
-`;

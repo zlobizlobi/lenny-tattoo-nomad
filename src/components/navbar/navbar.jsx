@@ -4,7 +4,7 @@ import { Container, MenuLink } from "./components";
 import "./hamburger.css"; // This file as only one has a css file, for the rest - use styled components
 import { CustomIcon } from "../customIcon";
 
-const sections = ["home", "about", "gallery", "bookings", "FAQ", "contact"];
+const sections = ["home", "about", "Gallery", "Contact", "FAQ"];
 
 export const Navbar = () => {
   return (

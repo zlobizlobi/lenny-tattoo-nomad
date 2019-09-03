@@ -1,7 +1,6 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { Text } from "../../components";
-import { Input, Form, PageContainer } from "../../components";
+import { Input, Form, PageContainer, Text, TextArea } from "../../components";
 
 export const Contact = () => (
   <Scroll.Element name="contact-section">
@@ -15,8 +14,8 @@ export const Contact = () => (
       <Form>
         {" "}
         <Input type="text" title="name" placeholder="Name"></Input>
-        <Input type="email" title="email" placeholder="E-mail"></Input>
-        <textarea name="message" autoFocus></textarea>
+        <Input type="email" title="email" placeholder="E-Mail"></Input>
+        <TextArea name="message" autoFocus></TextArea>
       </Form>
     </PageContainer>
   </Scroll.Element>

@@ -6,7 +6,7 @@ export const MenuLink = ({ section }) => {
   return (
     <li>
       <Scroll.Link
-        to={`${section}-section`}
+        to={`${section.toLowerCase()}-section`}
         spy={true}
         smooth={true}
         offset={50}

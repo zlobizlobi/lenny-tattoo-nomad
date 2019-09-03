@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Banner, About, Gallery } from "./sections";
+import { Banner, About, Gallery, Contact } from "./sections";
 import "./App.css";
 import { Navbar } from "./components";
 
@@ -12,6 +12,7 @@ class App extends Component {
           <Banner />
           <About />
           <Gallery />
+          <Contact />
         </main>
       </div>
     );

@@ -68,7 +68,7 @@
 }
 
 ul.bm-item {
-  color: grey;
+  color: #333333;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -85,7 +85,7 @@ ul.bm-item > li {
 }
 
 .bm-item > li > a > a {
-  color: grey;
+  color: #333333;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   display: inline-flex;

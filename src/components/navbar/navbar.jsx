@@ -14,8 +14,8 @@ export const Navbar = () => {
       outerContainerId="outer-container"
     >
       <ul>
-        {sections.map(section => (
-          <MenuLink section={section} />
+        {sections.map((section, index) => (
+          <MenuLink key={index} section={section} />
         ))}
         <Container justifyContent="space-between">
           <CustomIcon

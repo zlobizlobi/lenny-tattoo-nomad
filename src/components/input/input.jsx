@@ -6,7 +6,7 @@ export const Input = ({ type, title }) => {
 
   return (
     <InputContainer>
-      <label for={title}>{titleCapitalized}</label>
+      <label htmlFor={title}>{titleCapitalized}</label>
       <InputComponent type={type} name={title} id={title} />
     </InputContainer>
   );

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const TextAreaComponent = styled.textarea`
-  border: 1px solid white;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
   border-radius: 2px;
   color: white;
   background-color: black;
   font-weight: 900;
-  margin-top: 5px;
+  margin-top: 10px;
   height: 100px;
-  box-shadow: #a6a6a6 0 1px 3px 0;
+  width: 220px;
   padding: 10px 0 0 10px;
 `;
 

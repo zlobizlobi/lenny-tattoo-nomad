@@ -1,12 +1,15 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Input, Form, PageContainer, Text, TextArea } from "../../components";
-import { Flex } from "@rebass/grid";
-import { Heading, Asterix, TextContainer } from "./components";
+import { Heading, Asterix, TextContainer, Container } from "./components";
 
 export const Contact = () => (
   <Scroll.Element name="contact-section">
-    <Flex flexDirection="column" justifyContent="center" alignItems="center">
+    <Container
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+    >
       <Heading>CONTACT</Heading>
       <PageContainer>
         <Text>
@@ -29,6 +32,6 @@ export const Contact = () => (
           <TextArea name="message" autoFocus />
         </Form>
       </PageContainer>
-    </Flex>
+    </Container>
   </Scroll.Element>
 );

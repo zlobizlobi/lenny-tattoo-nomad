@@ -26,12 +26,10 @@ export const PageContainerAbout = styled.div`
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 0 60px;
 
   @media ${breakpoint.tablet} {
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0 130px;
   }
 `;
 

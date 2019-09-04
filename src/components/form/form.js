@@ -7,7 +7,7 @@ export const Form = styled.form.attrs({
   name: "contact"
 })`
   margin-top: 30px;
-
+  height: 100%;
   @media ${breakpoint.tablet} {
     margin: 0;
   }

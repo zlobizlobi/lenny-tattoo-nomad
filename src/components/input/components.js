@@ -2,25 +2,20 @@ import styled from "styled-components";
 import { Flex } from "@rebass/grid";
 
 export const InputComponent = styled.input`
-  border: 0.5px solid white;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-opacity: 0.5;
   border-radius: 2px;
   color: white;
   pointer: cursor;
-  padding: 10px 0 0 10px;
+  padding: 3px 0 3px 7px;
   font-weight: 900;
-  height: 20px;
-  margin-top: 5px;
+  height: 25px;
+  margin-top: 10px;
   transition: all 0.3s ease;
   background-color: black;
-  box-shadow: #a6a6a6 0 1px 3px 0;
-  max-width: 80%;
-
-  :focus {
-    background-color: grey;
-    color: white;
-  }
+  width: 220px;
 `;
 
 export const InputContainer = styled(Flex)`
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
 `;

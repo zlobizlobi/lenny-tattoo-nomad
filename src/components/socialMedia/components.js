@@ -3,11 +3,11 @@ import { CustomIcon } from "../customIcon";
 import { breakpoint } from "../../breakpoints";
 
 export const Number = styled.a`
-  color: white;
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   transition: color 0.3s ease;
   :hover {
-    color: #e6e6e6;
+    color: rgba(255, 255, 255, 0.8);
   }
 `;
 
@@ -19,7 +19,6 @@ export const Icon = styled(CustomIcon)`
 export const Divider = styled.span`
   transform: rotate(180deg);
   border-top: 1px solid white;
-  border-radius: 1px;
   width: 105px;
   margin: 5px 0;
 
@@ -46,5 +45,6 @@ export const SocialMediaContainer = styled.div`
 
   @media ${breakpoint.mobileL} {
     flex-direction: row;
+    align-items: center;
   }
 `;

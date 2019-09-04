@@ -1,26 +1,28 @@
 import * as React from "react";
-import styled from "styled-components";
-import { breakpoint } from "../../breakpoints";
+import styled, { css } from "styled-components";
 
 const ImageComponent = styled.img`
-  filter: ${({ isViewed }) => (!isViewed ? "grayscale(100%)" : "none")};
   border: 2px solid white;
-  width: ${({ isViewed }) => (isViewed ? "250px" : "180px")}
-  height: ${({ isViewed }) => (isViewed ? "250px" : "180px")}
-  border-radius: 5px;
-  margin: ${({ isViewed }) => (isViewed ? "30px" : "10px")}
+  border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.4) 0s;
   cursor: pointer;
+  width: 180px;
+  height: 180px;
+  filter: grayscale(100%);
+  margin: 10px;
 
-  @media ${breakpoint.mobileL}{
-    width: ${({ isViewed }) => (isViewed ? "250px" : "180px")}
-    height: ${({ isViewed }) => (isViewed ? "250px" : "180px")}
-  }
+  ${({ isViewed }) =>
+    isViewed &&
+    css`
+      width: 250px;
+      height: 250px;
+      filter: grayscale(0%);
+      margin: 30px;
+    `}
 
-  :hover{
+  :hover {
     filter: grayscale(0%);
   }
-
 `;
 
 export const Image = ({ src, isViewed, onClick }) => {

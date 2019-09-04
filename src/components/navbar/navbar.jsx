@@ -17,7 +17,7 @@ export const Navbar = () => {
         {sections.map((section, index) => (
           <MenuLink key={index} section={section} />
         ))}
-        <Container justifyContent="space-between">
+        <Container>
           <CustomIcon
             link="https://www.instagram.com/lenny.tattoo/"
             target="_blank"

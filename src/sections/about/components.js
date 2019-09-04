@@ -1,21 +1,5 @@
-import { Flex } from "@rebass/grid";
 import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
-
-export const Container = styled(Flex)`
-  flex-direction: column;
-  color: white;
-  padding: 60px;
-
-  @media ${breakpoint.mobileM} {
-    padding: 100px;
-  }
-
-  @media ${breakpoint.laptop} {
-    flex-direction: row;
-    padding: 150px;
-  }
-`;
 
 export const Image = styled.div`
   border-radius: 50%;
@@ -26,8 +10,35 @@ export const Image = styled.div`
   height: 230px;
   border: 2px solid white;
   margin-bottom: 50px;
-  display: inline;
+  flex-shrink: 0;
+
   @media ${breakpoint.laptop} {
     margin: 0;
   }
+`;
+
+export const Heading = styled.h2`
+  margin: 50px 0;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid white;
+`;
+
+export const PageContainerAbout = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 0 50px;
+
+  @media ${breakpoint.tablet} {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 130px;
+  }
+`;
+
+export const SectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

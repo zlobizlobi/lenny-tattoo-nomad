@@ -6,3 +6,4 @@ export { Input } from "./input";
 export { PageContainer } from "./pageContainer";
 export { Form } from "./form";
 export { TextArea } from "./textArea";
+export { SocialMedia } from "./socialMedia";

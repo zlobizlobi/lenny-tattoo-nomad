@@ -1,16 +1,9 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Input, Form, PageContainer, Text, TextArea } from "../../components";
-import styled from "styled-components";
 import { Flex } from "@rebass/grid";
-const Header = styled.h2`
-  font-family: "Major Mono Display", monospace;
-  color: white;
-  margin-top: 100px;
-  padding-bottom: 10px;
-  border-bottom: 0.5px solid white;
-  margin-bottom: 30px;
-`;
+import { Header } from "./components";
+
 export const Contact = () => (
   <Scroll.Element name="contact-section">
     <Flex flexDirection="column" justifyContent="center" alignItems="center">
@@ -24,9 +17,10 @@ export const Contact = () => (
         </Text>
         <Form>
           {" "}
-          <Input type="text" title="name" placeholder="Name"></Input>
-          <Input type="email" title="email" placeholder="E-Mail"></Input>
-          <TextArea name="message" autoFocus></TextArea>
+          <Input type="text" title="name" placeholder="Name" />
+          <Input type="email" title="email" placeholder="E-Mail" />
+          <label htmlFor="message">MESSAGE</label>
+          <TextArea name="message" autoFocus />
         </Form>
       </PageContainer>
     </Flex>

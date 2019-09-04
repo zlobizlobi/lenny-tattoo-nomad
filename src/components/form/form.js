@@ -6,8 +6,13 @@ export const Form = styled.form.attrs({
   method: "POST",
   name: "contact"
 })`
-  margin-top: 60px;
+  margin-top: 30px;
 
   @media ${breakpoint.tablet} {
+    margin: 0;
+  }
+
+  @media ${breakpoint.mobileL} {
+    margin-top: 20px;
   }
 `;

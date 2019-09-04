@@ -5,11 +5,9 @@ export const Input = ({ type, title }) => {
   const titleCapitalized = title.toUpperCase();
 
   return (
-    <InputContainer>
+    <InputContainer flexDirection="column">
       <label htmlFor={title}>{titleCapitalized}</label>
       <InputComponent type={type} name={title} id={title} />
     </InputContainer>
   );
 };
-
-// scroll.scrollToTop();

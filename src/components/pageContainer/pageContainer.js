@@ -6,10 +6,11 @@ export const PageContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  padding: 0px 100px;
+  padding: 0px 50px;
 
   @media ${breakpoint.laptop} {
+    padding: 0px 130px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+;
 `;

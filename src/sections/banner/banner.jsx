@@ -2,8 +2,8 @@ import * as React from "react";
 import "firebase/storage";
 import { storageReference } from "../../init-firebase";
 import * as Scroll from "react-scroll";
-import { Video, Overlay, Logo, Container, Ornament } from "./banner-styles";
-import { SocialMedia } from "./components";
+import { Video, Overlay, Logo, Container, Ornament } from "./components";
+import { SocialMedia } from "../../components";
 
 export const Banner = () => {
   const [bannerUrl, setBannerUrl] = React.useState({ webm: "", mp4: "" });

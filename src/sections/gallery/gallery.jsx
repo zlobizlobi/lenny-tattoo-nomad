@@ -3,7 +3,7 @@ import "firebase/storage";
 import { images } from "../../imageUrls";
 import * as Scroll from "react-scroll";
 
-import { Container, Section } from "./gallery.styles";
+import { Container, Section } from "./components";
 
 import { Image } from "../../components";
 

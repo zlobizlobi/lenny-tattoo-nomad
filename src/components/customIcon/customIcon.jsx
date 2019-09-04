@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from "./custom-icon.styles";
+import { Icon } from "./components";
 
 export const CustomIcon = ({ className, link }) => {
   return (

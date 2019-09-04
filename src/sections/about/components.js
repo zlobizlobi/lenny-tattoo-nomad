@@ -5,15 +5,13 @@ export const Image = styled.div`
   border-radius: 50%;
   background: url("lenny.jpg");
   background-size: cover;
-  max-width: 230px;
   width: 230px;
   height: 230px;
-  border: 2px solid white;
-  margin-bottom: 50px;
   flex-shrink: 0;
-
-  @media ${breakpoint.laptop} {
-    margin: 0;
+  border: 2px solid white;
+  margin: 0 0 20px 0;
+  @media ${breakpoint.mobileL} {
+    margin: 0 0 20px 0;
   }
 `;
 
@@ -28,7 +26,7 @@ export const PageContainerAbout = styled.div`
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 0 50px;
+  padding: 0 60px;
 
   @media ${breakpoint.tablet} {
     flex-direction: row;

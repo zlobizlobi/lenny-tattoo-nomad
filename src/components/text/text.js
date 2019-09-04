@@ -3,10 +3,10 @@ import { breakpoint } from "../../breakpoints";
 
 export const Text = styled.span`
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   font-size: 12px;
-  font-weight: 900;
-
+  max-width: 75%;
+  margin-top: 30px;
   @media ${breakpoint.laptop} {
     text-align: left;
     font-size: 16px;

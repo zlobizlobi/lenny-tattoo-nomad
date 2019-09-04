@@ -15,8 +15,8 @@ export const About = () => (
       <PageContainerAbout>
         <Image />
         <Text>
-          Hey, I'm Lenny - a special kind of artist 😂 - a travelling tattoo one
-          in fact. I love my work, challenges and fun.
+          Hey, I'm Lenny - a special kind of artist 😂, a travelling tattoo
+          artist. I love my work, challenges and fun.
         </Text>
       </PageContainerAbout>
     </SectionContainer>

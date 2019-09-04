@@ -2,10 +2,8 @@ import * as React from "react";
 import "firebase/storage";
 import { images } from "../../imageUrls";
 import * as Scroll from "react-scroll";
-
-import { Container, Section } from "./components";
-
-import { Image } from "../../components";
+import { Container } from "./components";
+import { Image, PageContainer } from "../../components";
 
 export const Gallery = () => {
   const [selections, setSelected] = React.useState([]);
@@ -33,7 +31,7 @@ export const Gallery = () => {
 
   return (
     <Scroll.Element name="gallery-section">
-      <Section>
+      <PageContainer>
         <Container ref={galleryRef}>
           {images.map((imageUrl, index) => (
             <Image
@@ -44,7 +42,7 @@ export const Gallery = () => {
             />
           ))}
         </Container>
-      </Section>
+      </PageContainer>
     </Scroll.Element>
   );
 };

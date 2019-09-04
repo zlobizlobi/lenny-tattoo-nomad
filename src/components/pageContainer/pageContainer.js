@@ -12,5 +12,6 @@ export const PageContainer = styled.section`
     padding: 0px 130px;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 ;
 `;

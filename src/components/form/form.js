@@ -11,8 +11,4 @@ export const Form = styled.form.attrs({
   @media ${breakpoint.tablet} {
     margin: 0;
   }
-
-  @media ${breakpoint.mobileL} {
-    margin-top: 20px;
-  }
 `;

@@ -4,7 +4,7 @@ import { breakpoint } from "../../breakpoints";
 
 export const Button = styled.button`
   padding: 5px;
-  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  border: 0.5px solid rgba(255, 255, 255, 1);
   border-radius: 50%;
   position: fixed;
   bottom: 36px;
@@ -24,6 +24,7 @@ export const Button = styled.button`
 
   :hover :only-child {
     color: black;
+    animation: none;
   }
 
   @media ${breakpoint.mobileL} {
@@ -34,24 +35,24 @@ export const Button = styled.button`
 `;
 
 export const Arrow = styled(MdKeyboardArrowUp)`
-
-@keyframes arrowUp {
-  from { bottom: -2px; }
-  to { bottom: 5px; }
-}
+  @keyframes arrowUp {
+    from {
+      bottom: -2px;
+    }
+    to {
+      bottom: 5px;
+    }
+  }
 
   width: 25px;
   height: 25px;
   position: relative;
   color: white;
   transition: all 0.2 ease;
-  animation: arrowUp .3s infinite alternate;
+  animation: arrowUp 0.3s infinite alternate;
 
   @media ${breakpoint.mobileL} {
     width: 35px;
     height: 35px;
   }
-}
-
-
 `;

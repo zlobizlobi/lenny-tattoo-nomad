@@ -8,4 +8,4 @@ This website is made using the following wonders of today's FE-world:
 - react-scroll
 - firebase
 
-js`yarn && yarn start`
+```yarn && yarn start```

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Banner, About, Gallery, Contact } from "./sections";
 import "./App.css";
-import { Navbar } from "./components";
+import { Navbar, ScrollToTopButton } from "./components";
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
           <About />
           <Gallery />
           <Contact />
+          <ScrollToTopButton />
         </main>
       </div>
     );

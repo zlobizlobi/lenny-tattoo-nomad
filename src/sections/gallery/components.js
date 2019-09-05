@@ -10,6 +10,6 @@ export const Container = styled(Flex)`
   @media ${breakpoint.mobileL} {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 85%;
+    width: 75%;
   }
 `;

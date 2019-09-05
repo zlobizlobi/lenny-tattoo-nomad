@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { breakpoint } from "../../breakpoints";
 
 export const Heading = styled.h2`
   margin-top: 100px;
@@ -13,7 +12,7 @@ export const Asterix = styled.span`
 `;
 
 export const TextContainer = styled.div`
-  margin: 30px 0;
+  margin: 20px 0;
 `;
 
 export const Container = styled.div`
@@ -21,4 +20,5 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 `;

@@ -1,6 +1,13 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { Input, Form, PageContainer, Text, TextArea } from "../../components";
+import {
+  Input,
+  Form,
+  PageContainer,
+  Text,
+  TextArea,
+  SubmitButton
+} from "../../components";
 import { Heading, Asterix, TextContainer, Container } from "./components";
 
 export const Contact = () => (
@@ -27,9 +34,11 @@ export const Contact = () => (
           </TextContainer>
         </Text>
         <Form>
-          <Input type="text" title="name" placeholder="Name" />
-          <Input type="email" title="email" placeholder="E-Mail" />
+          <Input type="text" title="name" />
+          <Input type="email" title="email" />
+          <Input type="text" title="subject" />
           <TextArea name="message" autoFocus />
+          <SubmitButton>Send me a message</SubmitButton>
         </Form>
       </PageContainer>
     </Container>

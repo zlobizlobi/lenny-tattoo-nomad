@@ -7,3 +7,5 @@ export { PageContainer } from "./pageContainer";
 export { Form } from "./form";
 export { TextArea } from "./textArea";
 export { SocialMedia } from "./socialMedia";
+export { SubmitButton } from "./submitButton";
+export { ScrollToTopButton } from "./scrollToTopButton";

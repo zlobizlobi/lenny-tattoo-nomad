@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const SubmitButton = styled.button.attrs({ type: "submit" })`
-  border: 1px dashed rgba(255, 255, 255, 0.7);
+  border: 1px dashed rgba(0, 0, 0, 0.7);
   padding: 10px 10px;
-  background-color: black;
+  background-color: black
   color: white;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -12,5 +12,6 @@ export const SubmitButton = styled.button.attrs({ type: "submit" })`
   :hover {
     background-color: white
     color: black;
+    border-color: black;
   }
 `;

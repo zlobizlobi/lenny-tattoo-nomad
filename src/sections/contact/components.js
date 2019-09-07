@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { breakpoint } from "../../breakpoints";
+import { PageContainer } from "../../components";
 
 export const Heading = styled.h2`
-  margin-top: 100px;
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.5px solid black;
   padding-bottom: 10px;
 `;
 
@@ -12,7 +13,20 @@ export const Asterix = styled.span`
 `;
 
 export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   margin: 20px 0;
+  @media ${breakpoint.mobileL} {
+    margin: 0;
+    align-self: flex-start;
+  }
+`;
+
+export const ContainerTwo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Container = styled.div`
@@ -20,5 +34,19 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+
+  @media ${breakpoint.mobileL} {
+    flex-direction: row;
+  }
+`;
+
+export const ContactPageContainer = styled(PageContainer)`
+  background-color: white;
+  padding: 60px 50px;
+  margin: 70px 0;
+  color: black;
+  max-width: 80%;
+  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),
+    0 10px 10px rgba(255, 255, 255, 0.22);
+  align-self: center;
 `;

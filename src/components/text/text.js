@@ -8,10 +8,11 @@ export const Text = styled.span`
   max-width: 75%;
   height: 100%;
   margin-top: 30px;
-
+  align-self: center;
   @media ${breakpoint.laptop} {
     text-align: left;
     font-size: 16px;
     flex: 0 0 45%;
+    align-self: flex-start;
   }
 `;

@@ -31,5 +31,6 @@ export const Image = styled.div`
 
   @media ${breakpoint.mobileL} {
     margin-right: 20px;
+    margin-bottom: 0;
   }
 `;

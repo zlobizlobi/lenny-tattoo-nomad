@@ -5,19 +5,19 @@ import {
   Heading,
   Asterix,
   TextContainer,
-  Container,
-  ContainerTwo,
+  ColonwAndRowConatiner,
+  ColumnContainer,
   ContactPageContainer
 } from "./components";
 
 export const Contact = () => (
   <Scroll.Element name="contact-section">
-    <Container>
+    <ColonwAndRowConatiner>
       <ContactPageContainer>
-        <ContainerTwo>
+        <ColumnContainer>
           <Heading>CONTACT</Heading>
-          <Container>
-            <ContainerTwo>
+          <ColonwAndRowConatiner>
+            <ColumnContainer>
               <TextContainer>
                 <Text>
                   <Asterix>*</Asterix>If you want to know more or book an
@@ -36,7 +36,7 @@ export const Contact = () => (
                   color-realistic.
                 </Text>
               </TextContainer>
-            </ContainerTwo>
+            </ColumnContainer>
             <Form>
               <Input type="text" title="name" />
               <Input type="email" title="email" />
@@ -44,9 +44,9 @@ export const Contact = () => (
               <TextArea name="message" autoFocus />
               <SubmitButton>Send me a message</SubmitButton>
             </Form>
-          </Container>
-        </ContainerTwo>
+          </ColonwAndRowConatiner>
+        </ColumnContainer>
       </ContactPageContainer>
-    </Container>
+    </ColonwAndRowConatiner>
   </Scroll.Element>
 );

@@ -22,14 +22,14 @@ export const TextContainer = styled.div`
   }
 `;
 
-export const ContainerTwo = styled.div`
+export const ColumnContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export const Container = styled.div`
+export const ColonwAndRowConatiner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,11 +42,16 @@ export const Container = styled.div`
 
 export const ContactPageContainer = styled(PageContainer)`
   background-color: white;
-  padding: 60px 50px;
-  margin: 70px 50px;
+  box-sizing: border-box;
+  margin: 60px 0;
   color: black;
+  padding: 60px 30px;
   max-width: 80%;
   box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),
     0 10px 10px rgba(255, 255, 255, 0.22);
   align-self: center;
+  @media ${breakpoint.tablet} {
+    flex-direction: row;
+    margin: 70px 50px;
+  }
 `;

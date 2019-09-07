@@ -16,6 +16,7 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 20px 0;
+
   @media ${breakpoint.mobileL} {
     margin: 0;
     align-self: flex-start;

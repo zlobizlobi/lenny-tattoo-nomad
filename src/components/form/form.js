@@ -6,7 +6,7 @@ export const Form = styled.form.attrs({
   method: "POST",
   name: "contact"
 })`
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Banner, About, Gallery, Contact, Faq } from "./sections";
+import { Banner, About, Gallery, Contact, Faq, Footer } from "./sections";
 import "./App.css";
 import { Navbar, ScrollToTopButton } from "./components";
 import { GlobalStyle } from "./globalStyle";
@@ -16,6 +16,7 @@ class App extends Component {
           <Gallery />
           <Contact />
           <Faq />
+          <Footer />
           <ScrollToTopButton />
         </main>
       </div>

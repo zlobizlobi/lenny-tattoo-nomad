@@ -1,9 +1,9 @@
 import * as React from "react";
 import { FaqContainer, FaqText } from "./components";
 
-export const FaqComponent = () => (
+export const FaqComponent = ({ content }) => (
   <FaqContainer>
-    <FaqText> What do you do after you get a tattoo ?</FaqText>
-    <FaqText>You Take Care Of It</FaqText>
+    <FaqText>{content.question}</FaqText>
+    <FaqText>{content.answer.toUpperCase()}</FaqText>
   </FaqContainer>
 );

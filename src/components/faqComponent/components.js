@@ -40,4 +40,5 @@ export const ArrowButton = styled.button`
 export const FaqText = styled.span`
   line-height: 25px;
   flex-wrap: wrap;
+  margin: 5px 0;
 `;

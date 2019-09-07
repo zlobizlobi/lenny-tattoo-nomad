@@ -10,7 +10,7 @@ export const Button = styled.button`
   position: fixed;
   bottom: 36px;
   cursor: pointer;
-  bottom: 30px;
+  bottom: 36px;
   right: 15px;
   display: flex;
   justify-content: center;

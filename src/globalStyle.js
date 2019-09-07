@@ -7,5 +7,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     color: white;
     font-family: "Major Mono Display", monospace;
+
+    select, textarea, input, button {
+      font-family: inherit;
+    }
   }  
 `;

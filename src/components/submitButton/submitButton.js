@@ -7,7 +7,6 @@ export const SubmitButton = styled.button.attrs({ type: "submit" })`
   color: white;
   transition: all 0.3s ease;
   cursor: pointer;
-  border-radius: 2px;
   margin-top: 25px;
   
   :hover {

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { breakpoint } from "../../breakpoints";
+import { arrowUp } from "./animations";
 
 export const Button = styled.button`
   padding: 5px;
@@ -19,26 +20,18 @@ export const Button = styled.button`
   opacity: ${({ isDisplayed }) => (isDisplayed ? "1" : "0")};
 
   :hover {
+    cursor: pointer;
     background-color: white;
   }
 
   :hover :only-child {
     color: black;
-    animation: arrowUp 0.3s infinite alternate;
-
-    @keyframes arrowUp {
-      from {
-        bottom: -2px;
-      }
-      to {
-        bottom: 5px;
-      }
-    }
+    animation: ${arrowUp} 0.3s infinite alternate;
   }
 
   @media ${breakpoint.mobileL} {
     bottom: 36px;
-    right: 36px;
+    right: 30px;
     padding: 7px;
   }
 `;

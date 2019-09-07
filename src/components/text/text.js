@@ -6,9 +6,9 @@ export const Text = styled.span`
   text-align: left;
   font-size: 12px;
   max-width: 75%;
-  height: 100%;
   margin-top: 30px;
   align-self: center;
+  display: inline-flex;
   @media ${breakpoint.laptop} {
     text-align: left;
     font-size: 16px;

@@ -43,11 +43,10 @@ export const ColonwAndRowConatiner = styled.div`
 
 export const ContactPageContainer = styled(PageContainer)`
   background-color: white;
-  box-sizing: border-box;
   margin: 60px 0;
   color: black;
-  padding: 60px 60px;
-  max-width: 80%;
+  padding: 60px 0;
+  width: 100%;
   box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),
     0 10px 10px rgba(255, 255, 255, 0.22);
   align-self: center;
@@ -55,5 +54,7 @@ export const ContactPageContainer = styled(PageContainer)`
     flex-direction: row;
     margin: 70px 50px;
     box-sizing: content-box;
+    max-width: 75%;
+    padding: 60px 60px;
   }
 `;

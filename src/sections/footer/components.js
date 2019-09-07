@@ -1,15 +1,23 @@
 import styled from "styled-components";
+import { breakpoint } from "../../breakpoints";
 
 export const FooterContainer = styled.div`
-  height: 140px;
   background-color: black;
   border-top: 2px dashed white;
   width: 100%;
   margin-top: 80px;
   display: flex;
+  flex-direction: columnn;
   align-items: center;
-  padding: 0 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 20px;
   box-sizing: border-box;
+  @media ${breakpoint.laptop} {
+    flex-direction: row;
+    padding: 30px 90px;
+    justify-content: space-between;
+  }
 `;
 
 export const Image = styled.div`
@@ -18,5 +26,10 @@ export const Image = styled.div`
   background-size: cover;
   width: 70px;
   height: 70px;
-  display: inline-flex;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+
+  @media ${breakpoint.mobileL} {
+    margin-right: 20px;
+  }
 `;

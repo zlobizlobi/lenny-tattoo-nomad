@@ -84,13 +84,14 @@ ul.bm-item > li {
   display: inline-flex;
 }
 
-.bm-item > li > a > a {
+.bm-item > li > a {
   color: grey;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   display: inline-flex;
   flex-direction: column;
   height: auto;
+  cursor: pointer;
 }
 .bm-item > li {
   position: relative;
@@ -100,7 +101,7 @@ ul.bm-item > li {
   outline: none;
 }
 
-.bm-item > li > a > a > span {
+.bm-item > li > a > span {
   background-color: white;
   height: 1px;
   transition: all 0.2s ease;
@@ -108,27 +109,27 @@ ul.bm-item > li {
   position: relative;
 }
 
-.bm-item > li > a > a > span:nth-child(1) {
+.bm-item > li > a > span:nth-child(1) {
   opacity: 0;
   top: 15px;
   left: 0;
 }
-.bm-item > li > a > a > span:nth-child(2) {
+.bm-item > li > a > span:nth-child(2) {
   opacity: 0;
   bottom: 15px;
   left: 0;
 }
 
-.bm-item > li > a > a:hover > span:nth-child(1) {
+.bm-item > li > a:hover > span:nth-child(1) {
   top: -2px;
   opacity: 1;
 }
-.bm-item > li > a > a:hover > span:nth-child(2) {
+.bm-item > li > a:hover > span:nth-child(2) {
   bottom: -4px;
   opacity: 1;
 }
 
-.bm-item > li > a > a:hover > {
+.bm-item > li > a:hover > {
   color: white;
 }
 
@@ -136,6 +137,6 @@ ul.bm-item > li {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.bm-item > li > a > a:hover {
+.bm-item > li > a:hover {
   color: white;
 }

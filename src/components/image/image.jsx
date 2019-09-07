@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled, { css } from "styled-components";
+import { breakpoint } from "../../breakpoints";
 
 const ImageComponent = styled.img`
   border: 2px solid white;
@@ -17,11 +18,21 @@ const ImageComponent = styled.img`
       width: 250px;
       height: 250px;
       filter: grayscale(0%);
-      margin: 30px;
     `}
 
   :hover {
     filter: grayscale(0%);
+  }
+
+  @media ${breakpoint.mobileL} {
+    ${({ isViewed }) =>
+      isViewed &&
+      css`
+        width: 250px;
+        height: 250px;
+        filter: grayscale(0%);
+        margin: 30px;
+      `}
   }
 `;
 

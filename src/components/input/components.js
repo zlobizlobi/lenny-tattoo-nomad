@@ -2,9 +2,7 @@ import styled from "styled-components";
 import { Flex } from "@rebass/grid";
 
 export const InputComponent = styled.input`
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  font-family: "Major Mono Display", serif;
-  border-radius: 2px;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
   color: white;
   pointer: cursor;
   outline: none;
@@ -14,6 +12,11 @@ export const InputComponent = styled.input`
   transition: all 0.3s ease;
   background-color: black;
   width: 220px;
+
+  :focus {
+    color: black;
+    background-color: white;
+  }
 `;
 
 export const InputContainer = styled(Flex)`

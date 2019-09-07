@@ -6,6 +6,7 @@ export const Text = styled.span`
   text-align: left;
   font-size: 12px;
   max-width: 75%;
+  height: 100%;
   margin-top: 30px;
   @media ${breakpoint.laptop} {
     text-align: left;

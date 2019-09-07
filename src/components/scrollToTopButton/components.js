@@ -24,7 +24,16 @@ export const Button = styled.button`
 
   :hover :only-child {
     color: black;
-    animation: none;
+    animation: arrowUp 0.3s infinite alternate;
+
+    @keyframes arrowUp {
+      from {
+        bottom: -2px;
+      }
+      to {
+        bottom: 5px;
+      }
+    }
   }
 
   @media ${breakpoint.mobileL} {
@@ -35,21 +44,10 @@ export const Button = styled.button`
 `;
 
 export const Arrow = styled(MdKeyboardArrowUp)`
-  @keyframes arrowUp {
-    from {
-      bottom: -2px;
-    }
-    to {
-      bottom: 5px;
-    }
-  }
-
   width: 25px;
   height: 25px;
   position: relative;
   color: white;
-  transition: all 0.2 ease;
-  animation: arrowUp 0.3s infinite alternate;
 
   @media ${breakpoint.mobileL} {
     width: 35px;

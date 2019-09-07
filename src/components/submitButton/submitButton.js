@@ -5,11 +5,11 @@ export const SubmitButton = styled.button.attrs({ type: "submit" })`
   padding: 10px 10px;
   background-color: black;
   color: white;
-  font-family: "Major Mono Display", serif;
   transition: all 0.3s ease;
   cursor: pointer;
   border-radius: 2px;
   margin-top: 25px;
+  
   :hover {
     background-color: white
     color: black;

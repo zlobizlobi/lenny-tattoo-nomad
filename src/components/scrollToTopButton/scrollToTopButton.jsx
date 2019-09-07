@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
+
 import { Button, Arrow } from "./components";
 
 const scroll = Scroll.animateScroll;
@@ -11,7 +12,7 @@ export const ScrollToTopButton = () => {
     if (window.pageYOffset > 800) {
       return setDisplayed(true);
     }
-    setDisplayed(false);
+    return setDisplayed(false);
   };
 
   const scrollToTop = () => scroll.scrollToTop();

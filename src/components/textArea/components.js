@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const TextAreaComponent = styled.textarea`
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
   color: white;
   background-color: black;
   margin-top: 10px;

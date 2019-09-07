@@ -1,5 +1,4 @@
 import * as React from "react";
-import { NavLink } from "react-router-dom";
 import * as Scroll from "react-scroll";
 import styled from "styled-components";
 
@@ -16,16 +15,12 @@ export const MenuLink = ({ section }) => {
     <li>
       <Scroll.Link
         to={`${section.toLowerCase()}-section`}
-        spy={true}
-        smooth={true}
-        offset={50}
-        duration={500}
+        smooth
+        duration={1100}
       >
-        <NavLink to="/" exact={true}>
-          <span />
-          {section}
-          <span />
-        </NavLink>
+        <span />
+        {section}
+        <span />
       </Scroll.Link>
     </li>
   );

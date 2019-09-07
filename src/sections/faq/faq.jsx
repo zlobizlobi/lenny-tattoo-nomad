@@ -5,6 +5,7 @@ import { Container, FaqComponentContainer } from "./components";
 export const Faq = () => (
   <PageContainer>
     <Container>
+      <Heading>FAQ</Heading>
       <FaqComponentContainer>
         <FaqComponent
           content={{

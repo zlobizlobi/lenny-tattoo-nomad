@@ -35,7 +35,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media ${breakpoint.mobileL} {
+  @media ${breakpoint.tablet} {
     flex-direction: row;
   }
 `;
@@ -43,7 +43,7 @@ export const Container = styled.div`
 export const ContactPageContainer = styled(PageContainer)`
   background-color: white;
   padding: 60px 50px;
-  margin: 70px 0;
+  margin: 70px 50px;
   color: black;
   max-width: 80%;
   box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),

@@ -1,11 +1,11 @@
 import * as React from "react";
 import { InputContainer, InputComponent } from "./components";
 
-export const Input = ({ type, title }) => {
+export const Input = ({ type, title, className }) => {
   const titleCapitalized = title.toUpperCase();
 
   return (
-    <InputContainer flexDirection="column">
+    <InputContainer className={className} flexDirection="column">
       <label htmlFor={title}>{titleCapitalized}</label>
       <InputComponent type={type} name={title} id={title} />
     </InputContainer>

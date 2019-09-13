@@ -30,7 +30,7 @@ export const ColumnContainer = styled.div`
   align-items: center;
 `;
 
-export const ColonwAndRowConatiner = styled.div`
+export const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,6 @@ export const ContactPageContainer = styled(PageContainer)`
   color: black;
   padding: 60px 0;
   width: 100%;
-  border-radius: 5px;
   align-self: center;
   @media ${breakpoint.laptop} {
     flex-direction: row;
@@ -55,5 +54,6 @@ export const ContactPageContainer = styled(PageContainer)`
     box-sizing: content-box;
     max-width: 75%;
     padding: 60px 60px;
+    border-radius: 5px;
   }
 `;

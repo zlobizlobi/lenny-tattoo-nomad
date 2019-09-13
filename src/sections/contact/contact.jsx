@@ -5,18 +5,24 @@ import {
   Heading,
   Asterix,
   TextContainer,
-  ColonwAndRowConatiner,
+  FlexContainer,
   ColumnContainer,
   ContactPageContainer
 } from "./components";
 
+import styled from "styled-components";
+
+const BotInput = styled(Input)`
+  display: none;
+`;
+
 export const Contact = () => (
   <Scroll.Element name="contact-section">
-    <ColonwAndRowConatiner>
+    <FlexContainer>
       <ContactPageContainer>
         <ColumnContainer>
           <Heading>CONTACT</Heading>
-          <ColonwAndRowConatiner>
+          <FlexContainer>
             <ColumnContainer>
               <TextContainer>
                 <Text>
@@ -24,29 +30,19 @@ export const Contact = () => (
                   appointment, don't be shy to call or send me a message.
                 </Text>
               </TextContainer>
-              <TextContainer>
-                <Text>
-                  <Asterix>*</Asterix> With 14 years of experience I take on all
-                  tattoo styles.
-                </Text>
-              </TextContainer>
-              <TextContainer>
-                <Text>
-                  <Asterix>*</Asterix> But i specialize in black and grey or
-                  color-realistic.
-                </Text>
-              </TextContainer>
             </ColumnContainer>
             <Form>
+              <BotInput type="text" name="bot-input" title="bot-input" />
               <Input type="text" title="name" />
               <Input type="email" title="email" />
               <Input type="text" title="subject" />
               <TextArea name="message" autoFocus />
+              <div data-netlify-recaptcha="true"></div>
               <SubmitButton>Send me a message</SubmitButton>
             </Form>
-          </ColonwAndRowConatiner>
+          </FlexContainer>
         </ColumnContainer>
       </ContactPageContainer>
-    </ColonwAndRowConatiner>
+    </FlexContainer>
   </Scroll.Element>
 );

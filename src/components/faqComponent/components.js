@@ -8,7 +8,7 @@ export const FaqContainer = styled.div`
   justify-content: space-between;
   padding: 20px;
   margin 20px 50px;
-  border: 1px dashed rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   transition: all 0.3s ease;
 
   :hover {

@@ -3,7 +3,7 @@ import { Flex } from "@rebass/grid";
 
 export const InputComponent = styled.input`
   border: 1px dashed rgba(0, 0, 0, 0.5);
-  color: white;
+  color: black;
   pointer: cursor;
   outline: none;
   padding: 3px 0 3px 7px;
@@ -12,7 +12,6 @@ export const InputComponent = styled.input`
   transition: all 0.3s ease;
   background-color: white;
   width: 220px;
-  background-color: black;
   :focus {
     color: white;
     background-color: black;

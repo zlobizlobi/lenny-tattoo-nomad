@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
 
 export const Form = styled.form.attrs({
-  ["data-netlify"]: true,
+  ["data-netlify"]: "true",
   ["netlify-honeypot"]: "bot-input",
-  ["data-netlify-recaptcha"]: true,
+  ["data-netlify-recaptcha"]: "true",
   method: "POST",
   name: "Contact Form"
 })`

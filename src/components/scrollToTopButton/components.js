@@ -30,8 +30,8 @@ export const Button = styled.button`
   }
 
   @media ${breakpoint.mobileL} {
-    bottom: 36px;
-    right: 30px;
+    bottom: 40px;
+    right: 20px;
     padding: 7px;
   }
 `;

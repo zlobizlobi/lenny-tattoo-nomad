@@ -9,10 +9,10 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: columnn;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   padding: 30px 20px;
   box-sizing: border-box;
+  line-height: 25px;
   @media ${breakpoint.laptop} {
     flex-direction: row;
     padding: 30px 90px;

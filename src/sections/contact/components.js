@@ -47,8 +47,7 @@ export const ContactPageContainer = styled(PageContainer)`
   color: black;
   padding: 60px 0;
   width: 100%;
-  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),
-    0 10px 10px rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
   align-self: center;
   @media ${breakpoint.laptop} {
     flex-direction: row;

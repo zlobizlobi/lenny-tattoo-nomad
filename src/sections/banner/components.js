@@ -46,3 +46,23 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
 `;
+
+export const PlaceHolderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+`;
+
+export const PlaceHolderImage = styled.img`
+  height: 35%;
+  min-width: 20%;
+  opacity: 0.1;
+  position: relative;
+
+  @media ${breakpoint.tablet} {
+    min-width: 25%;
+    height: 65%;
+  }
+`;

@@ -2,7 +2,7 @@ import * as React from "react";
 import { InputContainer, InputComponent } from "./components";
 
 export const Input = ({ type, title, className }) => {
-  const titleCapitalized = title.toUpperCase();
+  const titleCapitalized = title && title.toUpperCase();
 
   return (
     <InputContainer className={className} flexDirection="column">

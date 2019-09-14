@@ -44,8 +44,7 @@
 
 .bm-menu-wrap {
   height: 100%;
-  overflow: hidden;
-  width: 300px !important;
+  width: 300px;
 }
 
 /* General sidebar styles */
@@ -73,9 +72,9 @@ ul.bm-item {
   padding: 0;
   margin: 0;
   display: inline-flex !important;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
   height: 90%;
   font-size: 1em;
 }

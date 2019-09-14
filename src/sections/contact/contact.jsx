@@ -37,7 +37,6 @@ export const Contact = () => (
               <Input type="email" title="email" />
               <Input type="text" title="subject" />
               <TextArea name="message" autoFocus />
-              <div data-netlify-recaptcha="true"></div>
               <SubmitButton>Send me a message</SubmitButton>
             </Form>
           </FlexContainer>

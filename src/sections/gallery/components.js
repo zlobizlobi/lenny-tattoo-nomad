@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Flex } from "@rebass/grid";
 import { breakpoint } from "../../breakpoints";
 
-export const Container = styled(Flex)`
+export const Container = styled.div`
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;

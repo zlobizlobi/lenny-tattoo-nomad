@@ -12,7 +12,7 @@ export const Footer = () => (
     <FooterTextContainer>
       <span>© Copyright Lenny Tattoo 2019</span>
       <span>
-        Made by <Link href="https://www.github.com/zlobic">zlobic</Link>
+        Made by <Link href="https://www.github.com/zlobizlobi">zlobizlobi</Link>
       </span>
     </FooterTextContainer>
   </FooterContainer>

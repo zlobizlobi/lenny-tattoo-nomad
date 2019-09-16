@@ -31,13 +31,13 @@ export const Contact = () => (
                 </Text>
               </TextContainer>
             </ColumnContainer>
-            <Form method="post" form-name="contact" name="contact">
+            <Form method="post" name="contact">
               <BotInput type="text" name="bot-input" title="bot-input" />
               <Input type="text" title="name" />
               <Input type="email" title="email" />
               <Input type="text" title="subject" />
               <TextArea name="message" autoFocus />
-              <Input value="contact" name="form-name" type="hidden" />
+              <Input value="contact" name="contact" type="hidden" />
               <SubmitButton>Send me a message</SubmitButton>
             </Form>
           </FlexContainer>

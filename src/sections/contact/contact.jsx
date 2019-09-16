@@ -31,13 +31,18 @@ export const Contact = () => (
                 </Text>
               </TextContainer>
             </ColumnContainer>
-            <Form method="post" name="contact">
+            <Form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <Input type="hidden" form-name="contact" value="contact" />
               <BotInput type="text" name="bot-input" title="bot-input" />
               <Input type="text" title="name" />
               <Input type="email" title="email" />
               <Input type="text" title="subject" />
               <TextArea name="message" autoFocus />
-              <Input value="contact" name="contact" type="hidden" />
               <SubmitButton>Send me a message</SubmitButton>
             </Form>
           </FlexContainer>

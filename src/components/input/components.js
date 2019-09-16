@@ -18,6 +18,8 @@ export const InputComponent = styled.input`
   }
 `;
 
-export const InputContainer = styled(Flex)`
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   margin: 0 0 30px 0;
 `;

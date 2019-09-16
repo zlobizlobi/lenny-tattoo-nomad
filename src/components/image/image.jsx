@@ -2,15 +2,15 @@ import * as React from "react";
 import styled, { css } from "styled-components";
 import { breakpoint } from "../../breakpoints";
 
-const ImageComponent = styled.img`
+const ImageComponent = styled.img.attrs({ loading: "lazy" })`
   border: 2px solid white;
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.4) 0s;
   cursor: pointer;
   width: 180px;
+  margin: 10px;
   height: 180px;
   filter: grayscale(100%);
-  margin: 10px;
 
   ${({ isViewed }) =>
     isViewed &&

@@ -13,13 +13,13 @@ export const Asterix = styled.span`
 `;
 
 export const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
+  justify-content: center;
   margin: 20px 0;
 
   @media ${breakpoint.mobileL} {
     margin: 0;
-    align-self: flex-start;
+    justify-content: flex-start;
   }
 `;
 
@@ -45,14 +45,14 @@ export const ContactPageContainer = styled(PageContainer)`
   background-color: white;
   margin: 60px 0;
   color: black;
-  padding: 60px 0;
-  width: 100%;
+  padding: 60px 60px;
+  max-width: 100%;
   align-self: center;
+  box-sizing: border-box;
   @media ${breakpoint.laptop} {
     flex-direction: row;
     margin: 70px 50px;
     box-sizing: content-box;
-    max-width: 75%;
     padding: 60px 60px;
     border-radius: 5px;
   }

@@ -5,7 +5,7 @@ export const Input = ({ type, title, className }) => {
   const titleCapitalized = title && title.toUpperCase();
 
   return (
-    <InputContainer className={className} flexDirection="column">
+    <InputContainer className={className}>
       <label htmlFor={title}>{titleCapitalized}</label>
       <InputComponent type={type} name={title} id={title} />
     </InputContainer>

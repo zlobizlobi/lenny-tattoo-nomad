@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Banner, About, Gallery, Contact, Faq, Footer } from "./sections";
-import "./App.css";
 import { Navbar, ScrollToTopButton } from "./components";
 import { GlobalStyle } from "./globalStyle";
 import styled from "styled-components";

@@ -4,14 +4,13 @@ import { breakpoint } from "../../breakpoints";
 export const FooterContainer = styled.div`
   background-color: black;
   border-top: 2px dashed white;
-  width: 100%;
+  max-width: 100%;
   margin-top: 80px;
   display: flex;
   flex-direction: columnn;
   align-items: center;
-  flex-wrap: wrap;
   padding: 30px 20px;
-  box-sizing: border-box;
+  font-size: 10px;
   line-height: 25px;
   @media ${breakpoint.laptop} {
     flex-direction: row;
@@ -20,17 +19,23 @@ export const FooterContainer = styled.div`
   }
 `;
 
+export const Link = styled.a`
+  color: white;
+  font-weight: 900;
+`;
+
 export const Image = styled.div`
   background-image: url("logo-white.png");
   backgroun-position: center;
   background-size: cover;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   flex-shrink: 0;
-  margin-bottom: 20px;
+  margin-right: 10px;
+`;
 
-  @media ${breakpoint.mobileL} {
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
+export const FooterTextContainer = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 `;

@@ -1,14 +1,19 @@
 import * as React from "react";
-import { FooterContainer, Image } from "./components";
-import styled from "styled-components";
-
-const FooterText = styled.span`
-  margin: 0;
-`;
+import {
+  FooterContainer,
+  Image,
+  FooterTextContainer,
+  Link
+} from "./components";
 
 export const Footer = () => (
   <FooterContainer>
     <Image />
-    <FooterText>© Copyright Lenny Tattoo 2019</FooterText>
+    <FooterTextContainer>
+      <span>© Copyright Lenny Tattoo 2019</span>
+      <span>
+        Made by <Link href="https://www.github.com/zlobic">zlobic</Link>
+      </span>
+    </FooterTextContainer>
   </FooterContainer>
 );

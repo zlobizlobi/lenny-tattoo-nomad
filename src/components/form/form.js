@@ -6,7 +6,7 @@ export const Form = styled.form.attrs({
   ["netlify-honeypot"]: "bot-input",
   ["data-netlify-recaptcha"]: "true",
   method: "POST",
-  name: "Contact Form"
+  name: "contact"
 })`
   margin-top: 50px;
   display: flex;

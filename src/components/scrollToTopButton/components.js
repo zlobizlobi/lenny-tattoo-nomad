@@ -16,11 +16,11 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   background-color: black;
+  cursor: pointer;
   transition: all 0.5s ease;
   opacity: ${({ isDisplayed }) => (isDisplayed ? "1" : "0")};
 
   :hover {
-    cursor: pointer;
     background-color: white;
   }
 
@@ -30,7 +30,7 @@ export const Button = styled.button`
   }
 
   @media ${breakpoint.mobileL} {
-    bottom: 40px;
+    bottom: 36px;
     right: 20px;
     padding: 7px;
   }
@@ -41,9 +41,4 @@ export const Arrow = styled(MdKeyboardArrowUp)`
   height: 25px;
   position: relative;
   color: white;
-
-  @media ${breakpoint.mobileL} {
-    width: 35px;
-    height: 35px;
-  }
 `;

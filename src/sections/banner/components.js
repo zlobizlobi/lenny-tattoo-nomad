@@ -27,7 +27,7 @@ export const Logo = styled.img`
   height: 35%;
   min-width: 20%;
 
-  opacity: 0.7;
+  opacity: 0.9;
 
   @media ${breakpoint.tablet} {
     min-width: 25%;
@@ -58,7 +58,7 @@ export const PlaceHolderContainer = styled.div`
 export const PlaceHolderImage = styled.img`
   height: 35%;
   min-width: 20%;
-  opacity: 0.1;
+  opacity: 0.3;
   position: relative;
 
   @media ${breakpoint.tablet} {

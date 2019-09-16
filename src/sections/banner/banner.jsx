@@ -12,12 +12,13 @@ import {
   PlaceHolderImage
 } from "./components";
 import { SocialMedia } from "../../components";
-
+import logoWhite from "../../../public/logo-white.png";
 export const Banner = () => {
   const [bannerUrl, setBannerUrl] = React.useState({
     webm: "",
     mp4: "",
-    whiteLogo: ""
+    whiteLogo: "",
+    ornament: ""
   });
 
   let firebaseUrlMp4 = "";
@@ -55,7 +56,7 @@ export const Banner = () => {
     }
 
     fetchData();
-  }, [firebaseUrlWebM, firebaseUrlMp4, whiteLogo]);
+  }, [firebaseUrlWebM, firebaseUrlMp4, firebaseOrnament, firebaseWhiteLogo]);
 
   const { mp4, webm, whiteLogo, ornament } = bannerUrl;
 
@@ -64,15 +65,15 @@ export const Banner = () => {
       <section>
         {!whiteLogo && (
           <PlaceHolderContainer>
-            <PlaceHolderImage src="logo-white.png" />
+            <PlaceHolderImage src={logoWhite} />
           </PlaceHolderContainer>
         )}
         <SocialMedia />
         <Container>
           <Overlay>
-            <Logo src={whiteLogo} />
+            <Logo src={(mp4 || webm) && whiteLogo} />
             <Ornament src={ornament} />
-            <Video src={mp4 || webm} autoPlay muted loop />
+            <Video src={whiteLogo && (mp4 || webm)} autoPlay muted loop />
           </Overlay>
         </Container>
       </section>

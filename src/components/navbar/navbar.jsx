@@ -17,11 +17,13 @@ export const Navbar = () => {
           <CustomIcon
             link="https://www.instagram.com/lenny.tattoo/"
             target="_blank"
+            rel="noopener"
             className="fab fa-instagram"
           />
           <CustomIcon
             link="https://www.facebook.com/LennyTattoos/"
             target="_blank"
+            rel="noopener"
             className="fab fa-facebook"
           />
         </Container>

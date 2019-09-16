@@ -3,7 +3,8 @@ import { breakpoint } from "../../breakpoints";
 
 export const Form = styled.form.attrs({
   name: "contact",
-  method: "POST"
+  method: "POST",
+  ["form-name"]: "contact"
 })`
   margin-top: 50px;
   display: flex;

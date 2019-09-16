@@ -31,7 +31,7 @@ export const Contact = () => (
                 </Text>
               </TextContainer>
             </ColumnContainer>
-            <Form>
+            <Form method="post" form-name="contact" name="contact">
               <BotInput type="text" name="bot-input" title="bot-input" />
               <Input type="text" title="name" />
               <Input type="email" title="email" />

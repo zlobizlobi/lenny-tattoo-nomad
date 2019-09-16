@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Flex } from "@rebass/grid";
 
 export const InputComponent = styled.input`
   border: 1px dashed rgba(0, 0, 0, 0.5);

@@ -2,11 +2,8 @@ import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
 
 export const Form = styled.form.attrs({
-  ["data-netlify"]: "true",
-  ["netlify-honeypot"]: "bot-input",
-  ["data-netlify-recaptcha"]: "true",
-  method: "POST",
-  name: "contact"
+  name="contact",
+  method="post"
 })`
   margin-top: 50px;
   display: flex;

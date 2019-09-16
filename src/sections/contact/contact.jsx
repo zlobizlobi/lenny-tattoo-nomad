@@ -37,7 +37,7 @@ export const Contact = () => (
               <Input type="email" title="email" />
               <Input type="text" title="subject" />
               <TextArea name="message" autoFocus />
-              <Input value="contact" name="contact" type="hidden" />
+              <Input value="contact" name="form-name" type="hidden" />
               <SubmitButton>Send me a message</SubmitButton>
             </Form>
           </FlexContainer>

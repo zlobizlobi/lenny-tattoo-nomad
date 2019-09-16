@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   border-bottom: 0.5px solid white;
   padding-bottom: 25px;
+  width: 25%;
 `;
 
 export const MenuLink = ({ section }) => {

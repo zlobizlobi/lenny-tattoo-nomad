@@ -44,9 +44,15 @@
 
 .bm-menu-wrap {
   height: 100%;
-  width: 300px;
+  width: 450px !important;
 }
 
+@media only screen and (max-width: 600px) {
+  .bm-menu-wrap {
+    height: 100%;
+    width: 250px !important;
+  }
+}
 /* General sidebar styles */
 .bm-menu {
   background: darkgrey;

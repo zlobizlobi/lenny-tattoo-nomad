@@ -47,14 +47,11 @@ export const ContactPageContainer = styled(PageContainer)`
   margin: 60px 0;
   color: black;
   padding: 60px 60px;
-  width: 100%;
-  align-self: center;
   box-sizing: border-box;
   border-radius: 2px;
   @media ${breakpoint.laptop} {
     flex-direction: row;
-    margin: 70px 50px;
+    margin: 60px 50px;
     box-sizing: content-box;
-    padding: 60px 60px;
   }
 `;

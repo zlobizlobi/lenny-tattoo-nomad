@@ -1,18 +1,9 @@
 import * as React from "react";
+import * as Scroll from "react-scroll";
 import "firebase/storage";
 import { storageReference } from "../../init-firebase";
-import * as Scroll from "react-scroll";
-import {
-  Video,
-  Overlay,
-  Logo,
-  Container,
-  Ornament,
-  PlaceHolderContainer,
-  PlaceHolderImage
-} from "./components";
+import { Video, Overlay, Logo, Container, Ornament } from "./components";
 import { SocialMedia } from "../../components";
-import logoWhite from "../../../public/logo-white.png";
 export const Banner = () => {
   const [bannerUrl, setBannerUrl] = React.useState({
     webm: "",
@@ -63,11 +54,6 @@ export const Banner = () => {
   return (
     <Scroll.Element name="home-section">
       <section>
-        {!whiteLogo && (
-          <PlaceHolderContainer>
-            <PlaceHolderImage src={logoWhite} />
-          </PlaceHolderContainer>
-        )}
         <SocialMedia />
         <Container>
           <Overlay>

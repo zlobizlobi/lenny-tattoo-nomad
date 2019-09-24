@@ -3,8 +3,9 @@ import { breakpoint } from "../../breakpoints";
 import { PageContainer } from "../../components";
 
 export const Heading = styled.h2`
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid white;
   padding-bottom: 10px;
+  color: white;
 `;
 
 export const Asterix = styled.span`
@@ -16,7 +17,7 @@ export const TextContainer = styled.div`
   display: inline-flex;
   justify-content: center;
   margin: 20px 0;
-
+  color: white;
   @media ${breakpoint.mobileL} {
     margin: 0;
     justify-content: flex-start;
@@ -42,18 +43,18 @@ export const FlexContainer = styled.div`
 `;
 
 export const ContactPageContainer = styled(PageContainer)`
-  background-color: white;
+  background-color: darkgrey;
   margin: 60px 0;
   color: black;
   padding: 60px 60px;
-  max-width: 100%;
+  width: 100%;
   align-self: center;
   box-sizing: border-box;
+  border-radius: 2px;
   @media ${breakpoint.laptop} {
     flex-direction: row;
     margin: 70px 50px;
     box-sizing: content-box;
     padding: 60px 60px;
-    border-radius: 5px;
   }
 `;

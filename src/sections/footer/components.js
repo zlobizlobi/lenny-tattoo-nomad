@@ -3,7 +3,7 @@ import { breakpoint } from "../../breakpoints";
 
 export const FooterContainer = styled.div`
   background-color: black;
-  border-top: 2px dashed white;
+  border-top: 2px dashed darkgrey;
   max-width: 100%;
   margin-top: 80px;
   display: flex;
@@ -38,4 +38,5 @@ export const FooterTextContainer = styled.div`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  color: darkgrey;
 `;

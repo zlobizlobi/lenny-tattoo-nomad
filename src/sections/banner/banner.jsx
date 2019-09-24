@@ -47,7 +47,7 @@ export const Banner = () => {
     }
 
     fetchData();
-  }, [firebaseUrlWebM, firebaseUrlMp4, firebaseOrnament, firebaseWhiteLogo]);
+  }, [firebaseOrnament]);
 
   const { mp4, webm, whiteLogo, ornament } = bannerUrl;
 
@@ -57,9 +57,14 @@ export const Banner = () => {
         <SocialMedia />
         <Container>
           <Overlay>
-            <Logo src={(mp4 || webm) && whiteLogo} />
+            <Logo src={whiteLogo} />
             <Ornament src={ornament} />
-            <Video src={whiteLogo && (mp4 || webm)} autoPlay muted loop />
+            <Video
+              src={whiteLogo && ornament && (mp4 || webm)}
+              autoPlay
+              muted
+              loop
+            />
           </Overlay>
         </Container>
       </section>

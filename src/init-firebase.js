@@ -12,4 +12,4 @@ export const apiConfig = {
 
 firebase.initializeApp(apiConfig);
 
-export const storageReference = firebase.storage().ref();
+export const storageReference = firebase.storage();

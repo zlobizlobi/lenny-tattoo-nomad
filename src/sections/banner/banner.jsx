@@ -23,18 +23,22 @@ export const Banner = () => {
   React.useEffect(() => {
     async function fetchData() {
       firebaseUrlMp4 = await storageReference
+        .ref()
         .child("CuttedVideoCorrectCompressed.mp4")
         .getDownloadURL();
 
       firebaseUrlWebM = await storageReference
+        .ref()
         .child("CuttedVideoCorrectHQ.webm")
         .getDownloadURL();
 
       firebaseWhiteLogo = await storageReference
+        .ref()
         .child("whitelogo.png")
         .getDownloadURL();
 
       firebaseOrnament = await storageReference
+        .ref()
         .child("ornament.png")
         .getDownloadURL();
 

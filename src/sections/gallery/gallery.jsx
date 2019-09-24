@@ -3,45 +3,13 @@ import * as React from "react";
 import "firebase/storage";
 import { Container } from "./components";
 import { Image, PageContainer } from "../../components";
-import { storageReference } from "../../init-firebase";
+import { useGetUserMouseDown, useGetFirebaseImages } from "./hooks";
 
 export const Gallery = () => {
-  const [selections, setSelected] = React.useState([]);
-  const [firebaseImages, setImages] = React.useState([]);
   const galleryRef = React.useRef(null);
 
-  const handleUserKeyPress = event => {
-    if (galleryRef.current.contains(event.target)) {
-      return;
-    }
-    setSelected([]);
-  };
-
-  React.useEffect(() => {
-    window.addEventListener("mousedown", handleUserKeyPress, false);
-
-    return () => {
-      window.removeEventListener("mousedown", handleUserKeyPress, false);
-    };
-  }, [handleUserKeyPress]);
-
-  React.useEffect(() => {
-    async function fetchData() {
-      const images = await storageReference.ref("images").listAll();
-      console.log(images);
-
-      const imageUrls = await images.items.map(async item =>
-        item.getDownloadURL().then(result => result)
-      );
-      setImages(imageUrls);
-    }
-
-    fetchData();
-  }, []);
-
-  const handleOnClick = id => {
-    setSelected([id]);
-  };
+  const { selections, handleOnClick } = useGetUserMouseDown(galleryRef);
+  const { firebaseImages } = useGetFirebaseImages();
 
   return (
     <Scroll.Element name="gallery-section">

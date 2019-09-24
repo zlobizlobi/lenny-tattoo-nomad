@@ -9,11 +9,7 @@ export const Image = styled.div`
   height: 230px;
   flex-shrink: 0;
   border: 2px solid white;
-  margin: 0 0 20px 0;
-
-  @media ${breakpoint.mobileL} {
-    margin: 0 0 20px 0;
-  }
+  margin: 0 20px 0 0;
 `;
 
 export const Heading = styled.h2`
@@ -24,13 +20,12 @@ export const Heading = styled.h2`
 
 export const PageContainerAbout = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  color: white;
+  flex-direction: column;
 
   @media ${breakpoint.tablet} {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 `;
 
@@ -39,4 +34,5 @@ export const SectionContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 100px 0 100px 0;
+  padding: 0 60px;
 `;

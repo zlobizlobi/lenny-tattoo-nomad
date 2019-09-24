@@ -7,7 +7,6 @@ export const useGetFirebaseImages = () => {
   React.useEffect(() => {
     async function fetchData() {
       const images = await storageReference.ref("images").listAll();
-      console.log(images);
 
       const imageUrls = await images.items.map(async item =>
         item.getDownloadURL().then(result => result)

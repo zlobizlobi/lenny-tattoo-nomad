@@ -9,8 +9,7 @@ export const Gallery = () => {
   const galleryRef = React.useRef(null);
 
   const { selections, handleOnClick } = useGetUserMouseDown(galleryRef);
-  const { firebaseImages } = useGetFirebaseImages();
-
+  const firebaseImages = useGetFirebaseImages();
   return (
     <Scroll.Element name="gallery-section">
       <PageContainer>

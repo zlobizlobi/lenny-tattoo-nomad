@@ -14,6 +14,5 @@ export const Text = styled.span`
     text-align: left;
     font-size: 16px;
     flex: 0 0 70%;
-    align-self: flex-start;
   }
 `;

@@ -36,7 +36,7 @@ export const Contact = () => (
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <Input type="hidden" form-name="contact" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <BotInput type="text" name="bot-input" title="bot-input" />
             <Input type="text" title="name" />
             <Input type="email" title="email" />

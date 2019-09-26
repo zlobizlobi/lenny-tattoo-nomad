@@ -48,7 +48,6 @@ export const ContactPageContainer = styled(PageContainer)`
   color: black;
   padding: 60px 60px;
   box-sizing: border-box;
-  border-radius: 2px;
   @media ${breakpoint.laptop} {
     flex-direction: row;
     margin: 60px 50px;

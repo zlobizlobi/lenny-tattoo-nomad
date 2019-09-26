@@ -8,8 +8,8 @@ export const useGetFirebaseImages = () => {
     async function fetchData() {
       const images = await storageReference.ref("images").listAll();
 
-      const imageUrls = await images.items.map(async item =>
-        item.getDownloadURL().then(result => result)
+      const imageUrls = await Promise.all(
+        images.items.map(image => image.getDownloadURL())
       );
       setImages(imageUrls);
     }

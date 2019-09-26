@@ -11,6 +11,7 @@ export const useGetFirebaseImages = () => {
       const imageUrls = await Promise.all(
         images.items.map(image => image.getDownloadURL())
       );
+
       setImages(imageUrls);
     }
 

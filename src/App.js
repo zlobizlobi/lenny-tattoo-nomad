@@ -9,24 +9,20 @@ const AppContainer = styled.div`
   height: 100vh;
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <AppContainer id="outer-container">
-        <GlobalStyle />
-        <Navbar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
-        <main id="page-wrap">
-          {/* <Banner /> */}
-          <About />
-          {/* <Gallery /> */}
-          <Contact />
-          <Faq />
-          <Footer />
-          <ScrollToTopButton />
-        </main>
-      </AppContainer>
-    );
-  }
-}
+const App = () => (
+  <AppContainer id="outer-container">
+    <GlobalStyle />
+    <Navbar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
+    <main id="page-wrap">
+      <Banner />
+      <About />
+      <Gallery />
+      <Contact />
+      <Faq />
+      <Footer />
+      <ScrollToTopButton />
+    </main>
+  </AppContainer>
+);
 
 export default App;

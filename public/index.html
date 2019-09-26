@@ -42,7 +42,12 @@
   <body
     style="background-color: black; display: flex; align-items: center; justify-content: center; height: 100vh; width: 100vw"
   >
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form
+      name="contact"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="text" name="subject" />

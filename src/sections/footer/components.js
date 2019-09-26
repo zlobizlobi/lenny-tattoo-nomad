@@ -12,6 +12,7 @@ export const FooterContainer = styled.div`
   padding: 30px 20px;
   font-size: 10px;
   line-height: 25px;
+
   @media ${breakpoint.laptop} {
     flex-direction: row;
     padding: 30px 90px;
@@ -39,4 +40,5 @@ export const FooterTextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   color: darkgrey;
+  align-self: center;
 `;

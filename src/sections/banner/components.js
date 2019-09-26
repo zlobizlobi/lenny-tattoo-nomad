@@ -43,6 +43,18 @@ export const Ornament = styled.img.attrs({ alt: "Ornament Decoration" })`
 `;
 
 export const Container = styled.div`
-  position: relative;
   overflow: hidden;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+`;
+
+export const LogoPlaceHolder = styled.img`
+  opacity: 0.3;
+  width: 200px;
+  height: 200px;
 `;

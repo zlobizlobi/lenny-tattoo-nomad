@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  max-width: 95%;
   @media ${breakpoint.mobileL} {
     flex-direction: row;
     flex-wrap: wrap;

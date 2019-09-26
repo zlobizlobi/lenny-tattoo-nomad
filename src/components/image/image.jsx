@@ -29,7 +29,7 @@ const ImageComponent = styled.img.attrs({ loading: "lazy" })`
     ${({ isViewed }) =>
       isViewed &&
       css`
-        width: 250px;
+        width: 25px;
         height: 250px;
         filter: grayscale(0%);
         margin: 30px;

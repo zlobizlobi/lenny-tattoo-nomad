@@ -23,8 +23,8 @@ export const ColumnContainer = styled.div`
 
 export const ContactPageContainer = styled.div`
   background-color: darkgrey;
-  padding: 60px 0;
-  margin: 60px 0;
+  padding: 70px 0;
+  margin: 100px 0;
 `;
 
 export const Text = styled(TextComponent)`

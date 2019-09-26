@@ -1,7 +1,14 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import "firebase/storage";
-import { Video, Overlay, Logo, Container, Ornament } from "./components";
+import {
+  Video,
+  Overlay,
+  Logo,
+  Container,
+  Ornament,
+  LogoPlaceHolder
+} from "./components";
 import { SocialMedia } from "../../components";
 import { useGetFirebaseVideos } from "./useGetFirebaseVideos";
 
@@ -13,11 +20,14 @@ export const Banner = () => {
       <section>
         <SocialMedia />
         <Container>
-          <Overlay>
-            <Logo src="logo-white.png" />
-            <Ornament src="ornament.png" />
-            <Video src={mp4 || webm} autoPlay muted loop />
-          </Overlay>
+          {!(webm || mp4) && <LogoPlaceHolder src="logo-white.png" />}
+          {(webm || mp4) && (
+            <Overlay>
+              <Logo src="logo-white.png" />
+              <Ornament src="ornament.png" />
+              <Video src={mp4 || webm} autoPlay muted loop />
+            </Overlay>
+          )}
         </Container>
       </section>
     </Scroll.Element>

@@ -24,9 +24,8 @@ export const Gallery = () => {
   React.useEffect(() => {
     window.addEventListener("mousedown", handleUserKeyPress, false);
 
-    return () => {
+    return () =>
       window.removeEventListener("mousedown", handleUserKeyPress, false);
-    };
   }, [handleUserKeyPress]);
 
   const firebaseImages = useGetFirebaseImages();

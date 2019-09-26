@@ -7,16 +7,16 @@ const ImageComponent = styled.img.attrs({ loading: "lazy" })`
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.4) 0s;
   cursor: pointer;
-  width: 180px;
-  margin: 10px;
-  height: 180px;
+  width: 150px;
+  margin: 10px 0;
+  height: 150px;
   filter: grayscale(100%);
 
   ${({ isViewed }) =>
     isViewed &&
     css`
-      width: 250px;
-      height: 250px;
+      width: 220px;
+      height: 220px;
       filter: grayscale(0%);
     `}
 

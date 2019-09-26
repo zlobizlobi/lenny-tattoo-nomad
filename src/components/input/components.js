@@ -4,7 +4,6 @@ export const InputComponent = styled.input`
   border: 1px dashed white;
   color: white;
   pointer: cursor;
-  outline: none;
   padding: 3px 0 3px 7px;
   height: 25px;
   margin-top: 10px;

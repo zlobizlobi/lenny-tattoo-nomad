@@ -25,6 +25,7 @@ const ImageComponent = styled.img.attrs({ loading: "lazy" })`
   }
 
   @media ${breakpoint.mobileL} {
+    margin: 10px;
     ${({ isViewed }) =>
       isViewed &&
       css`

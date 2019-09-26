@@ -1,13 +1,13 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { Input, Form, Text, TextArea, SubmitButton } from "../../components";
+import { Input, Form, TextArea, SubmitButton } from "../../components";
 import {
   Heading,
   Asterix,
-  TextContainer,
-  FlexContainer,
   ColumnContainer,
-  ContactPageContainer
+  ContactPageContainer,
+  Text,
+  FlexContainer
 } from "./components";
 
 import styled from "styled-components";
@@ -22,14 +22,10 @@ export const Contact = () => (
       <ColumnContainer>
         <Heading>CONTACT</Heading>
         <FlexContainer>
-          <ColumnContainer>
-            <TextContainer>
-              <Text>
-                <Asterix>*</Asterix>&nbsp;If you want to know more or book an
-                appointment, don't be shy to call or send me a message.
-              </Text>
-            </TextContainer>
-          </ColumnContainer>
+          <Text>
+            <Asterix>*</Asterix>&nbsp;If you want to know more or book an
+            appointment, don't be shy to call or send me a message.
+          </Text>
           <Form name="contact" method="post">
             <input type="hidden" name="form-name" value="contact" />
             <BotInput type="text" name="bot-input" title="bot-input" />

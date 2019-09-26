@@ -21,7 +21,7 @@ export const Overlay = styled.div`
   background-color: transparent;
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.img.attrs({ alt: "Logo of Lenny Tattoo Nomad" })`
   position: relative;
   z-index: 100;
   height: 35%;
@@ -35,7 +35,7 @@ export const Logo = styled.img`
   }
 `;
 
-export const Ornament = styled.img`
+export const Ornament = styled.img.attrs({ alt: "Ornament Decoration" })`
   position: absolute;
   z-index: 0;
   height: 100%;
@@ -45,16 +45,4 @@ export const Ornament = styled.img`
 export const Container = styled.div`
   position: relative;
   overflow: hidden;
-`;
-
-export const PlaceHolderImage = styled.img`
-  height: 35%;
-  min-width: 20%;
-  opacity: 0.3;
-  position: relative;
-
-  @media ${breakpoint.tablet} {
-    min-width: 25%;
-    height: 65%;
-  }
 `;

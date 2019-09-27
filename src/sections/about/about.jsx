@@ -1,12 +1,12 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Image, PageContainerAbout, SectionContainer } from "./components";
-import { Text, Heading } from "../../components";
+import { Text } from "../../components";
 
 export const About = () => (
   <Scroll.Element name="about-section">
     <SectionContainer>
-      <Heading>About</Heading>
+      {/* <Heading>About</Heading> */}
       <PageContainerAbout>
         <Image />
         <Text>

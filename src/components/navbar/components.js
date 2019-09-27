@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
+
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -10,18 +11,19 @@ export const Container = styled.div`
   width: 25%;
 `;
 
-export const MenuLink = ({ section }) => {
-  return (
-    <li>
-      <Scroll.Link
-        to={`${section.toLowerCase()}-section`}
-        smooth
-        duration={1100}
-      >
-        <span />
-        {section}
-        <span />
-      </Scroll.Link>
-    </li>
-  );
-};
+export const MenuLink = ({ section }) => (
+  <li>
+    <Scroll.Link to={`${section.toLowerCase()}-section`} smooth duration={1100}>
+      <span />
+      {section}
+      <span />
+    </Scroll.Link>
+  </li>
+);
+
+// export const NavbarComponent = styled(Menu)`
+//   background: darkgrey;
+//   font-size: 1.4em;
+//   overflow: hidden !important;
+//   height: 100%;
+// `;

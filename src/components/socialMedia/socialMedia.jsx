@@ -15,10 +15,12 @@ export const SocialMedia = () => (
     <Container>
       <Icon
         component={FaInstagram}
+        aria-label="Go to Linnard Kristovski's Instagram page"
         link="https://www.instagram.com/lenny.tattoo/"
       />
       <Icon
         component={FaFacebook}
+        aria-label="Go to Linnard Kristovski's Facebook page"
         link="https://www.facebook.com/LennyTattoos/"
       />
     </Container>

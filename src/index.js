@@ -1,6 +1,5 @@
 import React from "react";
 import App from "./App";
-
 import { hydrate, render } from "react-dom";
 
 const rootElement = document.getElementById("root");

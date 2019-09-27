@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { Input, Form, TextArea, SubmitButton, Heading } from "../../components";
+import { Input, Form, TextArea, SubmitButton } from "../../components";
 import {
   Asterix,
   ColumnContainer,
@@ -19,7 +19,6 @@ export const Contact = () => (
   <Scroll.Element name="contact-section">
     <ContactPageContainer>
       <ColumnContainer>
-        <Heading>CONTACT</Heading>
         <FlexContainer>
           <Text>
             <Asterix>*</Asterix>&nbsp;If you want to know more or book an

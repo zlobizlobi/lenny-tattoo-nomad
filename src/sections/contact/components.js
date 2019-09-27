@@ -15,7 +15,6 @@ export const ColumnContainer = styled.div`
 `;
 
 export const ContactPageContainer = styled.div`
-  background-color: #8c8c8c;
   padding: 70px 0;
   margin: 100px 0;
 `;

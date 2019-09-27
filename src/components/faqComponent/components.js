@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { MdKeyboardArrowDown } from "react-icons/md";
 import { breakpoint } from "../../breakpoints";
 
 export const FaqContainer = styled.div`

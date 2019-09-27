@@ -26,7 +26,7 @@ export const Contact = () => (
             <Asterix>*</Asterix>&nbsp;If you want to know more or book an
             appointment, don't be shy to call or send me a message.
           </Text>
-          <Form name="contact" method="post">
+          <Form>
             <input type="hidden" name="form-name" value="contact" />
             <BotInput type="text" name="bot-input" title="bot-input" />
             <Input name="name" type="text" title="name" />

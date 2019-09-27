@@ -14,14 +14,10 @@ export const SocialMedia = () => (
     <Container>
       <Icon
         link="https://www.instagram.com/lenny.tattoo/"
-        target="_blank"
-        rel="noopener"
         className="fab fa-instagram"
       />
       <Icon
         link="https://www.facebook.com/LennyTattoos/"
-        target="_blank"
-        rel="noopener"
         className="fab fa-facebook"
       />
     </Container>

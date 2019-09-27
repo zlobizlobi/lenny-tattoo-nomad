@@ -14,9 +14,9 @@ const App = () => (
     <GlobalStyle />
     <Navbar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
     <main id="page-wrap">
-      <Banner />
+      {/* <Banner /> */}
       <About />
-      <Gallery />
+      {/* <Gallery /> */}
       <Contact />
       <Faq />
       <Footer />

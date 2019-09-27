@@ -37,6 +37,8 @@ const ImageComponent = styled.img.attrs({ loading: "lazy" })`
   }
 `;
 
-export const Image = ({ src, isViewed, onClick }) => {
-  return <ImageComponent onClick={onClick} isViewed={isViewed} src={src} />;
+export const Image = ({ src, isViewed, onClick, alt }) => {
+  return (
+    <ImageComponent alt={alt} onClick={onClick} isViewed={isViewed} src={src} />
+  );
 };

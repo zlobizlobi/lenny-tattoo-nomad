@@ -3,6 +3,7 @@ import { slide as Menu } from "react-burger-menu";
 import { Container, MenuLink } from "./components";
 import "./hamburger.css"; // This file as only one has a css file, for the rest - use styled components
 import { CustomIcon } from "../customIcon";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 const sections = ["home", "about", "Gallery", "Contact", "FAQ"];
 
@@ -18,13 +19,13 @@ export const Navbar = () => {
             link="https://www.instagram.com/lenny.tattoo/"
             target="_blank"
             rel="noopener"
-            className="fab fa-instagram"
+            component={FaInstagram}
           />
           <CustomIcon
             link="https://www.facebook.com/LennyTattoos/"
             target="_blank"
             rel="noopener"
-            className="fab fa-facebook"
+            component={FaFacebook}
           />
         </Container>
       </ul>

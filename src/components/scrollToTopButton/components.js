@@ -3,7 +3,7 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 import { breakpoint } from "../../breakpoints";
 import { arrowUp } from "./animations";
 
-export const Button = styled.button`
+export const Button = styled.button.attrs({ name: "Back to to top button" })`
   padding: 5px;
   border: 0.5px solid rgba(255, 255, 255, 1);
   border-radius: 50%;

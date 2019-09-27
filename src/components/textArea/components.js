@@ -13,8 +13,4 @@ export const TextAreaComponent = styled.textarea`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-
-  label {
-    color: white;
-  }
 `;

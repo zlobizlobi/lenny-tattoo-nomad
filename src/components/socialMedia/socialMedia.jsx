@@ -6,6 +6,7 @@ import {
   SocialMediaContainer,
   Container
 } from "./components";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export const SocialMedia = () => (
   <SocialMediaContainer>
@@ -13,12 +14,12 @@ export const SocialMedia = () => (
     <Divider></Divider>
     <Container>
       <Icon
+        component={FaInstagram}
         link="https://www.instagram.com/lenny.tattoo/"
-        className="fab fa-instagram"
       />
       <Icon
+        component={FaFacebook}
         link="https://www.facebook.com/LennyTattoos/"
-        className="fab fa-facebook"
       />
     </Container>
   </SocialMediaContainer>

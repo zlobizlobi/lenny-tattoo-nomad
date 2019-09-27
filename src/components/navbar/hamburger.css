@@ -85,7 +85,7 @@ ul.bm-item {
   font-size: 1em;
 }
 
-ul.bm-item > li {
+ul.bm-item li {
   display: inline-flex;
 }
 

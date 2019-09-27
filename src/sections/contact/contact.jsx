@@ -1,8 +1,7 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { Input, Form, TextArea, SubmitButton } from "../../components";
+import { Input, Form, TextArea, SubmitButton, Heading } from "../../components";
 import {
-  Heading,
   Asterix,
   ColumnContainer,
   ContactPageContainer,

@@ -2,13 +2,6 @@ import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
 import { Text as TextComponent } from "../../components";
 
-export const Heading = styled.h2`
-  border-bottom: 0.5px solid white;
-  padding-bottom: 10px;
-  color: white;
-  margin: 0;
-`;
-
 export const Asterix = styled.span`
   font-size: 25px;
   font-weight: 900;
@@ -22,7 +15,7 @@ export const ColumnContainer = styled.div`
 `;
 
 export const ContactPageContainer = styled.div`
-  background-color: darkgrey;
+  background-color: #8c8c8c;
   padding: 70px 0;
   margin: 100px 0;
 `;

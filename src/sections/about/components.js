@@ -12,12 +12,6 @@ export const Image = styled.div`
   margin: 0 20px 0 0;
 `;
 
-export const Heading = styled.h2`
-  margin: 0 0 50px 0;
-  padding-bottom: 10px;
-  border-bottom: 0.5px solid white;
-`;
-
 export const PageContainerAbout = styled.div`
   display: flex;
   align-items: center;

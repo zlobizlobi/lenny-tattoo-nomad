@@ -26,20 +26,6 @@ export const FaqContainer = styled.div`
 
 `;
 
-export const ArrowDown = styled(MdKeyboardArrowDown)`
-  width: 30px;
-  height: 30px;
-`;
-
-export const ArrowButton = styled.button`
-  border: none;
-  color: white;
-  padding: 0;
-  margin: 0 5px;
-  background-color: transparent;
-  cursor: pointer;
-`;
-
 export const FaqText = styled.span`
   line-height: 25px;
   flex-wrap: wrap;

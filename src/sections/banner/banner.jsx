@@ -25,7 +25,7 @@ export const Banner = () => {
             <Overlay>
               <Logo src={(webm || mp4) && "logo-white.png"} />
               <Ornament src="ornament.png" />
-              <Video src={mp4 || webm} autoPlay muted loop />
+              <Video src={webm || mp4} autoPlay muted loop />
             </Overlay>
           )}
         </Container>

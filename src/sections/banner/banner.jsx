@@ -23,7 +23,7 @@ export const Banner = () => {
           {!(webm || mp4) && <LogoPlaceHolder src="logo-white.png" />}
           {(webm || mp4) && (
             <Overlay>
-              <Logo src="logo-white.png" />
+              <Logo src={(webm || mp4) && "logo-white.png"} />
               <Ornament src="ornament.png" />
               <Video src={mp4 || webm} autoPlay muted loop />
             </Overlay>

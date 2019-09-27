@@ -6,7 +6,6 @@ import { Text } from "../../components";
 export const About = () => (
   <Scroll.Element name="about-section">
     <SectionContainer>
-      {/* <Heading>About</Heading> */}
       <PageContainerAbout>
         <Image />
         <Text>

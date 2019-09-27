@@ -58,6 +58,9 @@
   background: darkgrey;
   font-size: 1.4em;
   overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bm-morph-shape {

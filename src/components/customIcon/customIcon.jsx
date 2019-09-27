@@ -1,8 +1,13 @@
 import React from "react";
-import { Icon } from "./components";
+import { IconComponent } from "./components";
 
-export const CustomIcon = ({ link, component }) => (
-  <Icon href={link} target="_blank" rel="noopener">
+export const CustomIcon = ({ link, component, ariaLabel }) => (
+  <IconComponent
+    href={link}
+    aria-label={ariaLabel}
+    target="_blank"
+    rel="noopener"
+  >
     {component}
-  </Icon>
+  </IconComponent>
 );

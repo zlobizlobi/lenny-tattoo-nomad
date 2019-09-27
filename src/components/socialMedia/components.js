@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { CustomIcon } from "../customIcon";
 import { breakpoint } from "../../breakpoints";
 
 export const Number = styled.a`
@@ -9,11 +8,6 @@ export const Number = styled.a`
   :hover {
     color: rgba(255, 255, 255, 0.8);
   }
-`;
-
-export const Icon = styled(CustomIcon)`
-  font-size: 22px;
-  margin: 0 4px 0 4px;
 `;
 
 export const Divider = styled.span`

@@ -4,11 +4,12 @@ import * as Scroll from "react-scroll";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
+  display: inline-flex !important;
+  align-self: center;
   justify-content: space-between;
   border-bottom: 0.5px solid white;
   padding-bottom: 25px;
-  width: 25%;
+  min-width: 75px;
 `;
 
 export const MenuLink = ({ section }) => (

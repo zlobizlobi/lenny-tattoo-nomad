@@ -19,14 +19,14 @@ export const Navbar = () => (
         link="https://www.instagram.com/lenny.tattoo/"
         target="_blank"
         rel="noopener"
-        aria-label="Go to Linnard Kristovski's Facebook page"
+        ariaLabel="Go to Linnard Kristovski's Facebook page"
         component={<FaInstagram />}
       />
       <CustomIcon
         link="https://www.facebook.com/LennyTattoos/"
         target="_blank"
         rel="noopener"
-        aria-label="Go to Linnard Kristovski's Instagram page"
+        ariaLabel="Go to Linnard Kristovski's Instagram page"
         component={<FaFacebook />}
       />
     </Container>

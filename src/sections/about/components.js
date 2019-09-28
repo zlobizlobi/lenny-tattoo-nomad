@@ -5,11 +5,17 @@ export const Image = styled.div`
   border-radius: 50%;
   background: url("lenny.jpg");
   background-size: cover;
-  width: 230px;
-  height: 230px;
+  width: 190px;
+  height: 190px;
   flex-shrink: 0;
   border: 2px solid white;
-  margin: 0 20px 0 0;
+  margin: 0 0 20px 0;
+
+  @media ${breakpoint.laptop} {
+    width: 230px;
+    height: 230px;
+    margin: 0 20px 0 0;
+  }
 `;
 
 export const PageContainerAbout = styled.div`

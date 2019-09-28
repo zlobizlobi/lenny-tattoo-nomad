@@ -22,9 +22,9 @@ export const ContactPageContainer = styled.div`
 export const Text = styled(TextComponent)`
   color: white;
   max-width: 450px;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
-  margin: 10px 30px 60px 30px;
+  margin: 10px 30px 30px 30px;
 `;
 
 export const FlexContainer = styled.div`

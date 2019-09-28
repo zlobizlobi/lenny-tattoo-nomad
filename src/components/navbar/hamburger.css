@@ -42,6 +42,9 @@
   width: 5px;
 }
 
+ul .bm-item {
+  margin-bottom: 20px;
+}
 .bm-menu-wrap {
   height: 100%;
   width: 350px !important;
@@ -61,6 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px 0;
 }
 
 .bm-morph-shape {
@@ -85,7 +89,7 @@ ul.bm-item {
   justify-content: space-around;
   align-items: center;
   height: 90%;
-  font-size: 1em;
+  font-size: 16px;
 }
 
 ul.bm-item li {

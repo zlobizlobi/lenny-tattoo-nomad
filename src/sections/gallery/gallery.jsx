@@ -35,6 +35,7 @@ export const Gallery = () => {
         <Container ref={galleryRef}>
           {firebaseImages.map((imageUrl, index) => (
             <Image
+              intrinsicSize="100 x 100"
               alt="Picture of a Tattoo"
               isViewed={selections.includes(index)}
               onClick={() => handleOnClick(index)}

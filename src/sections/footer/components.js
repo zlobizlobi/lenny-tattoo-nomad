@@ -7,7 +7,7 @@ export const FooterContainer = styled.div`
   max-width: 100%;
   margin-top: 80px;
   display: flex;
-  flex-direction: columnn;
+  flex-direction: column;
   align-items: center;
   padding: 30px 20px;
   font-size: 10px;
@@ -32,7 +32,11 @@ export const Image = styled.div`
   width: 55px;
   height: 55px;
   flex-shrink: 0;
-  margin-right: 10px;
+  margin: 0 0 20px 0;
+
+  @media ${breakpoint.laptop} {
+    margin: 0 10px 0 0;
+  }
 `;
 
 export const FooterTextContainer = styled.div`
@@ -40,5 +44,4 @@ export const FooterTextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   color: darkgrey;
-  align-self: center;
 `;

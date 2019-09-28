@@ -2,7 +2,7 @@ import * as React from "react";
 import styled, { css } from "styled-components";
 import { breakpoint } from "../../breakpoints";
 
-const ImageComponent = styled.img.attrs({ loading: "lazy" })`
+const ImageComponent = styled.img`
   border: 2px solid white;
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.4) 0s;
@@ -39,6 +39,12 @@ const ImageComponent = styled.img.attrs({ loading: "lazy" })`
 
 export const Image = ({ src, isViewed, onClick, alt }) => {
   return (
-    <ImageComponent alt={alt} onClick={onClick} isViewed={isViewed} src={src} />
+    <ImageComponent
+      alt={alt}
+      loading="lazy"
+      onClick={onClick}
+      isViewed={isViewed}
+      src={src}
+    />
   );
 };

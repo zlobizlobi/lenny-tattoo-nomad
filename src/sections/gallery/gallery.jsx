@@ -1,4 +1,4 @@
-import * as Scroll from "react-scroll";
+import { Scroll } from "react-scroll";
 import * as React from "react";
 import "firebase/storage";
 import { Container } from "./components";

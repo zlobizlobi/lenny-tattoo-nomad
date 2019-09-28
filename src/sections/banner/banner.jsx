@@ -1,5 +1,6 @@
 import * as React from "react";
-import * as Scroll from "react-scroll";
+import { Scroll } from "react-scroll";
+
 import "firebase/storage";
 import {
   Video,
@@ -10,21 +11,26 @@ import {
   LogoPlaceHolder
 } from "./components";
 import { SocialMedia } from "../../components";
-import { useGetFirebaseVideos } from "./useGetFirebaseVideos";
+import { useGetBannerVisualContent } from "./useGetBannerVisualContent";
 
 export const Banner = () => {
-  const webm = useGetFirebaseVideos();
+  const { webm, whiteLogo, ornament } = useGetBannerVisualContent();
 
   return (
     <Scroll.Element name="home-section">
       <section>
         <SocialMedia />
         <Container>
-          {!webm && <LogoPlaceHolder src="logo-white.png" />}
+          {!whiteLogo && (
+            <LogoPlaceHolder
+              alt="Placeholder Logo Lenny Tattoo Nomad"
+              src={whiteLogo}
+            />
+          )}
           {webm && (
             <Overlay>
-              <Logo src={webm && "logo-white.png"} />
-              <Ornament src="ornament.png" />
+              <Logo src={whiteLogo} />
+              <Ornament src={ornament} />
               <Video src={webm} autoPlay muted loop />
             </Overlay>
           )}

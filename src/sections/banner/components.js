@@ -53,9 +53,7 @@ export const Container = styled.div`
   z-index: -1;
 `;
 
-export const LogoPlaceHolder = styled.img.attrs({
-  alt: "Placeholder Logo Lenny Tattoo Nomad"
-})`
+export const LogoPlaceHolder = styled.img`
   opacity: 0.3;
   width: 200px;
   height: 200px;

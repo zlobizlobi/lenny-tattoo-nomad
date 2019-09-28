@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as Scroll from "react-scroll";
+import { Scroll } from "react-scroll";
 
 import styled from "styled-components";
 

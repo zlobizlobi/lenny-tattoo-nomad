@@ -13,19 +13,19 @@ import { SocialMedia } from "../../components";
 import { useGetFirebaseVideos } from "./useGetFirebaseVideos";
 
 export const Banner = () => {
-  const { webm, mp4 } = useGetFirebaseVideos();
+  const webm = useGetFirebaseVideos();
 
   return (
     <Scroll.Element name="home-section">
       <section>
         <SocialMedia />
         <Container>
-          {!(webm || mp4) && <LogoPlaceHolder src="logo-white.png" />}
-          {(webm || mp4) && (
+          {!webm && <LogoPlaceHolder src="logo-white.png" />}
+          {webm && (
             <Overlay>
-              <Logo src={(webm || mp4) && "logo-white.png"} />
+              <Logo src={webm && "logo-white.png"} />
               <Ornament src="ornament.png" />
-              <Video src={webm || mp4} autoPlay muted loop />
+              <Video src={webm} autoPlay muted loop />
             </Overlay>
           )}
         </Container>

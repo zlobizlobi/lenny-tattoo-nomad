@@ -21,12 +21,7 @@ export const Banner = () => {
       <section>
         <SocialMedia />
         <Container>
-          {!whiteLogo && (
-            <LogoPlaceHolder
-              alt="Placeholder Logo Lenny Tattoo Nomad"
-              src={whiteLogo}
-            />
-          )}
+          {!whiteLogo && <LogoPlaceHolder src={whiteLogo} />}
           {webm && (
             <Overlay>
               <Logo src={whiteLogo} />

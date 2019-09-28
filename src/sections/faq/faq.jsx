@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Scroll } from "react-scroll";
+import * as Scroll from "react-scroll";
 import { FaqComponent, PageContainer, Heading } from "../../components";
 import { Container, FaqComponentContainer } from "./components";
 

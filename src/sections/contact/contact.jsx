@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Scroll } from "react-scroll";
+import * as Scroll from "react-scroll";
 import { Input, Form, TextArea, SubmitButton } from "../../components";
 import {
   Asterix,

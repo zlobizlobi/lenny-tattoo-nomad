@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+// const leftToRight = keyframes`
+//   0% {
+//     left: 0;
+//   }
+//   50% {
+//     left: 50%;
+//   }
+//   100% {
+//     left: 100%;
+//   }
+// `;
 
 export const SubmitButton = styled.button.attrs({
   type: "submit",
@@ -12,7 +24,8 @@ export const SubmitButton = styled.button.attrs({
   cursor: pointer;
   margin-top: 25px;
 
-  :hover {
+  &:hover {
+    background-color: darkgrey;
     color: black;
   }
 `;

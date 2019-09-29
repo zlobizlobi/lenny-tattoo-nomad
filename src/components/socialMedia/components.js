@@ -13,14 +13,14 @@ export const Number = styled.a`
 
 export const Divider = styled.span`
   transform: rotate(180deg);
-  border-top: 1px solid white;
+  border-top: 1px solid darkgrey;
   width: 105px;
   margin: 5px 0;
 
   @media ${breakpoint.mobileL} {
     transform: rotate(90deg);
     width: 30px;
-    border-top: 0.5px solid white;
+    border-top: 0.5px solid darkgrey;
     margin: 0;
   }
 `;

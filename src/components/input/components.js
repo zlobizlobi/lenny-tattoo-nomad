@@ -10,6 +10,7 @@ export const InputComponent = styled.input`
   transition: all 0.3s ease;
   background-color: transparent;
   width: 220px;
+  border-radius: 2px;
 `;
 
 export const InputContainer = styled.div`

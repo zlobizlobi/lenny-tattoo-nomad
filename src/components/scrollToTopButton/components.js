@@ -24,7 +24,7 @@ export const Button = styled.button.attrs({
   opacity: ${({ isDisplayed }) => (isDisplayed ? "1" : "0")};
 
   :hover {
-    background-color: white;
+    background-color: darkgrey;
   }
 
   :hover :only-child {

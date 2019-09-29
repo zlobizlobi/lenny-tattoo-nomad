@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
 
 export const Container = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 88%;
+  align-self: center;
   @media ${breakpoint.mobileL} {
     flex-direction: row;
     flex-wrap: wrap;

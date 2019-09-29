@@ -26,7 +26,7 @@ export const Link = styled.a`
 `;
 
 export const Image = styled.div`
-  background-image: url("logo-white.png");
+  background-image: url("whitelogo.webp");
   backgroun-position: center;
   background-size: cover;
   width: 55px;

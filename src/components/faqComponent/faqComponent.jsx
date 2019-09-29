@@ -5,7 +5,7 @@ export const FaqComponent = ({ content }) => {
   const { answer, question } = content;
   return (
     <FaqContainer>
-      <FaqText>{question.toUpperCase()}</FaqText>
+      <FaqText>{question}</FaqText>
       <FaqText>{answer}</FaqText>
     </FaqContainer>
   );

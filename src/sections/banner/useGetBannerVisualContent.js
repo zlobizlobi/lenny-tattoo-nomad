@@ -2,7 +2,7 @@ import * as React from "react";
 import { storageReference } from "../../init-firebase";
 
 export const useGetBannerVisualContent = () => {
-  const [bannerContent, setWebmSource] = React.useState("");
+  const [bannerContent, setWebmSource] = React.useState({ webm: "", mp4: "" });
 
   React.useEffect(() => {
     async function fetchData() {
@@ -11,7 +11,12 @@ export const useGetBannerVisualContent = () => {
         .child("CuttedVideoCorrectHQ.webm")
         .getDownloadURL();
 
-      setWebmSource(firebaseUrlWebM);
+      const firebaseUrlMp4 = await storageReference
+        .ref()
+        .child("CuttedVideoCorrectCompressed.mp4")
+        .getDownloadURL();
+
+      setWebmSource({ webm: firebaseUrlWebM, mp4: firebaseUrlMp4 });
     }
 
     fetchData();

@@ -80,7 +80,6 @@ ul .bm-item {
 }
 
 ul.bm-item {
-  color: black;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -97,7 +96,7 @@ ul.bm-item li {
 }
 
 .bm-item > li > a {
-  color: grey;
+  color: white;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   display: inline-flex;
@@ -114,7 +113,7 @@ ul.bm-item li {
 }
 
 .bm-item > li > a > span {
-  background-color: white;
+  background-color: black;
   height: 1px;
   transition: all 0.2s ease;
   width: 100%;
@@ -139,10 +138,6 @@ ul.bm-item li {
 .bm-item > li > a:hover > span:nth-child(2) {
   bottom: -4px;
   opacity: 1;
-}
-
-.bm-item > li > a:hover > {
-  color: white;
 }
 
 .bm-overlay {

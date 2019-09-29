@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: inline-flex !important;
   align-self: center;
   justify-content: space-between;
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.5px solid black;
   padding-bottom: 25px;
   min-width: 75px;
 `;

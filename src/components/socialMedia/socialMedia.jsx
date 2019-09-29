@@ -1,7 +1,12 @@
 import * as React from "react";
-import { Number, Divider, SocialMediaContainer, Container } from "./components";
+import {
+  Number,
+  Divider,
+  SocialMediaContainer,
+  Container,
+  CustomIcon
+} from "./components";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-import { CustomIcon } from "../customIcon";
 
 export const SocialMedia = () => (
   <SocialMediaContainer>

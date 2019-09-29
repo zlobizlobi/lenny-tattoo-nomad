@@ -1,8 +1,7 @@
 import * as React from "react";
-import { Container, MenuLink } from "./components";
+import { Container, MenuLink, CustomIcon } from "./components";
 import { slide as Menu } from "react-burger-menu";
 import "./hamburger.css";
-import { CustomIcon } from "../customIcon";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 const sections = ["home", "about", "Gallery", "Contact", "FAQ"];

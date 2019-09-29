@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
+import { CustomIcon as CustomIconComponent } from "../customIcon";
 
 export const Number = styled.a`
   color: rgba(255, 255, 255, 1);
@@ -40,5 +41,11 @@ export const SocialMediaContainer = styled.div`
   @media ${breakpoint.mobileL} {
     flex-direction: row;
     align-items: center;
+  }
+`;
+
+export const CustomIcon = styled(CustomIconComponent)`
+  &:hover {
+    color: rgb(255, 255, 255, 0.8);
   }
 `;

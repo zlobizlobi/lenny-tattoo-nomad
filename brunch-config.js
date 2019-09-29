@@ -1,7 +1,7 @@
 module.exports = {
   files: {
     javascripts: {
-      joinTo: "App.js"
+      joinTo: "app.js"
     }
   }
 };

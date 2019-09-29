@@ -21,10 +21,3 @@ export const MenuLink = ({ section }) => (
     </Scroll.Link>
   </li>
 );
-
-// export const NavbarComponent = styled(Menu)`
-//   background: darkgrey;
-//   font-size: 1.4em;
-//   overflow: hidden !important;
-//   height: 100%;
-// `;

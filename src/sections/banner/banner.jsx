@@ -14,18 +14,17 @@ import { SocialMedia } from "../../components";
 import { useGetBannerVisualContent } from "./useGetBannerVisualContent";
 
 export const Banner = () => {
-  const { webm, whiteLogo, ornament } = useGetBannerVisualContent();
-
+  const webm = useGetBannerVisualContent();
   return (
     <Scroll.Element name="home-section">
       <section>
         <SocialMedia />
         <Container>
-          {!whiteLogo && <LogoPlaceHolder src={whiteLogo} />}
+          {!webm && <LogoPlaceHolder src="whitelogo.webp" />}
           {webm && (
             <Overlay>
-              <Logo src={whiteLogo} />
-              <Ornament src={ornament} />
+              <Logo src="whitelogo.webp" />
+              <Ornament src="ornament.webp" />
               <Video src={webm} autoPlay muted loop />
             </Overlay>
           )}

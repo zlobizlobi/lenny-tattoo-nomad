@@ -12,25 +12,25 @@ export const Faq = () => (
           <FaqComponent
             content={{
               question:
-                "Why do you do what you do and why do you do what you do ?",
+                "Does it hurt?",
               answer:
-                "i what i do because i do what i do because i do what i do"
+                "Simple answer is, yes it does. But it’s also very different from person to person - some have a high tolerance for pain, some don’t. But no matter what - people always expect worse than it actually is."
             }}
           />
           <FaqComponent
             content={{
               question:
-                "Why do you do what you do and why do you do what you do ?",
+                "How much does it cost?",
               answer:
-                "i what i do because i do what i do because i do what i do"
+                "Each project of a tattoo is very individual - placement, size, colors, design etc. So best just contact me..."
             }}
           />
           <FaqComponent
             content={{
               question:
-                "Why do you do what you do and why do you do what you do ?",
+                "How long does a tattoo take?",
               answer:
-                "i what i do because i do what i do because i do what i do"
+                "Tattooing is not a quick process, nor should it be rushed as you will be living with the results permanently. Again, depends on the tattoo - contact me!"
             }}
           />
         </FaqComponentContainer>

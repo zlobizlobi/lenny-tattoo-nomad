@@ -4,12 +4,13 @@ import { breakpoint } from "../../breakpoints";
 export const FaqContainer = styled.div`
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  margin 20px 50px;
+  justify-content: flex-start;
+  padding: 35px 30px;
   border: 2px solid darkgrey;
   transition: all 0.3s ease;
-  
+  border-radius: 2px;
+  margin: 30px 0;
+  max-width: 300px;
   :hover {
     background-color: white;
     color: black;
@@ -20,13 +21,18 @@ export const FaqContainer = styled.div`
   }
 
   @media ${breakpoint.laptop}{
-    margin:  0 50px;
+    margin: 0 30px;
   }
 
 `;
 
 export const FaqText = styled.span`
-  line-height: 25px;
+  line-height: 35px;
   flex-wrap: wrap;
-  margin: 10px 0;
+  margin-top: 35px;
 `;
+
+export const FaqQuestion = styled(FaqText)`
+line-height: 22px;
+margin-top: 0;
+`

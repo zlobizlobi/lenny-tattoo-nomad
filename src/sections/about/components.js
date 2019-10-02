@@ -11,7 +11,7 @@ export const Image = styled.div`
   border: 2px solid white;
   margin: 0 0 20px 0;
 
-  @media ${breakpoint.laptop} {
+  @media ${breakpoint.tablet} {
     width: 230px;
     height: 230px;
     margin: 0 20px 0 0;
@@ -33,6 +33,6 @@ export const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 0 100px 0;
+  margin: 100px 0;
   padding: 0 60px;
 `;

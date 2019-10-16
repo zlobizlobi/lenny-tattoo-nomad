@@ -8,9 +8,10 @@ export const FaqContainer = styled.div`
   padding: 35px 30px;
   border: 2px solid darkgrey;
   transition: all 0.3s ease;
-  border-radius: 2px;
-  margin: 30px 0;
+  border-radius: 5px;
+  margin: 30px 30px;
   max-width: 300px;
+
   :hover {
     background-color: white;
     color: black;

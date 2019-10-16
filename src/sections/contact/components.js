@@ -7,32 +7,25 @@ export const Asterix = styled.span`
   font-weight: 900;
 `;
 
-export const ColumnContainer = styled.div`
+export const ContactPageContainer = styled.section`
   display: flex;
+  align-self: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
 
-export const ContactPageContainer = styled.div`
-  padding: 70px 0;
-  margin: 100px 0;
+  @media ${breakpoint.laptop}{
+    flex-direction: row;
+  }
 `;
 
 export const Text = styled(TextComponent)`
   color: white;
-  max-width: 450px;
   text-align: left;
   font-size: 16px;
   margin: 10px 30px 30px 30px;
+  line-height: 35px;
+  @media ${breakpoint.laptop} {
+    max-width: 450px;
+  }
+
 `;
 
-export const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  @media ${breakpoint.laptop} {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-`;

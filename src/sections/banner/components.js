@@ -3,7 +3,7 @@ import { breakpoint } from "../../breakpoints";
 
 export const Video = styled.video`
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   position: absolute;
   z-index: -1;
@@ -11,13 +11,12 @@ export const Video = styled.video`
 
 export const Overlay = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 5000;
   background-color: transparent;
 `;
 
@@ -26,7 +25,6 @@ export const Logo = styled.img.attrs({ alt: "Logo of Lenny Tattoo Nomad" })`
   z-index: 100;
   height: 35%;
   min-width: 20%;
-
   opacity: 0.9;
 
   @media ${breakpoint.tablet} {

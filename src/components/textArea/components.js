@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TextAreaComponent = styled.textarea.attrs({ id: "message" })`
   border: 1px dashed white;
+  border-radius: 5px;
   color: white;
   background-color: transparent;
   margin-top: 10px;

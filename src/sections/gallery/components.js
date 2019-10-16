@@ -2,15 +2,16 @@ import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
 
 export const Container = styled.div`
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  align-self: center;
-  max-width: 80%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 40px;
 
-  @media ${breakpoint.mobileL} {
+  @media ${breakpoint.mobileM} {
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 80px;
   }
 `;

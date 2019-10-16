@@ -4,18 +4,15 @@ import { breakpoint } from "../../breakpoints";
 export const FooterContainer = styled.div`
   background-color: black;
   border-top: 2px dashed darkgrey;
-  max-width: 100%;
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
+  padding: 30px 0;
   font-size: 10px;
-  line-height: 25px;
 
   @media ${breakpoint.laptop} {
     flex-direction: row;
-    padding: 30px 90px;
+    padding: 30px 80px;
     justify-content: space-between;
   }
 `;
@@ -44,4 +41,5 @@ export const FooterTextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   color: darkgrey;
+  line-height: 25px;
 `;

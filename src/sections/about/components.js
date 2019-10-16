@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
+import { Text as TextComponent } from '../../components'
 
 export const Image = styled.div`
   border-radius: 50%;
@@ -9,7 +10,7 @@ export const Image = styled.div`
   height: 190px;
   flex-shrink: 0;
   border: 2px solid white;
-  margin: 0 0 20px 0;
+  margin: 0 0 100px 0;
 
   @media ${breakpoint.tablet} {
     width: 230px;
@@ -18,21 +19,25 @@ export const Image = styled.div`
   }
 `;
 
-export const PageContainerAbout = styled.div`
+
+export const SectionContainer = styled.section`
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  margin: 100px 40px;
 
   @media ${breakpoint.tablet} {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 100px 80px;
   }
 `;
 
-export const SectionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px 0;
-  padding: 0 60px;
-`;
+export const Text = styled(TextComponent)`
+  line-height: 35px;
+  text-align: center;
+
+  @media ${breakpoint.tablet} {
+    text-align: right;
+  }
+`

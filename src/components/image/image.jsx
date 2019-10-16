@@ -4,36 +4,19 @@ import { breakpoint } from "../../breakpoints";
 
 const ImageComponent = styled.img`
   border: 2px solid white;
-  border-radius: 2px;
+  border-radius: 5px;
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.4) 0s;
-  cursor: pointer;
-  width: 150px;
-  margin: 10px 0;
-  height: 150px;
   filter: grayscale(100%);
-
-  ${({ isViewed }) =>
-    isViewed &&
-    css`
-      width: 220px;
-      height: 220px;
-      filter: grayscale(0%);
-    `}
+  margin: 10px 0;
+  width: 160px;
+  height: 160px;
 
   :hover {
     filter: grayscale(0%);
   }
 
   @media ${breakpoint.mobileL} {
-    margin: 10px;
-    ${({ isViewed }) =>
-      isViewed &&
-      css`
-        width: 250px;
-        height: 250px;
-        filter: grayscale(0%);
-        margin: 30px;
-      `}
+    margin: 5px;
   }
 `;
 

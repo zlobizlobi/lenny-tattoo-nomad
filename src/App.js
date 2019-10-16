@@ -7,6 +7,9 @@ import styled from "styled-components";
 const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  aling-items: center;
 `;
 
 const App = () => (
@@ -18,7 +21,7 @@ const App = () => (
       <About />
       <Gallery />
       <Contact />
-      <Faq />
+      {/* <Faq /> */}
       <Footer />
       <ScrollToTopButton />
     </main>

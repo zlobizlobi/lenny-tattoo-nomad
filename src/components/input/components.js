@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { breakpoint } from '../../breakpoints'
 
 export const InputComponent = styled.input`
-  border: 1px dashed white;
+  border: 1px solid white;
   color: white;
   pointer: cursor;
   padding: 3px 0 3px 7px;
@@ -9,8 +10,11 @@ export const InputComponent = styled.input`
   margin-top: 10px;
   transition: all 0.3s ease;
   background-color: transparent;
-  width: 220px;
-  border-radius: 2px;
+  border-radius: 5px;
+  width: 100%;
+
+  @media ${breakpoint.laptop}{
+  }
 `;
 
 export const InputContainer = styled.div`

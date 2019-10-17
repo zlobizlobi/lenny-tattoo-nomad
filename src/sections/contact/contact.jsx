@@ -25,7 +25,7 @@ export const Contact = () => (
         <BotInput type="text" name="bot-input" title="bot-input" />
         <Input name="name" placeholder="what's your name..." type="text" title="name" />
         <Input name="email" type="email" placeholder="and your e-mail..." title="email" />
-        <TextArea name="message" placeholder="Write your message here... ✉️" autoFocus />
+        <TextArea name="message" placeholder="Write your message here..." autoFocus />
         <SubmitButton>send</SubmitButton>
       </Form>
     </ContactPageContainer>

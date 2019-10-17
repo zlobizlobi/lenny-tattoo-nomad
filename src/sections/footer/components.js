@@ -47,5 +47,7 @@ export const FooterTextContainer = styled.div`
   opacity: 0.7;
   color: hsl(0, 60%, 50%);
   word-spacing: 2.5px;
-  margin-left: 20px;
+  @media ${breakpoint.laptop} {
+    margin-left: 20px;
+  }
 `;

@@ -30,10 +30,12 @@ export const Text = styled(TextComponent)`
   text-align: left;
   line-height: 35px;
   font-size: 20px;
-  margin-right: 30px;
-  
+  margin: 0 0 35px 0;
+  max-width: 250px;
+
   @media ${breakpoint.laptop} {
     max-width: 300px;
+    margin: 0 30px 0 0;
   }
 
 `;

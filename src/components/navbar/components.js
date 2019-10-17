@@ -7,14 +7,25 @@ export const Container = styled.div`
   display: inline-flex !important;
   align-self: center;
   justify-content: space-between;
-  border-bottom: 0.5px solid white;
-  padding-bottom: 25px;
-  min-width: 75px;
+  min-width: 200px;
+  margin-top: 50px;
 `;
 
+export const SocialContainer = styled.span`
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  animation: all 0.5s ease;
+  font-size: 12px;
+  &:hover *, &:hover {
+    color: white;
+  }
+`
 export const CustomIcon = styled(CustomIconComponent)`
   font-size: 18px;
-  color: hsl(0, 60%, 35%);
+  color: hsla(0, 60%, 35%, 0.4);
+  margin-right: 10px;
+  animation: all 0.5s ease;
 
   :hover {
     color: white;

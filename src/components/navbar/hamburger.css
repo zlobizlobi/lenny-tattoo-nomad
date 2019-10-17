@@ -2,43 +2,29 @@
 .bm-burger-button {
   position: absolute;
   height: 22px;
+  background-color: transparent;
   left: 36px;
   top: 36px;
   width: 31px;
 }
 
-.bm-burger-button button {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: hsl(0, 60%, 35%);
-  height: 5% !important;
+  background:white;
+  
+  height: 1px !important;
   border-radius: 2px;
-  width: 40px;
+  width: 35px;
+  align-self: center;
 }
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: white !important;
-}
+
 
 .bm-cross {
   width: 1px !important;
-  height: 30px !important;
-  animation: transform 0.4s ease-in-out; 
-  display: inline-block; 
+  height: 30px !important; 
 }
 
-
-.bm-cross:hover{
-  transform: rotate(180deg);
-}
 
 
 .bm-cross-button {
@@ -125,7 +111,7 @@ ul.bm-item li {
 }
 
 .bm-item > li > a > span {
-  background-color: white;
+  background-color:hsl(0, 60%, 35%);
   height: 1px;
   transition: all 0.2s ease;
   width: 100%;
@@ -144,7 +130,7 @@ ul.bm-item li {
 }
 
 .bm-item > li > a:hover > span:nth-child(1) {
-  top: -2px;
+  top: -4px;
   opacity: 1;
 }
 .bm-item > li > a:hover > span:nth-child(2) {
@@ -157,5 +143,5 @@ ul.bm-item li {
 }
 
 .bm-item > li > a:hover {
-  color: white;
+  color:white;
 }

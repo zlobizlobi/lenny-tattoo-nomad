@@ -12,7 +12,7 @@ export const SubmitButton = styled.button.attrs({
   color: white;
   transition: all 0.3s ease;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 20px;
   align-self: flex-end;
   font-size: 20px;
   

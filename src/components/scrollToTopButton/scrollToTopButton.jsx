@@ -10,15 +10,17 @@ export const ScrollToTopButton = () => {
 
   const handleOnScroll = () => {
     if (window.pageYOffset > 800) {
-      return setDisplayed(true);
+      setDisplayed(true);
+    } else {
+      setDisplayed(false);
     }
-    return setDisplayed(false);
   };
 
   const scrollToTop = () => scroll.scrollToTop();
 
   React.useEffect(() => {
     window.addEventListener("scroll", handleOnScroll);
+
     return () => {
       window.removeEventListener("scroll", handleOnScroll);
     };

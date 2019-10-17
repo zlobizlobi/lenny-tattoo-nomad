@@ -17,17 +17,16 @@ export const Contact = () => (
   <Scroll.Element name="contact-section">
     <ContactPageContainer>
       <Text>
-        <Asterix>*</Asterix>&nbsp;If you want to know more or book an
-        appointment, don't be shy to call or send me a message.
+        Want to know more or book an
+        appointment? Don't be shy to call or send me a message.
       </Text>
       <Form>
         <input type="hidden" name="form-name" value="contact" />
         <BotInput type="text" name="bot-input" title="bot-input" />
-        <Input name="name" type="text" title="name" />
-        <Input name="email" type="email" title="email" />
-        <Input name="subject" type="text" title="subject" />
-        <TextArea name="message" autoFocus />
-        <SubmitButton>Send me a message</SubmitButton>
+        <Input name="name" placeholder="what's your name..." type="text" title="name" />
+        <Input name="email" type="email" placeholder="and your e-mail..." title="email" />
+        <TextArea name="message" placeholder="Write your message here... ✉️" autoFocus />
+        <SubmitButton>send</SubmitButton>
       </Form>
     </ContactPageContainer>
   </Scroll.Element>

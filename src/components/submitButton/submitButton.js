@@ -6,17 +6,18 @@ export const SubmitButton = styled.button.attrs({
   type: "submit",
   name: "Submit form button"
 })`
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 10px 10px;
+  border: 2px solid hsl(0, 60%, 40%);
+  padding: 10px 25px;
   background-color: transparent;
   color: white;
   transition: all 0.3s ease;
   cursor: pointer;
   margin-top: 30px;
-
+  align-self: flex-end;
+  font-size: 20px;
+  
   &:hover {
-    background-color: darkgrey;
+    background-color: hsl(0, 60%, 40%);
     color: black;
   }
 `;

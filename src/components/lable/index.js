@@ -1,1 +1,0 @@
-export { Lable } from "./lable";

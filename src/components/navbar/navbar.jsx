@@ -4,26 +4,25 @@ import { Container, MenuLink, CustomIcon } from "./components";
 import { slide as Menu } from "react-burger-menu";
 import "./hamburger.css";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-const sections = ["home", "about", "Gallery", "Contact", "FAQ"];
+const sections = ["Home", "About", "Gallery", "Contact", "Faq"];
 
-const FlexContainer = styled.a`
-  display: flex;
-`;
 
-export const Navbar = () => (
-  <Menu pageWrapId="page-wrap" outerContainerId="outer-container">
-    <ul>
-      {sections.map((section, index) => (
-        <MenuLink key={index} section={section} />
-      ))}
-    </ul>
-    <Container>
-      <FlexContainer
-        target="_blank"
-        rel="noopener"
-        href="https://www.instagram.com/lenny.tattoo/"
-        aria-label="Go to Linnard Kristovski's Instagram page"
-      >
+export const Navbar = () => {
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleOnClick = () => {
+    setOpen(!open)
+  }
+
+  return (
+    <Menu isOpen={open} pageWrapId="page-wrap" outerContainerId="outer-container">
+      <ul>
+        {sections.map((section, index) => (
+          <MenuLink onClick={handleOnClick} key={index} section={section} />
+        ))}
+      </ul>
+      {/* <Container>
         <CustomIcon
           link="https://www.instagram.com/lenny.tattoo/"
           target="_blank"
@@ -31,14 +30,14 @@ export const Navbar = () => (
           ariaLabel="Go to Linnard Kristovski's Instagram page"
           component={<FaInstagram />}
         />
-      </FlexContainer>
-      <CustomIcon
-        link="https://www.facebook.com/LennyTattoos/"
-        target="_blank"
-        rel="noopener"
-        ariaLabel="Go to Linnard Kristovski's Instagram page"
-        component={<FaFacebook />}
-      />
-    </Container>
-  </Menu>
-);
+        <CustomIcon
+          link="https://www.facebook.com/LennyTattoos/"
+          target="_blank"
+          rel="noopener"
+          ariaLabel="Go to Linnard Kristovski's Instagram page"
+          component={<FaFacebook />}
+        />
+      </Container> */}
+    </Menu >
+  )
+}

@@ -11,7 +11,7 @@ import { FaInstagram, FaFacebook } from "react-icons/fa";
 export const SocialMedia = () => (
   <SocialMediaContainer>
     <Number href="tel:+ 47 939 39 343">+ 47 93939 343</Number>
-    <Divider></Divider>
+    <Divider />
     <Container>
       <CustomIcon
         component={<FaInstagram />}

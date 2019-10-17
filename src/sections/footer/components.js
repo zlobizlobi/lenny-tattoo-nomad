@@ -3,7 +3,7 @@ import { breakpoint } from "../../breakpoints";
 
 export const FooterContainer = styled.div`
   background-color: black;
-  border-top: 2px dashed darkgrey;
+  border-top: 2px dashed hsl(0, 60%, 35%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,13 +13,16 @@ export const FooterContainer = styled.div`
   @media ${breakpoint.laptop} {
     flex-direction: row;
     padding: 30px 80px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 `;
 
 export const Link = styled.a`
   color: white;
   font-weight: 900;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 0.5px solid white;
 `;
 
 export const Image = styled.div`
@@ -40,6 +43,9 @@ export const FooterTextContainer = styled.div`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  color: darkgrey;
   line-height: 25px;
+  opacity: 0.7;
+  color: hsl(0, 60%, 50%);
+  word-spacing: 2.5px;
+  margin-left: 20px;
 `;

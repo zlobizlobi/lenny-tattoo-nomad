@@ -12,8 +12,8 @@ export const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       color: white;
-      font-family: "Major Mono Display", monospace;
-      
+      font-family: "Josefin Slab", serif;
+            
       select, textarea, input, button {
         font-family: inherit; 
       }

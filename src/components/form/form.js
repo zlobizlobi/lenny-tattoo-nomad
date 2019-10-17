@@ -7,7 +7,6 @@ export const Form = styled.form.attrs({
   ["data-netlify"]: "true",
   ["netlify-honeypot"]: "bot-field"
 })`
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

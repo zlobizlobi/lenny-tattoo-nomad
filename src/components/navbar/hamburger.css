@@ -7,11 +7,20 @@
   width: 31px;
 }
 
+.bm-burger-button button {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: white;
-  height: 6% !important;
+  background: hsl(0, 60%, 35%);
+  height: 5% !important;
   border-radius: 2px;
+  width: 40px;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -22,22 +31,25 @@
 .bm-cross {
   width: 1px !important;
   height: 30px !important;
+  animation: transform 0.4s ease-in-out; 
+  display: inline-block; 
 }
+
+
+.bm-cross:hover{
+  transform: rotate(180deg);
+}
+
 
 .bm-cross-button {
   right: 21px !important;
   top: 16px !important;
 }
-.bm-cross-button > button:focus {
-  outline: none;
-}
 
-.bm-cross-button:focus {
-  outline: none !important;
-}
+
 
 .bm-cross-button > span > .bm-cross {
-  background: white;
+  background: hsl(0, 60%, 35%);
   height: 10px;
   width: 5px;
 }
@@ -58,7 +70,7 @@ ul .bm-item {
 }
 /* General sidebar styles */
 .bm-menu {
-  background: darkgrey;
+  background: black;
   font-size: 1.4em;
   overflow: hidden !important;
   display: flex;
@@ -72,7 +84,7 @@ ul .bm-item {
 }
 
 .bm-item-list {
-  color: white;
+  color: hsl(0, 60%, 35%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,7 +108,7 @@ ul.bm-item li {
 }
 
 .bm-item > li > a {
-  color: white;
+  color: hsl(0, 60%, 35%);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   display: inline-flex;
@@ -113,7 +125,7 @@ ul.bm-item li {
 }
 
 .bm-item > li > a > span {
-  background-color: black;
+  background-color: white;
   height: 1px;
   transition: all 0.2s ease;
   width: 100%;

@@ -2,27 +2,26 @@ import styled from "styled-components";
 import { breakpoint } from '../../breakpoints'
 
 export const InputComponent = styled.input`
-  border: 1px solid white;
-  color: white;
+  border: 2px solid hsl(0, 60%, 40%);
+  color: hsl(0, 60%, 40%);
   pointer: cursor;
-  padding: 3px 0 3px 7px;
+  padding: 6px 0 5px 15px;
   height: 25px;
   margin-top: 10px;
   transition: all 0.3s ease;
   background-color: transparent;
-  border-radius: 5px;
-  width: 100%;
-
-  @media ${breakpoint.laptop}{
+  border-radius: 1px;
+  min-width: 200px;
+  font-size: 16px;
+  &::placeholder {
+    color: hsla(0, 60%, 40%, 0.6);
+    font-size: 14px;
   }
 `;
 
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 0 30px 0;
-
-  label {
-    color: white;
-  }
+  margin: 0 0 10px 0;
+  align-self: flex-start;
 `;

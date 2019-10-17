@@ -3,7 +3,7 @@ import { breakpoint } from "../../breakpoints";
 import { CustomIcon as CustomIconComponent } from "../customIcon";
 
 export const Number = styled.a`
-  color: rgba(255, 255, 255, 1);
+  color: hsl(0, 60%, 35%);
   text-decoration: none;
   transition: color 0.3s ease;
   :hover {
@@ -13,14 +13,14 @@ export const Number = styled.a`
 
 export const Divider = styled.span`
   transform: rotate(180deg);
-  border-top: 1px solid darkgrey;
+  border-top: 1px solid hsl(0, 60%, 35%);
   width: 105px;
   margin: 5px 0;
 
   @media ${breakpoint.mobileL} {
     transform: rotate(90deg);
     width: 30px;
-    border-top: 0.5px solid darkgrey;
+    border-top: 1px solid hsl(0, 60%, 35%);
     margin: 0;
   }
 `;
@@ -45,7 +45,10 @@ export const SocialMediaContainer = styled.div`
 `;
 
 export const CustomIcon = styled(CustomIconComponent)`
+  font-size: 18px;
+  color: white;
+  
   &:hover {
-    color: rgb(255, 255, 255, 0.8);
+    color: hsl(0, 60%, 35%);
   }
 `;

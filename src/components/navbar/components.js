@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const CustomIcon = styled(CustomIconComponent)`
   font-size: 18px;
-  color: black;
+  color: hsl(0, 60%, 35%);
 
   :hover {
     color: white;

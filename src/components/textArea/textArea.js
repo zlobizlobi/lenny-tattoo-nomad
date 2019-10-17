@@ -1,10 +1,6 @@
 import * as React from "react";
-import { Container, TextAreaComponent } from "./components";
-import { Lable } from "../lable";
+import { TextAreaComponent } from "./components";
 
-export const TextArea = () => (
-  <Container>
-    <Lable htmlFor="message">MESSAGE</Lable>
-    <TextAreaComponent />
-  </Container>
+export const TextArea = ({ placeholder }) => (
+  <TextAreaComponent placeholder={placeholder} />
 );

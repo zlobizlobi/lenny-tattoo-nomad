@@ -8,7 +8,7 @@ export const Button = styled.button.attrs({
   ["aria-label"]: "Scroll to the top"
 })`
   padding: 5px;
-  border: 0.5px solid rgba(255, 255, 255, 1);
+  border: 2px solid hsl(0, 60%, 35%);
   border-radius: 50%;
   position: fixed;
   bottom: 36px;
@@ -24,11 +24,11 @@ export const Button = styled.button.attrs({
   opacity: ${({ isDisplayed }) => (isDisplayed ? "1" : "0")};
 
   :hover {
-    background-color: darkgrey;
+    background-color: white;
   }
 
   :hover :only-child {
-    color: black;
+    color: hsl(0, 60%, 35%);
     animation: ${arrowUp} 0.3s infinite alternate;
   }
 

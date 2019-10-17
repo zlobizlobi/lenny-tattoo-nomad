@@ -1,15 +1,13 @@
 import * as React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { breakpoint } from "../../breakpoints";
 
 const ImageComponent = styled.img`
-  border: 2px solid white;
-  border-radius: 5px;
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.4) 0s;
-  filter: grayscale(100%);
+  border: 2px solid hsl(0, 60%, 35%);
   margin: 10px 0;
   width: 160px;
   height: 160px;
+  box-sizing: content-box;
 
   :hover {
     filter: grayscale(0%);

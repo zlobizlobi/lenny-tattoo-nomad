@@ -8,16 +8,19 @@ export const Container = styled.div`
   align-self: center;
   justify-content: space-between;
   min-width: 200px;
-  margin-top: 50px;
+  margin-top: 25px;
 `;
 
-export const SocialContainer = styled.span`
+export const SocialContainer = styled.a`
   align-items: center;
   display: flex;
   cursor: pointer;
   animation: all 0.5s ease;
   font-size: 12px;
-  &:hover *, &:hover {
+  text-decoration: none;
+  color: hsl(0, 60%, 35%);
+  
+   &:hover {
     color: white;
   }
 `
@@ -26,10 +29,6 @@ export const CustomIcon = styled(CustomIconComponent)`
   color: hsla(0, 60%, 35%, 0.4);
   margin-right: 10px;
   animation: all 0.5s ease;
-
-  :hover {
-    color: white;
-  }
 `;
 
 export const MenuLink = ({ section }) => (

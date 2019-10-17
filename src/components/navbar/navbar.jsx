@@ -22,7 +22,7 @@ export const Navbar = () => {
         ))}
       </ul>
       <Container>
-        <SocialContainer >
+        <SocialContainer href='https://www.facebook.com/LennyTattoos/'>
           <CustomIcon
             link="https://www.facebook.com/LennyTattoos/"
             target="_blank"
@@ -30,7 +30,7 @@ export const Navbar = () => {
             ariaLabel="Go to Linnard Kristovski's Instagram page"
             component={<FaFacebook />}
           />Facebook</SocialContainer>
-        <SocialContainer >
+        <SocialContainer href="https://www.instagram.com/lenny.tattoo/" >
           <CustomIcon
             link="https://www.instagram.com/lenny.tattoo/"
             target="_blank"

@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const FaqComponentContainer = styled.div`
   display: flex;
   flex-direction: column;
-
+  
   @media ${breakpoint.laptop} {
     flex-direction: row;
   }

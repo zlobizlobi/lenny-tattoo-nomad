@@ -21,7 +21,7 @@ const App = () => (
       <About />
       <Gallery />
       <Contact />
-      {/* <Faq /> */}
+      <Faq />
       <Footer />
       <ScrollToTopButton />
     </main>

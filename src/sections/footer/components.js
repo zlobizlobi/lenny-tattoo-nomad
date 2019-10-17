@@ -9,7 +9,8 @@ export const FooterContainer = styled.div`
   align-items: center;
   padding: 30px 0;
   font-size: 10px;
-
+  margin-top: 100px;
+  
   @media ${breakpoint.laptop} {
     flex-direction: row;
     padding: 30px 80px;

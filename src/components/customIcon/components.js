@@ -6,8 +6,4 @@ export const IconComponent = styled.a`
   transition: color 0.2s ease;
   cursor: pointer;
   margin: 0 2.5px;
-
-  :hover {
-    color: rgba(0, 0, 0, 1);
-  }
 `;

@@ -4,8 +4,9 @@ import { slide as Menu } from "react-burger-menu";
 import "./hamburger.css";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import styled from 'styled-components'
+
 const SocialSpan = styled.span`
-  margin-left: 10px;
+  margin-left: 5px;
 `
 const sections = ["Home", "About", "Gallery", "Contact", "Faq"];
 

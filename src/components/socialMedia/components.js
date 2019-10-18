@@ -32,9 +32,9 @@ export const SocialMediaContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: relative;
-  right: 36px;
-  top: 34px;
+  // position: relative;
+  // right: 36px;
+  // top: 34px;
   
   @media ${breakpoint.mobileL} {
     flex-direction: row;
@@ -46,7 +46,6 @@ export const SocialMediaContainer = styled.div`
 export const IconAnchor = styled.a`
   font-size: 18px;
   color: white;
-  margin: 0 2.5px;
   align-self: center;
   transition: color 0.2s ease;
 

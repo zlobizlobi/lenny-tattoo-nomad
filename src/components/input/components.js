@@ -10,7 +10,7 @@ export const InputComponent = styled.input`
   transition: all 0.3s ease;
   background-color: transparent;
   border-radius: 1px;
-  min-width: 200px;
+  width: 200px;
   font-size: 16px;
   
   &::placeholder {

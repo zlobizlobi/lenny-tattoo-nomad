@@ -7,7 +7,7 @@ import styled from "styled-components";
 const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  max-width:100%; 
+  max-width: 100vw; 
   display: flex;
   flex-direction: column;
   aling-items: center;

@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: inline-flex !important;
   align-self: center;
   justify-content: space-between;
-  min-width: 200px;
+  width: 200px;
   margin-top: 25px;
 `;
 

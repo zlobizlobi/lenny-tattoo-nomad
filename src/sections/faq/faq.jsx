@@ -14,7 +14,7 @@ export const Faq = () => (
               question:
                 "does it hurt...",
               answer:
-                "simple answer is, yes it does. but it’s also very different from person to person - some have a high tolerance for pain, some don’t. no matter what - people always expect worse than it actually is."
+                "simple answer is, yes it does. but it’s also very different from person to person - some have a high tolerance for pain, some don’t. No matter what - people always expect worse than it actually is."
             }}
           />
           <FaqComponent

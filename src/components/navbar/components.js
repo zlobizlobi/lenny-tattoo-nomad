@@ -20,17 +20,6 @@ export const SocialContainer = styled.a`
   padding: 7px 10px;
   transition: color 0.3s ease;
   color: rgba(255,255,255,0.8);
-   
-  &:hover  {
-    color: rgba(255,255,255,1);
-
-    ~ a  {
-      color: rgba(255, 255, 255,0.5);
-    } 
-    
-  }
-
-
 `
 // export const CustomIcon = styled(CustomIconComponent)`
 //   font-size: 18px;

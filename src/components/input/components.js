@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InputComponent = styled.input`
   border: 2px solid hsl(0, 60%, 40%);
-  color: hsl(0, 60%, 40%);
+  color: white;
   pointer: cursor;
   padding: 6px 0 5px 15px;
   height: 25px;

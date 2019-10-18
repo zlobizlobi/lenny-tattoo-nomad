@@ -4,6 +4,8 @@ import { breakpoint } from "../../breakpoints";
 export const Video = styled.video`
   height: 100vh;
   width: 100vw;
+  max-width: 100vw;
+  max-height: 100vh;
   object-fit: cover;
   position: absolute;
   z-index: -1;
@@ -22,21 +24,15 @@ export const Container = styled.div`
 export const Logo = styled.img.attrs({ alt: "Logo of Lenny Tattoo Nomad" })`
   position: relative;
   z-index: 100;
-  width: 250px;
+  width: 200px;
   opacity: 0.6;
-  margin-top: 30px;
+  margin-top: 60px;
   
   @media ${breakpoint.tablet} {
     width: 350px
   }
 `;
 
-export const Ornament = styled.img.attrs({ alt: "Ornament Decoration" })`
-  position: absolute;
-  z-index: 0;
-  height: 100%;
-  opacity: 0.3;
-`;
 
 
 

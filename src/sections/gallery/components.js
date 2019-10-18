@@ -16,10 +16,3 @@ export const Container = styled.div`
   }
 `;
 
-export const Overlay = styled.div`
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  top: 0;
-  left: 0;
-`

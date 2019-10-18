@@ -2,7 +2,6 @@ import * as React from "react";
 import * as Scroll from "react-scroll";
 import "firebase/storage";
 import whitelogo from "../../../public/whitelogo.png";
-
 import { FaPhone } from 'react-icons/fa'
 import {
   Video,

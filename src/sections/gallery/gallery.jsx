@@ -19,7 +19,6 @@ export const Gallery = () => {
   return (
     <Scroll.Element name="gallery-section">
       <Container>
-        <Overlay />
         {firebaseImages.map((imageUrl, index) => (
           <Image
             intrinsicSize="100 x 100"

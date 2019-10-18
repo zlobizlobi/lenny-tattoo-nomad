@@ -19,11 +19,11 @@ export const FooterContainer = styled.div`
 `;
 
 export const Link = styled.a`
-  color: white;
+  color: hsl(0, 60%, 40%);
   font-weight: 900;
   text-decoration: none;
   padding-bottom: 3px;
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.5px solid hsl(0, 60%, 40%);
 `;
 
 export const Image = styled.div`
@@ -45,8 +45,7 @@ export const FooterTextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   line-height: 25px;
-  opacity: 0.7;
-  color: hsl(0, 60%, 50%);
+  color: rgba(255,255,255,1);
   word-spacing: 2.5px;
   @media ${breakpoint.laptop} {
     margin-left: 20px;

@@ -32,9 +32,10 @@ export const SocialMediaContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: absolute;
+  position: relative;
   right: 36px;
   top: 34px;
+  
   @media ${breakpoint.mobileL} {
     flex-direction: row;
     align-items: center;

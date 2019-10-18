@@ -21,13 +21,6 @@ export const SocialContainer = styled.a`
   transition: color 0.3s ease;
   color: rgba(255,255,255,0.8);
 `
-// export const CustomIcon = styled(CustomIconComponent)`
-//   font-size: 18px;
-//   color: white;
-//   margin-right: 10px;
-//   color: rgba(255,255,255,0.8);
-//   transition: color 0.3s ease;
-// `;
 
 export const MenuLink = ({ section }) => (
   <li>

@@ -9,27 +9,25 @@ export const Video = styled.video`
   z-index: -1;
 `;
 
-export const Overlay = styled.div`
+export const Container = styled.div`
   height: 100vh;
-  width: 100vw;
-  object-fit: cover;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: transparent;
 `;
 
 export const Logo = styled.img.attrs({ alt: "Logo of Lenny Tattoo Nomad" })`
   position: relative;
   z-index: 100;
-  height: 35%;
-  min-width: 20%;
-  opacity: 0.9;
-
+  width: 250px;
+  opacity: 0.6;
+  margin-top: 30px;
+  
   @media ${breakpoint.tablet} {
-    min-width: 25%;
-    height: 65%;
+    width: 350px
   }
 `;
 
@@ -40,16 +38,7 @@ export const Ornament = styled.img.attrs({ alt: "Ornament Decoration" })`
   opacity: 0.3;
 `;
 
-export const Container = styled.div`
-  overflow: hidden;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
-`;
+
 
 export const LogoPlaceHolder = styled.img.attrs({
   alt: "Placeholder Logo Lenny Tattoo Nomad"

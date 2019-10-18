@@ -2,7 +2,6 @@ import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Input, Form, TextArea, SubmitButton } from "../../components";
 import {
-  Asterix,
   ContactPageContainer,
   Text,
 } from "./components";

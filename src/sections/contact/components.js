@@ -36,6 +36,7 @@ export const Text = styled(TextComponent)`
   @media ${breakpoint.laptop} {
     max-width: 300px;
     margin: 0 30px 0 0;
+    font-size: 25px;
   }
 
 `;

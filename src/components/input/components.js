@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { breakpoint } from '../../breakpoints'
 
 export const InputComponent = styled.input`
   border: 2px solid hsl(0, 60%, 40%);
@@ -13,8 +12,9 @@ export const InputComponent = styled.input`
   border-radius: 1px;
   min-width: 200px;
   font-size: 16px;
+  
   &::placeholder {
-    color: hsla(0, 60%, 40%, 0.6);
+    color: rgba(255,255,255,0.5);
     font-size: 14px;
   }
 `;

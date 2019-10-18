@@ -1,4 +1,3 @@
-export { CustomIcon } from "./customIcon";
 export { Navbar } from "./navbar";
 export { Image } from "./image";
 export { Text } from "./text";

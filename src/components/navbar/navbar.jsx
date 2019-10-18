@@ -1,10 +1,13 @@
 import * as React from "react";
-import { Container, MenuLink, CustomIcon, SocialContainer } from "./components";
+import { Container, MenuLink, IconAnchor, SocialContainer } from "./components";
 import { slide as Menu } from "react-burger-menu";
 import "./hamburger.css";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import styled from 'styled-components'
+const SocialSpan = styled.span`
+  margin-left: 10px;
+`
 const sections = ["Home", "About", "Gallery", "Contact", "Faq"];
-
 
 export const Navbar = () => {
 
@@ -22,22 +25,22 @@ export const Navbar = () => {
         ))}
       </ul>
       <Container>
-        <SocialContainer href='https://www.facebook.com/LennyTattoos/'>
-          <CustomIcon
-            link="https://www.facebook.com/LennyTattoos/"
-            target="_blank"
-            rel="noopener"
-            ariaLabel="Go to Linnard Kristovski's Instagram page"
-            component={<FaFacebook />}
-          />Facebook</SocialContainer>
-        <SocialContainer href="https://www.instagram.com/lenny.tattoo/" >
-          <CustomIcon
-            link="https://www.instagram.com/lenny.tattoo/"
-            target="_blank"
-            rel="noopener"
-            ariaLabel="Go to Linnard Kristovski's Instagram page"
-            component={<FaInstagram />}
-          />Instagram</SocialContainer>
+        <SocialContainer
+          target="_blank"
+          rel="noopener"
+          ariaLabel="Go to Linnard Kristovski's Instagram page"
+          href='https://www.facebook.com/LennyTattoos/'>
+          <FaFacebook />
+          <SocialSpan>LennyTattoos</SocialSpan>
+        </SocialContainer>
+        <SocialContainer
+          target="_blank"
+          rel="noopener"
+          aria-label="Go to Linnard Kristovski's Instagram page"
+          href="https://www.instagram.com/lenny.tattoo/" >
+          <FaInstagram />
+          <SocialSpan>lenny.tattoo</SocialSpan>
+        </SocialContainer>
       </Container>
     </Menu >
   )

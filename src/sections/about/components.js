@@ -38,6 +38,8 @@ export const Text = styled(TextComponent)`
   text-align: center;
   font-family: 'Josefin Slab', serif;
   font-size: 20px;
+  position: relative;
+  z-index: 1;
   
   @media ${breakpoint.tablet} {
     text-align: right;

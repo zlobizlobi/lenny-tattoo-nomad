@@ -11,8 +11,8 @@ export const TextAreaComponent = styled.textarea.attrs({ id: "message" })`
   min-width: 250px;
   font-size: 14px;
   
-  &::placeholder{
-    color: hsla(0, 60%, 40%, 0.6);
-    font-size: 12px;
+  &::placeholder {
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
   }
 `;

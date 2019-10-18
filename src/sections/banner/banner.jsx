@@ -50,6 +50,7 @@ const Button = styled.button`
 
 export const PhoneIcon = styled(FaPhone)`
   margin-left: 10px;
+  font-size: 14px;
 `
 
 export const Banner = () => {

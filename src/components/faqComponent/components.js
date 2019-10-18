@@ -6,7 +6,7 @@ export const FaqContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   padding: 35px 30px;
-  border: 2px solid rgba(255,255,255,0.9);
+  border: 1px solid rgba(255,255,255,0.9);
   transition: all 0.3s ease;
   border-radius: 5px;
   margin: 30px 30px;
@@ -28,10 +28,12 @@ export const FaqContainer = styled.div`
 `;
 
 export const FaqText = styled.span`
-  color: hsl(0,60%, 35%);
+  color: hsl(0,60%, 25%);
   line-height: 35px;
   flex-wrap: wrap;
   margin-top: 35px;
+  font-weight: 300;
+
 `;
 
 export const FaqQuestion = styled(FaqText)`

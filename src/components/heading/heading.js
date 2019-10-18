@@ -5,4 +5,5 @@ export const Heading = styled.h2`
   padding-bottom: 10px;
   color: white;
   border-bottom: 0.5px solid white;
+  font-weight: 700;
 `;

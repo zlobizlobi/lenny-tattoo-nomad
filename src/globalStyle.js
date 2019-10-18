@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   body, html {
       margin: 0;
       padding: 0;
+      max-width: 100vw;
       color: white;
       font-family: "Josefin Slab", serif;
             

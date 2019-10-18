@@ -17,7 +17,6 @@ export const SocialContainer = styled.a`
   animation: all 0.5s ease;
   font-size: 14px;
   text-decoration: none;
-  padding: 7px 10px;
   transition: color 0.3s ease;
   color: rgba(255,255,255,0.8);
 `

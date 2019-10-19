@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 const SocialSpan = styled.span`
   margin-left: 5px;
+  color: rgba(255,255,255,0.5);
 `
 const sections = ["Home", "About", "Gallery", "Contact", "Faq"];
 

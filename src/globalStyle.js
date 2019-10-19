@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       max-width: 100vw;
+      width: 100vw;
       color: white;
       font-family: "Josefin Slab", serif;
             

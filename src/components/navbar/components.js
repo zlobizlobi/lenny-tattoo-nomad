@@ -4,9 +4,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex !important;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
-  margin-top: 25px;
 `;
 
 export const SocialContainer = styled.a`
@@ -24,6 +23,14 @@ export const SocialContainer = styled.a`
   opacity: 0.8;
   :hover {
     color: white;
+  }
+
+  &:first-child{
+    margin-right: 5px;
+  }
+
+  &:last-child{
+    margin-left: 5px;
   }
 `
 

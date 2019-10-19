@@ -8,7 +8,7 @@ const ImageComponent = styled.img`
   width: 160px;
   height: 160px;
   box-sizing: content-box;
-
+  cursor: pointer;
   :hover {
     filter: grayscale(0%);
   }

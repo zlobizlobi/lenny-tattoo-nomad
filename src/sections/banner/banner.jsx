@@ -7,7 +7,6 @@ import {
   Video,
   Logo,
   Container,
-  Ornament,
   LogoPlaceHolder
 } from "./components";
 import { SocialMedia } from "../../components";
@@ -43,7 +42,6 @@ const Button = styled.button`
     ~ {
       color: hsl(0, 60%, 40%);
     }
-    
   }
 `
 
@@ -58,19 +56,21 @@ export const Banner = () => {
   return (
     <Scroll.Element name="home-section">
       <section>
-        {!(mp4 || webm) && <LogoPlaceHolder src="whitelogo.png" />}
-        {(mp4 || webm) && (
-          <Container>
-            <SocialMedia />
-            <Logo src={whitelogo} />
-            <Video src={mp4 || webm} autoPlay muted loop />
-            <Scroll.Link to='contact-section' smooth duration={1100}>
-              <Button>Make an appointment
+        <Container>
+          {!(mp4 || webm) && <LogoPlaceHolder src="whitelogo.png" />}
+          {(mp4 || webm) && (
+            <React.Fragment>
+              <SocialMedia />
+              <Logo src={whitelogo} />
+              <Video src={mp4 || webm} autoPlay muted loop />
+              <Scroll.Link to='contact-section' smooth duration={1100}>
+                <Button>Make an appointment
                 <PhoneIcon />
-              </Button>
-            </Scroll.Link>
-          </Container>
-        )}
+                </Button>
+              </Scroll.Link>
+            </React.Fragment>
+          )}
+        </Container>
       </section>
     </Scroll.Element >
   );

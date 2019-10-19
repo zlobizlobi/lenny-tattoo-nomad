@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex !important;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
   margin-top: 25px;
 `;

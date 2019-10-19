@@ -64,12 +64,14 @@ export const Banner = () => {
             <SocialMedia />
             <Logo src={whitelogo} />
             <Video src={mp4 || webm} autoPlay muted loop />
-            <Button>Make an appointment
-            <PhoneIcon />
-            </Button>
+            <Scroll.Link to='contact-section' smooth duration={1100}>
+              <Button>Make an appointment
+                <PhoneIcon />
+              </Button>
+            </Scroll.Link>
           </Container>
         )}
       </section>
-    </Scroll.Element>
+    </Scroll.Element >
   );
 };

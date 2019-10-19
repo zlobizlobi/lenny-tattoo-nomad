@@ -6,6 +6,7 @@ export const Number = styled.a`
   text-decoration: none;
   transition: color 0.3s ease;
 
+    
   :hover {
     color: rgba(255, 255, 255, 0.8);
   }
@@ -26,15 +27,17 @@ export const Divider = styled.span`
 
 export const Container = styled.div`
   display: flex;
+  width: 45px;
+  justify-content: space-between;
 `;
 
 export const SocialMediaContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  // position: relative;
-  // right: 36px;
-  // top: 34px;
+  position: absolute;
+  right: 36px;
+  top: 34px;
   
   @media ${breakpoint.mobileL} {
     flex-direction: row;

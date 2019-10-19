@@ -10,7 +10,7 @@ import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export const SocialMedia = () => (
   <SocialMediaContainer>
-    {/* <Number href="tel:+ 47 939 39 343">+ 47 93939 343</Number>
+    <Number href="tel:+ 47 939 39 343">+ 47 93939 343</Number>
     <Divider />
     <Container>
       <IconAnchor target="_blank" aria-label="Go to Lenny's Instagram page" href="https://www.instagram.com/lenny.tattoo/">
@@ -19,6 +19,6 @@ export const SocialMedia = () => (
       <IconAnchor target="_blank" aria-label="Go to Lenny's Facebook page" href="https://www.facebook.com/LennyTattoos/">
         <FaFacebook />
       </IconAnchor>
-    </Container> */}
+    </Container>
   </SocialMediaContainer>
 );

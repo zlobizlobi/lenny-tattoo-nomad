@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { breakpoint } from "../../breakpoints";
+import { breakpoint } from "../../styles/breakpoints";
 
 export const FaqSectionContainer = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ const FaqAndAnswerContainer = styled.div`
   }
 
   :hover {
-    
+
     background-color: white;
 
     span:nth-child(2) {

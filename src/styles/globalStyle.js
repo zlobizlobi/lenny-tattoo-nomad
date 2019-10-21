@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import JosefinSlab from "./fonts/JosefinSlab-Regular.ttf";
-import JosefinSlabBold from "./fonts/JosefinSlab-Bold.ttf";
+import JosefinSlab from "../fonts/JosefinSlab-Regular.ttf";
+import JosefinSlabBold from "../fonts/JosefinSlab-Bold.ttf";
 
 export const GlobalStyle = createGlobalStyle`
 

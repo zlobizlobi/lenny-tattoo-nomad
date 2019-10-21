@@ -1,7 +1,8 @@
 import React from "react";
 import { Banner, About, Gallery, Contact, Faq, Footer } from "./sections";
 import { Navbar, ScrollToTopButton } from "./components";
-import { GlobalStyle } from "./globalStyle";
+import { GlobalStyle } from "./styles/globalStyle";
+
 import styled from "styled-components";
 
 const AppContainer = styled.div`

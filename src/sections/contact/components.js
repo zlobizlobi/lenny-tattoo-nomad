@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakpoint } from "../../breakpoints";
+import { breakpoint } from "../../styles/breakpoints";
 import { Text as TextComponent } from "../../components";
 
 export const Asterix = styled.span`

@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { breakpoint } from "../../breakpoints";
+import { breakpoint } from "../../styles/breakpoints";
 
 const ImageComponent = styled.img`
   border: 2px solid hsl(0, 60%, 35%);

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MdKeyboardArrowUp } from "react-icons/md";
-import { breakpoint } from "../../breakpoints";
+import { breakpoint } from "../../styles/breakpoints";
 import { arrowUp } from "./animations";
 
 export const Button = styled.button.attrs({

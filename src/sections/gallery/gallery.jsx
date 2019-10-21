@@ -5,10 +5,9 @@ import { Container, Overlay } from "./components";
 import { Image } from "../../components";
 import { useGetFirebaseImages } from "./hooks";
 import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import 'react-image-lightbox/style.css';
 
 export const Gallery = () => {
-  const [selections, setSelected] = React.useState([]);
 
   const [isOpen, setIsOpen] = React.useState(false)
   const [photoIndex, setPhotoIndex] = React.useState(0)
@@ -30,7 +29,7 @@ export const Gallery = () => {
   return (
     <Scroll.Element name="gallery-section">
       <Container>
-        {firebaseImages.map((imageUrl, index) => (
+        {firebaseImages.map((imageUrl) => (
           <Image
             intrinsicSize="100 x 100"
             alt="Picture of a Tattoo"

@@ -7,8 +7,8 @@ const ImageComponent = styled.img`
   margin: 10px 0;
   width: 160px;
   height: 160px;
-  box-sizing: content-box;
   cursor: pointer;
+
   :hover {
     filter: grayscale(0%);
   }
@@ -18,14 +18,13 @@ const ImageComponent = styled.img`
   }
 `;
 
-export const Image = ({ src, isViewed, onClick, alt }) => {
+export const Image = ({ src, onClick, alt }) => {
   return (
     <ImageComponent
+      src={src}
+      onClick={onClick}
       alt={alt}
       loading="lazy"
-      onClick={onClick}
-      isViewed={isViewed}
-      src={src}
     />
   );
 };

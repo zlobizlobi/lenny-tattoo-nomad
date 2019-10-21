@@ -1,20 +1,23 @@
 import { createGlobalStyle } from "styled-components";
-import MajorMonoDisplay from "./fonts/MajorMonoDisplay-Regular.ttf";
+import JosefinSlab from "./fonts/JosefinSlab-Regular.ttf";
+import JosefinSlabBold from "./fonts/JosefinSlab-Bold.ttf";
 
 export const GlobalStyle = createGlobalStyle`
 
   @font-face{
-    font-family: "Major Mono Display";
-    src: url(${MajorMonoDisplay})
+    font-family: "Josefin Slab";
+    src: url(${JosefinSlab})
+  }
+
+  @font-face{
+    font-family: "Josefin Slab";
+    src: url(${JosefinSlabBold})
+    font-style: bold;
   }
 
   body, html {
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
-      max-width: 100vw;
-      color: white;
       font-family: "Josefin Slab", serif;
             
       select, textarea, input, button {

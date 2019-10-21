@@ -15,10 +15,9 @@ export const FaqContainer = styled.div`
   :hover {
     background-color: white;
 
-     > span:nth-child(2) {
+     span:nth-child(2) {
       color: hsl(0, 60%, 40%);
     }
-
   }
 
   @media ${breakpoint.laptop}{

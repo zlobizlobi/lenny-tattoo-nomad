@@ -17,7 +17,6 @@ export const Image = styled.div`
     height: 230px;
     margin-right: 30px;
   }
-  
 `;
 
 
@@ -30,7 +29,6 @@ export const Container = styled.div`
 export const Text = styled(TextComponent)`
   line-height: 35px;
   text-align: center;
-  font-size: 20px;
   color: #fff;  
   
   @media ${breakpoint.laptop} {

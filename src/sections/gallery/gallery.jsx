@@ -1,7 +1,7 @@
 import "firebase/storage";
 import * as Scroll from "react-scroll";
 import * as React from "react";
-import { Container, Overlay } from "./components";
+import { Container } from "./components";
 import { Image, SectionContainer } from "../../components";
 import { useGetFirebaseImages } from "./hooks";
 import Lightbox from 'react-image-lightbox';
@@ -12,7 +12,7 @@ export const Gallery = () => {
   const [isOpen, setIsOpen] = React.useState(false)
   const [photoIndex, setPhotoIndex] = React.useState(0)
 
-  const handleOnClick = id => {
+  const handleOnClick = () => {
     setIsOpen(!isOpen);
   };
 
@@ -32,11 +32,10 @@ export const Gallery = () => {
         <Container>
           {firebaseImages.map((imageUrl) => (
             <Image
-              intrinsicSize="100 x 100"
               alt="Picture of a Tattoo"
               key={imageUrl}
               src={imageUrl}
-              onClick={() => setIsOpen(true)}
+              onClick={handleOnClick}
             />
           ))}
           {isOpen && (

@@ -3,9 +3,9 @@ import { breakpoint } from "../../styles/breakpoints";
 
 export const Text = styled.span`
   text-align: left;
-  font-size: 12px;
+  font-size: 20px;
 
   @media ${breakpoint.laptop} {
-    font-size: 16px;
+    font-size: 25px;
   }
 `;

@@ -1,18 +1,8 @@
 import styled from "styled-components";
-import { breakpoint } from "../../styles/breakpoints";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  padding: 0 40px;
-
-  @media ${breakpoint.mobileM} {
-    flex-direction: row;
-    justify-content: center;
-    padding: 0 80px;
-  }
 `;
 

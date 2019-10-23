@@ -15,6 +15,7 @@ export const Image = styled.div`
   @media ${breakpoint.tablet} {
     width: 230px;
     height: 230px;
+    margin-right: 30px;
   }
   
 `;
@@ -36,6 +37,7 @@ export const Text = styled(TextComponent)`
     text-align: right;
     line-height: 40px;
     font-size: 25px;
+    max-width: 550px;
   }
 `
 

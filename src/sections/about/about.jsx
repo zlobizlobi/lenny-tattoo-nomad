@@ -13,7 +13,7 @@ export const About = () => (
           <Image />
           <Text>
             Hey, i'm lenny - a special kind of artist, <Highlight>a travelling tattoo
-            artist</Highlight>. I love my work, challenges and fun.
+            artist</Highlight>.  I love my work, challenges and fun.
           </Text>
         </ImageTextContainer>
       </Container>

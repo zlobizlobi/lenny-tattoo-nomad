@@ -10,7 +10,8 @@ export const Image = styled.div`
   height: 190px;
   flex-shrink: 0;
   border: 3px solid hsl(0, 60%, 35%);
-
+  margin-bottom: 30px;
+  
   @media ${breakpoint.tablet} {
     width: 230px;
     height: 230px;

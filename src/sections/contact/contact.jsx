@@ -2,7 +2,7 @@ import * as React from "react";
 import * as Scroll from "react-scroll";
 import { Input, Form, TextArea, SubmitButton } from "../../components";
 import {
-  ContactPageContainer,
+  Container,
   Text,
 } from "./components";
 
@@ -14,7 +14,7 @@ const BotInput = styled(Input)`
 
 export const Contact = () => (
   <Scroll.Element name="contact-section">
-    <ContactPageContainer>
+    <Container>
       <Text>
         Want to know more or book an
         appointment? Don't be shy to call or send me a message.
@@ -27,6 +27,6 @@ export const Contact = () => (
         <TextArea name="message" placeholder="Write your message here..." autoFocus />
         <SubmitButton>send</SubmitButton>
       </Form>
-    </ContactPageContainer>
+    </Container>
   </Scroll.Element>
 );

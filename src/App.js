@@ -8,7 +8,6 @@ import styled from "styled-components";
 const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  max-width: 100vw; 
   display: flex;
   flex-direction: column;
   aling-items: center;
@@ -19,7 +18,7 @@ const App = () => (
     <GlobalStyle />
     <Navbar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
     <main id="page-wrap">
-      {/* <Banner /> */}
+      <Banner />
       <About />
       <Gallery />
       <Contact />

@@ -7,7 +7,7 @@ export const Asterix = styled.span`
   font-weight: 900;
 `;
 
-export const ContactPageContainer = styled.section`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

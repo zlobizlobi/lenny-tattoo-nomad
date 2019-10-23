@@ -28,7 +28,6 @@ export const Container = styled.div`
 export const Text = styled(TextComponent)`
   line-height: 35px;
   text-align: center;
-  font-family: 'Josefin Slab', serif;
   font-size: 20px;
   color: #fff;  
   

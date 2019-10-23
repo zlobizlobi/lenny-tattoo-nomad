@@ -25,29 +25,19 @@ const Button = styled.button`
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  position: relative;
-  z-index: 2;
-  transition: all 0.5s ease;
-
-  a {
-    transition: all 0.5s ease;
-    margin-left: 10px;
-    font-size: 16px;
-  }
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: white;
     color: hsl(0, 60%, 40%);
-
-    ~ {
-      color: hsl(0, 60%, 40%);
-    }
   }
 `
 
 export const PhoneIcon = styled(FaPhone)`
   margin-left: 10px;
-  font-size: 14px;
+  font-size: 12px;
+  transition: color 0.3s ease;
+
 `
 
 export const Banner = () => {

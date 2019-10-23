@@ -18,12 +18,11 @@ import { useGetBannerVisualContent } from "./useGetBannerVisualContent";
 
 export const Banner = () => {
   const { webm, mp4 } = useGetBannerVisualContent();
-
   return (
     <section>
       <Scroll.Element name="home-section">
         <Container>
-          {!(mp4 || webm) && <LogoPlaceHolder src={whitelogo} />}
+          {!(mp4 || webm) && <LogoPlaceHolder src={whitelogo} git ad />}
           {(mp4 || webm) && (
             <React.Fragment>
               <SocialMedia />

@@ -23,7 +23,7 @@ export const Banner = () => {
     <section>
       <Scroll.Element name="home-section">
         <Container>
-          {!(mp4 || webm) && <LogoPlaceHolder src="whitelogo.png" />}
+          {!(mp4 || webm) && <LogoPlaceHolder src={whitelogo} />}
           {(mp4 || webm) && (
             <React.Fragment>
               <SocialMedia />

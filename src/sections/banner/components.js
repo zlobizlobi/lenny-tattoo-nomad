@@ -41,7 +41,7 @@ export const LogoPlaceHolder = styled.img.attrs({
 `;
 
 
-export const Button = styled.button`
+export const Button = styled.button.attrs({ ['aria-label']: 'Button to contact section' })`
   display: flex;
   align-items: center;
   position: relative;
@@ -52,7 +52,6 @@ export const Button = styled.button`
   color: white;
   cursor: pointer;
   font-weight: 700;
-  font-size: 16px;
   transition: all 0.3s ease;
 
   &:hover {
@@ -62,6 +61,5 @@ export const Button = styled.button`
 `
 
 export const PhoneIcon = styled(FaPhone)`
-  margin-left: 10px;
   font-size: 12px;
 `

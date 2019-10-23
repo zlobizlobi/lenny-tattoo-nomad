@@ -30,8 +30,8 @@ export const Banner = () => {
               <Logo src={whitelogo} />
               <Video src={mp4 || webm} autoPlay muted loop />
               <Scroll.Link to='contact-section' smooth duration={1100}>
-                <Button>Make an appointment
-                <PhoneIcon />
+                <Button>
+                  Make an appointment&nbsp;&nbsp;<PhoneIcon />
                 </Button>
               </Scroll.Link>
             </React.Fragment>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { breakpoint } from "../../styles/breakpoints";
 
-export const Number = styled.a`
+export const Number = styled.span`
   color: white;
   text-decoration: none;
 `;

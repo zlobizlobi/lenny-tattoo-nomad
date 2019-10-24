@@ -24,7 +24,7 @@ const App = () => (
       <Contact />
       <Faq />
       <Footer />
-      <ScrollToTopButton />
+      <ScrollToTopButton aria-label="Scroll to to top button" name="Scroll to to top button" />
     </main>
   </AppContainer>
 );

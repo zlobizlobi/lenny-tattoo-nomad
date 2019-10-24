@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Heading = styled.h1`
   padding-bottom: 5px;
-  color: white;
-  border-bottom: 0.5px solid white;
+  color: #fff;
+  border-bottom: 1px solid #fff;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `;

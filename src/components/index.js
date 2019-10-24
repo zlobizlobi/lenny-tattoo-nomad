@@ -9,3 +9,4 @@ export { SocialMedia } from "./socialMedia";
 export { SubmitButton } from "./submitButton";
 export { ScrollToTopButton } from "./scrollToTopButton";
 export { Heading } from "./heading";
+export { ColumnContainer } from './columnContainer'

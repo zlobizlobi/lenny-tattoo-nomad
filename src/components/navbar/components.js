@@ -12,25 +12,21 @@ export const SocialContainer = styled.a`
   display: inline-flex;  
   align-items: center;
   cursor: pointer;
-  animation: all 0.5s ease;
   font-size: 12px;
+  animation: all 0.3s ease;
   font-weight: 700;
   text-decoration: none;
-  color: hsla(0, 60%, 40%, 1);
+  color: #fff;
   background-color: rgba(255,255,255,0.1);
-  padding: 5px;
-  transition: color 0.3s ease;
-  opacity: 0.8;
-  :hover {
-    color: white;
-  }
+  padding: 7.5px;
+  transition: background-color 0.3s ease;
 
-  &:first-child{
-    margin-right: 5px;
+  :hover {
+    background-color: hsl(0,60%,40%);
   }
 
   &:last-child{
-    margin-left: 5px;
+    margin-left: 10px;
   }
 `
 

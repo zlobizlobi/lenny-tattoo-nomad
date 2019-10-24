@@ -3,10 +3,7 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 import { breakpoint } from "../../styles/breakpoints";
 import { arrowUp } from "./animations";
 
-export const Button = styled.button.attrs({
-  name: "Back to to top button",
-  ["aria-label"]: "Scroll to the top"
-})`
+export const Button = styled.button`
   padding: 5px;
   border: 2px solid hsl(0, 60%, 35%);
   border-radius: 50%;

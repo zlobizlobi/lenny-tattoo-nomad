@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import "firebase/storage";
 import whitelogo from "../../../public/whitelogo.png";
 import {
   Video,
@@ -22,14 +21,14 @@ export const Banner = () => {
     <section>
       <Scroll.Element name="home-section">
         <Container>
-          {!(mp4 || webm) && <LogoPlaceHolder src={whitelogo} git ad />}
+          {!(mp4 || webm) && <LogoPlaceHolder src={whitelogo} />}
           {(mp4 || webm) && (
             <React.Fragment>
               <SocialMedia />
               <Logo src={whitelogo} />
               <Video src={mp4 || webm} autoPlay muted loop />
               <Scroll.Link to='contact-section' smooth duration={1100}>
-                <Button>
+                <Button aria-label="Button to Contact Section">
                   Make an appointment&nbsp;&nbsp;<PhoneIcon />
                 </Button>
               </Scroll.Link>

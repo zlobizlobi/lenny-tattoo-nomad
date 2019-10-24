@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { breakpoint } from "../../styles/breakpoints";
-import { Text as TextComponent, Heading as HeadingComponent } from '../../components'
+import { Text as TextComponent, ColumnContainer } from '../../components'
 
 export const Image = styled.div`
   border-radius: 50%;
   background: url("lenny.jpg");
-  background-size: cover;
+  background-size: contain;
   width: 190px;
   height: 190px;
   flex-shrink: 0;
-  border: 3px solid hsl(0, 60%, 35%);
+  border: 2px solid hsl(0, 60%, 35%);
   margin-bottom: 30px;
   
   @media ${breakpoint.tablet} {
@@ -17,13 +17,6 @@ export const Image = styled.div`
     height: 230px;
     margin-right: 30px;
   }
-`;
-
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export const Text = styled(TextComponent)`
@@ -39,17 +32,12 @@ export const Text = styled(TextComponent)`
   }
 `
 
-
-
 export const Highlight = styled.span`
   color: hsl(0,60%,40%);
 `
 
-export const ImageTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+export const ImageTextContainer = styled(ColumnContainer)`
+ 
   @media ${breakpoint.laptop}{
     flex-direction: row;
   }

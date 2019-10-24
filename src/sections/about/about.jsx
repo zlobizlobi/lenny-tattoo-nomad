@@ -1,13 +1,13 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { Image, Text, Highlight, Container, ImageTextContainer } from "./components"
-import { SectionContainer, Heading } from "../../components";
+import { Image, Text, Highlight, ImageTextContainer } from "./components"
+import { SectionContainer, Heading, ColumnContainer } from "../../components";
 
 
 export const About = () => (
   <SectionContainer>
     <Scroll.Element name="about-section">
-      <Container>
+      <ColumnContainer>
         <Heading>About</Heading>
         <ImageTextContainer>
           <Image />
@@ -16,7 +16,7 @@ export const About = () => (
             artist</Highlight>.  I love my work, challenges and fun.
           </Text>
         </ImageTextContainer>
-      </Container>
+      </ColumnContainer>
     </Scroll.Element>
   </SectionContainer >
 );

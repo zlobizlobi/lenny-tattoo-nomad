@@ -3,8 +3,8 @@ import { breakpoint } from "../../styles/breakpoints";
 import { FaPhone } from 'react-icons/fa'
 
 export const Video = styled.video`
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   object-fit: cover;
   position: absolute;
   z-index: 0;
@@ -26,7 +26,7 @@ export const Logo = styled.img.attrs({ alt: "Logo of Lenny Tattoo Nomad" })`
   opacity: 0.6;
   
   @media ${breakpoint.tablet} {
-    width: 350px
+    width: 300px
   }
 `;
 
@@ -41,13 +41,13 @@ export const LogoPlaceHolder = styled.img.attrs({
 `;
 
 
-export const Button = styled.button.attrs({ ['aria-label']: 'Button to contact section' })`
+export const Button = styled.button`
   display: flex;
   align-items: center;
   position: relative;
   z-index: 1;
   border: 1px solid white;
-  padding: 11px 20px;
+  padding: 10px 20px;
   background-color: transparent;
   color: white;
   cursor: pointer;

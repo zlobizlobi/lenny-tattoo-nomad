@@ -12,6 +12,8 @@ export const Gallery = () => {
   const [isOpen, setIsOpen] = React.useState(false)
   const [photoIndex, setPhotoIndex] = React.useState(0)
 
+  const firebaseImages = useGetFirebaseImages();
+
   const handleOnClick = () => {
     setIsOpen(!isOpen);
   };
@@ -24,7 +26,6 @@ export const Gallery = () => {
     setPhotoIndex((photoIndex + 1) % firebaseImages.length)
   }
 
-  const firebaseImages = useGetFirebaseImages();
 
   return (
     <SectionContainer>

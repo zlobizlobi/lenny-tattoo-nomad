@@ -1,32 +1,33 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
-import { Input, Form, TextArea, SubmitButton } from "../../components";
+import { Input, Form, TextArea, SubmitButton, SectionContainer, Heading, ColumnContainer } from "../../components";
 import {
   Container,
-  Text,
+  Text
 } from "./components";
 
-import styled from "styled-components";
-
-const BotInput = styled(Input)`
-  display: none;
-`;
 
 export const Contact = () => (
-  <Scroll.Element name="contact-section">
-    <Container>
-      <Text>
-        Want to know more or book an
-        appointment? Don't be shy to call or send me a message.
-      </Text>
-      <Form>
-        <input type="hidden" name="form-name" value="contact" />
-        <BotInput type="text" name="bot-input" title="bot-input" />
-        <Input name="name" placeholder="what's your name..." type="text" title="name" />
-        <Input name="email" type="email" placeholder="and your e-mail..." title="email" />
-        <TextArea name="message" placeholder="Write your message here..." autoFocus />
-        <SubmitButton>send</SubmitButton>
-      </Form>
-    </Container>
-  </Scroll.Element>
+  <SectionContainer>
+    <Scroll.Element name="contact-section">
+      <ColumnContainer>
+        <Heading>Contact</Heading>
+        <Container>
+          <Text>
+            Want to know more or book an
+            appointment? Don't be shy to call or send me a message.
+          </Text>
+          <Form data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="text" name="bot-input" title="bot-input" style={{ display: 'none' }} />
+            <Input name="name" placeholder="what's your name..." type="text" title="name" />
+            <Input name="email" type="email" placeholder="and your e-mail..." title="email" />
+            <TextArea name="message" placeholder="Write your message here..." autoFocus />
+            <SubmitButton>send</SubmitButton>
+          </Form>
+        </Container>
+      </ColumnContainer>
+    </Scroll.Element>
+  </SectionContainer>
+
 );

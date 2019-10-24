@@ -3,9 +3,7 @@ import { breakpoint } from "../../styles/breakpoints";
 
 export const Form = styled.form.attrs({
   name: "contact",
-  method: "post",
-  ["data-netlify"]: "true",
-  ["netlify-honeypot"]: "bot-field"
+  method: "post"
 })`
   display: flex;
   flex-direction: column;

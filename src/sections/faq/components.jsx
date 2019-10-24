@@ -25,13 +25,11 @@ const FaqAndAnswerContainer = styled.div`
   }
 
   :hover {
-
     background-color: white;
 
     span:nth-child(2) {
       color: hsl(0, 60%, 40%);
     }
-
   }
 
   @media ${breakpoint.laptop}{
@@ -39,24 +37,22 @@ const FaqAndAnswerContainer = styled.div`
   &:nth-child(2) {
     margin: 0 30px;
   }
+
 }
 `;
 
 const FaqText = styled.span`
   color: rgba(255,255,255,0.8);
-  line-height: 35px;
+  line-height: 30px;
   flex-wrap: wrap;
-  margin-top: 35px;
-  font-weight: 300;
-  padding-bottom: 35px;
+  font-size: 18px;
 `
 
 const FaqQuestion = styled(FaqText)`
-  line-height: 22px;
   color: hsl(0,60%, 35%);
-  margin-top: 0;
+  margin-bottom: 25px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
 `
 
 export const FaqAndAnswer = ({ content }) => {

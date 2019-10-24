@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Container, MenuLink, IconAnchor, SocialContainer } from "./components";
+import { Container, MenuLink, SocialContainer } from "./components";
 import { slide as Menu } from "react-burger-menu";
 import "./hamburger.css";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
@@ -30,7 +30,7 @@ export const Navbar = () => {
         <SocialContainer
           target="_blank"
           rel="noopener"
-          ariaLabel="Go to Linnard Kristovski's Instagram page"
+          aria-label="Go to Linnard Kristovski's Instagram page"
           href='https://www.facebook.com/LennyTattoos/'>
           <FaFacebook />
           <SocialSpan>LennyTattoos</SocialSpan>

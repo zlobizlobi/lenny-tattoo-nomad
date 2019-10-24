@@ -14,7 +14,9 @@ export const Gallery = () => {
 
   const firebaseImages = useGetFirebaseImages();
 
-  const handleOnClick = () => {
+  const handleOnClick = index => {
+    setPhotoIndex(index)
+
     setIsOpen(!isOpen);
   };
 
@@ -31,12 +33,12 @@ export const Gallery = () => {
     <SectionContainer>
       <Scroll.Element name="gallery-section">
         <Container>
-          {firebaseImages.map((imageUrl) => (
+          {firebaseImages.map((imageUrl, index) => (
             <Image
               alt="Picture of a Tattoo"
-              key={imageUrl}
+              key={index}
               src={imageUrl}
-              onClick={handleOnClick}
+              onClick={() => handleOnClick(index)}
             />
           ))}
           {isOpen && (

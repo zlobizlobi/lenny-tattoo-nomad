@@ -49,7 +49,7 @@ export const Button = styled.button`
   border: 1px solid white;
   padding: 10px 20px;
   background-color: transparent;
-  color: white;
+  color: #fff;
   cursor: pointer;
   font-weight: 700;
   transition: all 0.3s ease;

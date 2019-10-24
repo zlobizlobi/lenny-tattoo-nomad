@@ -14,11 +14,10 @@ export const Gallery = () => {
 
   const firebaseImages = useGetFirebaseImages();
 
-  const handleOnClick = index => {
-    setPhotoIndex(index)
 
-    setIsOpen(!isOpen);
-  };
+  const handleOnCloseRequest = () => {
+    setIsOpen(!isOpen)
+  }
 
   const handleOnMovePrevRequest = () => {
     setPhotoIndex((photoIndex + firebaseImages.length - 1) % firebaseImages.length)
@@ -38,7 +37,10 @@ export const Gallery = () => {
               alt="Picture of a Tattoo"
               key={index}
               src={imageUrl}
-              onClick={() => handleOnClick(index)}
+              onClick={() => {
+                setPhotoIndex(index),
+                  setIsOpen(!isOpen)
+              }}
             />
           ))}
           {isOpen && (
@@ -46,7 +48,7 @@ export const Gallery = () => {
               mainSrc={firebaseImages[photoIndex]}
               nextSrc={firebaseImages[(photoIndex + 1) % firebaseImages.length]}
               prevSrc={firebaseImages[(photoIndex + firebaseImages.length - 1) % firebaseImages.length]}
-              onCloseRequest={handleOnClick}
+              onCloseRequest={handleOnCloseRequest}
               onMovePrevRequest={handleOnMovePrevRequest}
               onMoveNextRequest={handleOnMoveNextRequest}
             />

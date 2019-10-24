@@ -30,7 +30,7 @@ export const Container = styled.div`
   position: absolute;
   z-index: 1;
   right: 36px;
-  top: 34px;
+  top: 36px;
   
   @media ${breakpoint.mobileL} {
     flex-direction: row;

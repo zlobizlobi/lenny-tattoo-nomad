@@ -1,6 +1,77 @@
 import * as React from "react";
 import * as Scroll from "react-scroll";
 import styled from "styled-components";
+import { breakpoint } from "../../styles/breakpoints";
+
+
+export const Hamburger = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  z-index: 2;
+
+
+  @media ${breakpoint.mobileL}{
+    position: absolute;
+    top: 25px;
+    left: 36px;
+  }
+
+`
+
+export const HamburgerBar = styled.span`
+    width: 30px;
+    height: 2px;
+    border-top: 1px solid #fff;
+    margin: 4px 0;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.2s ease;
+
+    &:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+`
+
+export const HamburgerInput = styled.input.attrs({ type: 'checkbox' })`
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  z-index: 10;
+
+  :checked ~ span:nth-last-child(1){
+    transform: rotate(-45deg) translate(3px,4px);
+  }
+
+  :checked ~ span:nth-last-child(2){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  :checked ~ span:nth-last-child(3){
+    transform: rotate(45deg) translate(9px,1px);
+  }
+`
+
+export const SlideMenu = styled.ul`
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  list-style-type: none;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  transform-origin: 0% 0%;
+  transform: translate(${({ isOpen }) => isOpen ? '0%' : '-100%'}, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+`
 
 export const Container = styled.div`
   display: flex !important;
@@ -28,6 +99,11 @@ export const SocialContainer = styled.a`
   &:last-child{
     margin-left: 10px;
   }
+`
+
+
+export const SocialSpan = styled.span`
+  margin-left: 5px;
 `
 
 export const MenuLink = ({ section }) => (

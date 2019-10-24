@@ -38,8 +38,8 @@ export const Gallery = () => {
               key={index}
               src={imageUrl}
               onClick={() => {
-                setPhotoIndex(index),
-                  setIsOpen(!isOpen)
+                setPhotoIndex(index);
+                setIsOpen(!isOpen);
               }}
             />
           ))}

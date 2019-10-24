@@ -1,49 +1,49 @@
 import * as React from "react";
-import { Container, MenuLink, SocialContainer } from "./components";
-import { slide as Menu } from "react-burger-menu";
-import "./hamburger.css";
+import { Container, MenuLink, SocialContainer, SocialSpan, HamburgerBar, HamburgerInput, HamburgerMenu, SlideMenu, Hamburger } from "./components";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-import styled from 'styled-components'
 
-const SocialSpan = styled.span`
-  margin-left: 5px;
-  color: rgba(255,255,255,0.5);
-`
+
 const sections = ["Home", "About", "Gallery", "Contact", "Faq"];
 
 export const Navbar = () => {
-
-  const [open, setOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   const handleOnClick = () => {
-    setOpen(!open)
+    setIsOpen(!open)
   }
 
+  console.log(isOpen)
   return (
-    <Menu isOpen={open} pageWrapId="page-wrap" outerContainerId="outer-container">
-      <ul>
+    <React.Fragment>
+      <Hamburger>
+        <HamburgerInput onChange={() => setIsOpen(!isOpen)} checked={isOpen} />
+        <HamburgerBar />
+        <HamburgerBar />
+        <HamburgerBar />
+      </Hamburger>
+      <SlideMenu isOpen={isOpen}>
         {sections.map((section, index) => (
           <MenuLink onClick={handleOnClick} key={index} section={section} />
         ))}
-      </ul>
-      <Container>
-        <SocialContainer
-          target="_blank"
-          rel="noopener"
-          aria-label="Go to Linnard Kristovski's Instagram page"
-          href='https://www.facebook.com/LennyTattoos/'>
-          <FaFacebook />
-          <SocialSpan>LennyTattoos</SocialSpan>
-        </SocialContainer>
-        <SocialContainer
-          target="_blank"
-          rel="noopener"
-          aria-label="Go to Linnard Kristovski's Instagram page"
-          href="https://www.instagram.com/lenny.tattoo/" >
-          <FaInstagram />
-          <SocialSpan>lenny.tattoo</SocialSpan>
-        </SocialContainer>
-      </Container>
-    </Menu >
+        <Container>
+          <SocialContainer
+            target="_blank"
+            rel="noopener"
+            aria-label="Go to Linnard Kristovski's Instagram page"
+            href='https://www.facebook.com/LennyTattoos/'>
+            <FaFacebook />
+            <SocialSpan>LennyTattoos</SocialSpan>
+          </SocialContainer>
+          <SocialContainer
+            target="_blank"
+            rel="noopener"
+            aria-label="Go to Linnard Kristovski's Instagram page"
+            href="https://www.instagram.com/lenny.tattoo/" >
+            <FaInstagram />
+            <SocialSpan>lenny.tattoo</SocialSpan>
+          </SocialContainer>
+        </Container>
+      </SlideMenu>
+    </React.Fragment >
   )
 }

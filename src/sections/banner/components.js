@@ -24,9 +24,10 @@ export const Logo = styled.img.attrs({ alt: "Logo of Lenny Tattoo Nomad" })`
   z-index: 1;
   width: 200px;
   opacity: 0.6;
-  
+  margin-top: 100px;
+
   @media ${breakpoint.tablet} {
-    width: 300px
+    width: 300px;
   }
 `;
 
@@ -46,14 +47,14 @@ export const Button = styled.button`
   align-items: center;
   position: relative;
   z-index: 1;
-  border: 1px solid white;
-  padding: 10px 20px;
+  border: 0.5px solid white;
+  padding: 12px 20px;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 300;
   transition: all 0.3s ease;
-
+  
   &:hover {
     background-color: white;
     color: hsl(0, 60%, 40%);

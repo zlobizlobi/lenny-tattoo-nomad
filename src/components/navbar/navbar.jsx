@@ -9,14 +9,15 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const handleOnClick = () => {
-    setIsOpen(!open)
+    setIsOpen(!isOpen)
   }
 
   console.log(isOpen)
+
   return (
     <React.Fragment>
       <Hamburger>
-        <HamburgerInput onChange={() => setIsOpen(!isOpen)} checked={isOpen} />
+        <HamburgerInput onChange={handleOnClick} checked={isOpen} />
         <HamburgerBar />
         <HamburgerBar />
         <HamburgerBar />
@@ -31,7 +32,7 @@ export const Navbar = () => {
             rel="noopener"
             aria-label="Go to Linnard Kristovski's Instagram page"
             href='https://www.facebook.com/LennyTattoos/'>
-            <FaFacebook />
+            <FaFacebook style={{ display: 'inline-flex' }} />
             <SocialSpan>LennyTattoos</SocialSpan>
           </SocialContainer>
           <SocialContainer

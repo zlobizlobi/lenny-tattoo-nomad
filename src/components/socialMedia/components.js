@@ -31,6 +31,7 @@ export const Container = styled.div`
   z-index: 1;
   right: 36px;
   top: 36px;
+  align-items: flex-end;
   
   @media ${breakpoint.mobileL} {
     flex-direction: row;

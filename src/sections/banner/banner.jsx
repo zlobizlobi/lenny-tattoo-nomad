@@ -9,11 +9,8 @@ import {
   Button,
   PhoneIcon
 } from "./components";
-import { SocialMedia } from "../../components";
 import { useGetBannerVisualContent } from "./useGetBannerVisualContent";
-
-
-
+import { SocialMedia } from "../../components";
 
 export const Banner = () => {
   const { webm, mp4 } = useGetBannerVisualContent();

@@ -10,7 +10,7 @@ export const Hamburger = styled.div`
   position: absolute;
   top: 36px;
   left: 36px;
-  z-index: 2;
+  z-index: 3;
 
 
   @media ${breakpoint.mobileL}{
@@ -62,15 +62,21 @@ export const HamburgerInput = styled.input.attrs({ type: 'checkbox' })`
 export const SlideMenu = styled.ul`
   display: flex;
   flex-direction: column;
-  background: #000;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 150px 0;
   list-style-type: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
   transform-origin: 0% 0%;
-  transform: translate(${({ isOpen }) => isOpen ? '0%' : '-100%'}, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: opacity 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
+  opacity: ${({ isOpen }) => isOpen ? '1' : '0'};
 `
 
 export const Container = styled.div`
@@ -83,17 +89,19 @@ export const SocialContainer = styled.a`
   display: inline-flex;  
   align-items: center;
   cursor: pointer;
-  font-size: 12px;
+  opacity: 0.5;
+  font-size: 10px;
   animation: all 0.3s ease;
   font-weight: 700;
   text-decoration: none;
   color: #fff;
   background-color: rgba(255,255,255,0.1);
   padding: 7.5px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 
   :hover {
     background-color: hsl(0,60%,40%);
+    opacity: 1;
   }
 
   &:last-child{
@@ -106,12 +114,10 @@ export const SocialSpan = styled.span`
   margin-left: 5px;
 `
 
-export const MenuLink = ({ section }) => (
+export const MenuLink = ({ section, onClick }) => (
   <li>
-    <Scroll.Link to={`${section.toLowerCase()}-section`} smooth duration={1100}>
-      <span />
+    <Scroll.Link onClick={onClick} to={`${section.toLowerCase()}-section`} smooth duration={1100}>
       {section}
-      <span />
     </Scroll.Link>
   </li>
 );

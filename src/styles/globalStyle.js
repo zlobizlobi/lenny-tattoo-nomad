@@ -19,18 +19,16 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: "Josefin Slab", serif;
-          
+    width: 100%;
+
     select, textarea, input, button {
       font-family: inherit; 
       font-size: inherit;
     }
-
+    
     a {
       text-decoration: none;
     }
+
   }  
-  
-  body {
-    overflow-x: hidden;
-  }
 `;

@@ -16,7 +16,6 @@ const ImageComponent = styled.img`
   @media ${breakpoint.mobileL} {
     margin: 5px;
   }
-  
 `;
 
 export const Image = ({ src, onClick, alt }) => {

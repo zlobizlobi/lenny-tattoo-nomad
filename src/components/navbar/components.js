@@ -13,36 +13,16 @@ export const Hamburger = styled.div`
   z-index: 3;
   
   @media ${breakpoint.mobileL}{
-    position: absolute;
     top: 25px;
     left: 36px;
   }
-
 `
-
-export const HamburgerBar = styled.span`
-    width: 30px;
-    height: 2px;
-    border-top: 1px solid #fff;
-    margin: 4px 0;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.2s ease;
-
-    &:first-child {
-        transform-origin: 0% 0%;
-    }
-
-    &:nth-last-child(2) {
-        transform-origin: 0% 100%;
-    }
-`
-
 export const HamburgerInput = styled.input.attrs({ type: 'checkbox' })`
   appearance: none;
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   position: absolute;
-  z-index: 10;
+  z-index: 1;
 
   :checked ~ span:nth-last-child(1){
     transform: rotate(-45deg) translate(3px,4px);
@@ -57,6 +37,25 @@ export const HamburgerInput = styled.input.attrs({ type: 'checkbox' })`
     transform: rotate(45deg) translate(9px,1px);
   }
 `
+
+export const HamburgerBar = styled.span`
+    width: 30px;
+    height: 2px;
+    border-top: 1px solid #fff;
+    margin: 4px 0;
+    transform-origin: 4px 0px;
+    transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.3s ease;
+
+    &:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+`
+
+
 
 export const SlideMenu = styled.nav`
   transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -85,35 +84,6 @@ export const SlideMenu = styled.nav`
   }
 `
 
-export const Container = styled.div`
-  display: flex !important;
-  justify-content: center;
-  width: 100%;
-`;
-
-export const SocialContainer = styled.a`
-  display: inline-flex;  
-  align-items: center;
-  cursor: pointer;
-  opacity: 0.5;
-  font-size: 10px;
-  animation: all 0.3s ease;
-  font-weight: 700;
-  color: #fff;
-  background-color: rgba(255,255,255,0.1);
-  padding: 7.5px;
-  transition: all 0.3s ease;
-
-  :hover {
-    background-color: hsl(0,60%,40%);
-    opacity: 1;
-  }
-
-  &:last-child{
-    margin-left: 10px;
-  }
-`
-
 export const SocialAnchor = styled.a`
   display: flex;
   align-items: center;
@@ -132,6 +102,12 @@ export const SocialAnchor = styled.a`
 
 export const SocialSpan = styled.span`
   margin-left: 10px;
+`
+
+export const List = styled.ul`
+  margin: 0; 
+  padding: 0;
+  list-style-type: none;
 `
 
 export const ListItem = styled.li`
@@ -163,11 +139,12 @@ export const MenuContainer = styled.div`
   align-items: flex-start;
 `
 export const SocialMenuContainer = styled(MenuContainer)`
-    margin: 50px 0 0 0;
+  margin: 50px 0 0 0;
   
-   @media ${breakpoint.laptop}{
-     margin-left: 100px;
-   }
+  @media ${breakpoint.laptop}{
+    margin-left: 100px;
+  }
+
 `
 export const MenuLink = ({ section, onClick }) => (
   <ListItem>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { MenuLink, HamburgerBar, HamburgerInput, SlideMenu, Hamburger, MenuContainer, Heading, SocialSpan, SocialAnchor, SocialMenuContainer } from "./components";
+import { MenuLink, HamburgerBar, HamburgerInput, SlideMenu, Hamburger, MenuContainer, Heading, SocialSpan, SocialAnchor, SocialMenuContainer, List } from "./components";
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 
 const sections = ["Home", "About", "Gallery", "Contact", "Faq"];
@@ -22,11 +22,11 @@ export const Navbar = () => {
       <SlideMenu isOpen={isOpen}>
         <MenuContainer>
           <Heading>Menu</Heading>
-          <ul style={{ listStyleType: 'none', margin: '0', padding: '0' }}>
+          <List>
             {sections.map((section, index) => (
               <MenuLink onClick={handleOnClick} key={index} section={section} />
             ))}
-          </ul>
+          </List>
         </MenuContainer>
         <SocialMenuContainer>
           <Heading>Social</Heading>

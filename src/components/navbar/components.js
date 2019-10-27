@@ -11,8 +11,7 @@ export const Hamburger = styled.div`
   top: 36px;
   left: 36px;
   z-index: 3;
-
-
+  
   @media ${breakpoint.mobileL}{
     position: absolute;
     top: 25px;
@@ -59,24 +58,31 @@ export const HamburgerInput = styled.input.attrs({ type: 'checkbox' })`
   }
 `
 
-export const SlideMenu = styled.ul`
+export const SlideMenu = styled.nav`
+  transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  visibility: ${({ isOpen }) => isOpen ? 'visible' : 'hidden'}
+  opacity: ${({ isOpen }) => isOpen ? '1' : '0'};
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start
+  padding: 0 40px;
+  justify-content: center;
   background-color: #000;
-  padding: 150px 0;
   list-style-type: none;
   position: absolute;
   z-index: 2;
   height: 100vh;
   width: 100vw;
-  color: #fff;
   box-sizing: border-box;
   margin: 0;
-  transform-origin: 0% 0%;
-  transition: opacity 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
-  opacity: ${({ isOpen }) => isOpen ? '1' : '0'};
+
+
+  @media ${breakpoint.laptop}{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 250px 0;
+  }
 `
 
 export const Container = styled.div`
@@ -93,7 +99,6 @@ export const SocialContainer = styled.a`
   font-size: 10px;
   animation: all 0.3s ease;
   font-weight: 700;
-  text-decoration: none;
   color: #fff;
   background-color: rgba(255,255,255,0.1);
   padding: 7.5px;
@@ -109,15 +114,65 @@ export const SocialContainer = styled.a`
   }
 `
 
+export const SocialAnchor = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.2s ease;
 
-export const SocialSpan = styled.span`
-  margin-left: 5px;
+  &:last-child {
+    margin-top: 15px;
+  }
+
+  :hover {
+    color: white;
+  }
 `
 
+export const SocialSpan = styled.span`
+  margin-left: 10px;
+`
+
+export const ListItem = styled.li`
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-bottom: 20px;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.2s ease;
+
+  :hover {
+    color: white;
+  }
+
+  &:last-child{
+    margin: 0;
+  }
+`
+
+export const Heading = styled.h3`
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+  color: rgb(255,255,255);
+`
+
+export const MenuContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`
+export const SocialMenuContainer = styled(MenuContainer)`
+    margin: 50px 0 0 0;
+  
+   @media ${breakpoint.laptop}{
+     margin-left: 100px;
+   }
+`
 export const MenuLink = ({ section, onClick }) => (
-  <li>
+  <ListItem>
     <Scroll.Link onClick={onClick} to={`${section.toLowerCase()}-section`} smooth duration={1100}>
       {section}
     </Scroll.Link>
-  </li>
+  </ListItem>
 );

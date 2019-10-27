@@ -4,6 +4,7 @@ import { breakpoint } from "../../styles/breakpoints";
 export const Number = styled.span`
   color: white;
   text-decoration: none;
+  display: list-item;
 `;
 
 export const Divider = styled.span`

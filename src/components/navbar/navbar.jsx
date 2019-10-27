@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Container, MenuLink, SocialContainer, SocialSpan, HamburgerBar, HamburgerInput, HamburgerMenu, SlideMenu, Hamburger } from "./components";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
-
+import { MenuLink, HamburgerBar, HamburgerInput, SlideMenu, Hamburger, MenuContainer, Heading, SocialSpan, SocialAnchor, SocialMenuContainer } from "./components";
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
 
 const sections = ["Home", "About", "Gallery", "Contact", "Faq"];
 
@@ -12,8 +11,6 @@ export const Navbar = () => {
     setIsOpen(!isOpen)
   }
 
-  console.log(isOpen)
-
   return (
     <React.Fragment>
       <Hamburger>
@@ -23,27 +20,31 @@ export const Navbar = () => {
         <HamburgerBar />
       </Hamburger>
       <SlideMenu isOpen={isOpen}>
-        {sections.map((section, index) => (
-          <MenuLink onClick={handleOnClick} key={index} section={section} />
-        ))}
-        <Container>
-          <SocialContainer
-            target="_blank"
+        <MenuContainer>
+          <Heading>Menu</Heading>
+          <ul style={{ listStyleType: 'none', margin: '0', padding: '0' }}>
+            {sections.map((section, index) => (
+              <MenuLink onClick={handleOnClick} key={index} section={section} />
+            ))}
+          </ul>
+        </MenuContainer>
+        <SocialMenuContainer>
+          <Heading>Social</Heading>
+          <SocialAnchor target="_blank"
             rel="noopener"
             aria-label="Go to Linnard Kristovski's Instagram page"
-            href='https://www.facebook.com/LennyTattoos/'>
-            <FaFacebook style={{ display: 'inline-flex' }} />
-            <SocialSpan>LennyTattoos</SocialSpan>
-          </SocialContainer>
-          <SocialContainer
-            target="_blank"
+            href='https://www.facebook.com/LennyTattoos/' >
+            <FaFacebook style={{ color: 'rgba(255,255,255,0.5)' }} />
+            <SocialSpan>facebook.com/LennyTattoos</SocialSpan>
+          </SocialAnchor>
+          <SocialAnchor target="_blank"
             rel="noopener"
             aria-label="Go to Linnard Kristovski's Instagram page"
             href="https://www.instagram.com/lenny.tattoo/" >
-            <FaInstagram />
-            <SocialSpan>lenny.tattoo</SocialSpan>
-          </SocialContainer>
-        </Container>
+            <FaInstagram style={{ color: 'rgba(255,255,255,0.3)' }} />
+            <SocialSpan>instagram.com/lenny.tattoo</SocialSpan>
+          </SocialAnchor>
+        </SocialMenuContainer>
       </SlideMenu>
     </React.Fragment >
   )

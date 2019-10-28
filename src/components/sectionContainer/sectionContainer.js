@@ -5,7 +5,7 @@ export const SectionContainer = styled.section`
   margin: 70px 40px;
 
 
-  @media ${breakpoint.laptop} {
+ ${breakpoint.laptop} {
     margin: 70px 80px;
   }
 `;

@@ -12,7 +12,7 @@ export const Hamburger = styled.div`
   left: 36px;
   z-index: 3;
   
-  @media ${breakpoint.mobileL}{
+   ${breakpoint.mobileL}{
     top: 25px;
     left: 36px;
   }
@@ -76,7 +76,7 @@ export const SlideMenu = styled.nav`
   margin: 0;
 
 
-  @media ${breakpoint.laptop}{
+   ${breakpoint.laptop}{
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
@@ -141,7 +141,7 @@ export const MenuContainer = styled.div`
 export const SocialMenuContainer = styled(MenuContainer)`
   margin: 50px 0 0 0;
   
-  @media ${breakpoint.laptop}{
+   ${breakpoint.laptop}{
     margin-left: 100px;
   }
 

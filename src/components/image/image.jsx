@@ -19,7 +19,7 @@ const ImageContainer = styled.div`
   border: 2px solid hsl(0, 60%, 35%);
   margin: 10px 0;
 
-  @media ${breakpoint.mobileL} {
+  ${breakpoint.mobileL} {
     margin: 5px;
   }
 `

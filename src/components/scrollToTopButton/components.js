@@ -29,7 +29,7 @@ export const Button = styled.button`
     animation: ${arrowUp} 0.3s infinite alternate;
   }
 
-  @media ${breakpoint.mobileL} {
+  ${breakpoint.mobileL} {
     bottom: 36px;
     right: 20px;
     padding: 7px;

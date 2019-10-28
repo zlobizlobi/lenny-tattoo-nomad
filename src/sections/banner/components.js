@@ -26,7 +26,7 @@ export const Logo = styled.img.attrs({ alt: "Logo of Lenny Tattoo Nomad" })`
   opacity: 0.6;
   margin-top: 100px;
 
-  @media ${breakpoint.tablet} {
+  ${breakpoint.tablet} {
     width: 300px;
   }
 `;

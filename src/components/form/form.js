@@ -9,7 +9,7 @@ export const Form = styled.form.attrs({
   flex-direction: column;
   align-items: center;
 
-  @media ${breakpoint.tablet} {
+  ${breakpoint.tablet} {
     margin: 0;
   }
 `;

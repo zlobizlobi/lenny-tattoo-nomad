@@ -14,7 +14,7 @@ export const Divider = styled.span`
   height: 0px;
   margin: 5px 0;
 
-  @media ${breakpoint.mobileL} {
+  ${breakpoint.mobileL} {
     transform: rotate(90deg);
     width: 30px;
     margin: 0;
@@ -34,7 +34,7 @@ export const Container = styled.div`
   top: 36px;
   align-items: flex-end;
   
-  @media ${breakpoint.mobileL} {
+  ${breakpoint.mobileL} {
     flex-direction: row;
     align-items: center;
   }

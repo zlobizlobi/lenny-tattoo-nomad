@@ -6,7 +6,7 @@ export const FaqSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   
-  @media ${breakpoint.laptop} {
+  ${breakpoint.laptop} {
     flex-direction: row;
   }
 `;
@@ -32,7 +32,7 @@ const FaqAndAnswerContainer = styled.div`
     }
   }
 
-  @media ${breakpoint.laptop}{
+  ${breakpoint.laptop}{
   
   &:nth-child(2) {
     margin: 0 30px;

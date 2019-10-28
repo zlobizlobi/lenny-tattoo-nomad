@@ -5,7 +5,7 @@ export const Text = styled.span`
   text-align: left;
   font-size: 18px;
 
-  @media ${breakpoint.laptop} {
+  ${breakpoint.laptop} {
     font-size: 20px;
   }
 `;

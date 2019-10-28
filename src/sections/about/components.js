@@ -12,7 +12,7 @@ export const Image = styled.div`
   border: 2px solid hsl(0, 60%, 35%);
   margin: 0 0 30px 0;
   
-  @media ${breakpoint.laptop} {
+  ${breakpoint.laptop} {
     width: 170px;
     height: 170px;
     margin: 0 70px 0 0;
@@ -24,7 +24,7 @@ export const Text = styled(TextComponent)`
   text-align: center;
   color: #fff;  
   
-  @media ${breakpoint.laptop} {
+  ${breakpoint.laptop} {
     text-align: right;
     line-height: 40px;
     max-width: 550px;
@@ -37,7 +37,7 @@ export const Highlight = styled.span`
 
 export const ImageTextContainer = styled(ColumnContainer)`
  
-  @media ${breakpoint.laptop}{
+  ${breakpoint.laptop}{
     flex-direction: row;
   }
 `

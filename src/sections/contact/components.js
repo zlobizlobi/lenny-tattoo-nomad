@@ -8,7 +8,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
 
-  @media ${breakpoint.laptop}{
+  ${breakpoint.laptop}{
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
@@ -22,7 +22,7 @@ export const Text = styled(TextComponent)`
   margin: 0 0 35px 0;
   max-width: 250px;
 
-  @media ${breakpoint.laptop} {
+  ${breakpoint.laptop} {
     max-width: 300px;
     margin-right: 50px;
   }

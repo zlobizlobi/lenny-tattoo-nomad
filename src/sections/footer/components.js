@@ -11,7 +11,7 @@ export const FooterContainer = styled.div`
   font-size: 10px;
   margin-top: 100px;
   
-  @media ${breakpoint.laptop} {
+  ${breakpoint.laptop} {
     flex-direction: row;
     padding: 30px 80px;
     justify-content: flex-start;
@@ -35,7 +35,7 @@ export const Image = styled.div`
   flex-shrink: 0;
   margin: 0 0 20px 0;
 
-  @media ${breakpoint.laptop} {
+  ${breakpoint.laptop} {
     margin: 0 10px 0 0;
   }
 `;
@@ -47,7 +47,8 @@ export const FooterTextContainer = styled.div`
   line-height: 25px;
   color: rgba(255,255,255,1);
   word-spacing: 2.5px;
-  @media ${breakpoint.laptop} {
+  
+  ${breakpoint.laptop} {
     margin-left: 20px;
   }
 `;

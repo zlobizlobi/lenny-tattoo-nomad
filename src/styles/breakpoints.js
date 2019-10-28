@@ -9,6 +9,9 @@ export const sizes = {
 };
 
 export const breakpoint = Object.keys(sizes).reduce((acc, cur) => {
-  acc[cur] = `(min-width: ${sizes[cur]}px)`;
+  acc[cur] = `@media (min-width: ${sizes[cur]}px)`;
   return acc;
 }, {});
+
+
+console.log(breakpoint)

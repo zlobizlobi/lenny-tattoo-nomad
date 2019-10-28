@@ -4,7 +4,7 @@ import { FaPhone } from 'react-icons/fa'
 
 export const Video = styled.video`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   position: absolute;
   z-index: 0;
@@ -12,7 +12,7 @@ export const Video = styled.video`
 
 export const Container = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,6 +5,10 @@ export const Number = styled.span`
   color: white;
   text-decoration: none;
   display: list-item;
+
+  ${breakpoint.mobileL}{
+    margin-top: 5px;
+  }
 `;
 
 export const Divider = styled.span`
@@ -31,7 +35,7 @@ export const Container = styled.div`
   position: absolute;
   z-index: 1;
   right: 36px;
-  top: 36px;
+  top: 35px;
   align-items: flex-end;
   
   ${breakpoint.mobileL} {

@@ -12,4 +12,5 @@ const apiConfig = {
 
 firebase.initializeApp(apiConfig);
 
+
 export const storageReference = firebase.storage();

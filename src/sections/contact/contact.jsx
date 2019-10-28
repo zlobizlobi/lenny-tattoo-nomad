@@ -24,7 +24,7 @@ export const Contact = () => (
             <input type="text" name="bot-input" title="bot-input" style={{ display: 'none' }} />
             <Input name="name" type="text" placeholder="what's your name..." title="name" />
             <Input name="email" type="email" placeholder="and your e-mail..." title="email" />
-            <TextArea name="message" placeholder="Write your message here..." autoFocus />
+            <TextArea name="message" placeholder="Write your message here..." />
             <SubmitButton>send</SubmitButton>
           </Form>
         </Container>

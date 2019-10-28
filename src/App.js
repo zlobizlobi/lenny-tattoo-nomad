@@ -7,13 +7,13 @@ import styled from "styled-components";
 
 const AppContainer = styled.div`
   width: 100%;
-  height: 100vh;
   display: flex;
+  background-color: black;
   flex-direction: column;
   aling-items: center;
 `;
 
-const App = () => (
+const App = () =>
   <AppContainer id="outer-container">
     <GlobalStyle />
     <Navbar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
@@ -27,6 +27,6 @@ const App = () => (
       <ScrollToTopButton aria-label="Scroll to to top button" name="Scroll to to top button" />
     </main>
   </AppContainer>
-);
+
 
 export default App;

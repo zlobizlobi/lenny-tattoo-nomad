@@ -23,6 +23,11 @@ export const HamburgerInput = styled.input.attrs({ type: 'checkbox' })`
   height: 26px;
   position: absolute;
   z-index: 1;
+  cursor: pointer;
+  
+  :focus {
+    outline: none;
+  }
 
   :checked ~ span:nth-last-child(1){
     transform: rotate(-45deg) translate(3px,4px);

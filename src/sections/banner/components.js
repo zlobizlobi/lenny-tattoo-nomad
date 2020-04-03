@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { breakpoint } from "../../styles/breakpoints";
-import { FaPhone } from 'react-icons/fa'
+import styled from 'styled-components';
+import { breakpoints } from '../../styles/breakpoints';
+import { FaPhone } from 'react-icons/fa';
 
 export const Video = styled.video`
   height: 100vh;
@@ -19,28 +19,27 @@ export const Container = styled.div`
   justify-content: space-evenly;
 `;
 
-export const Logo = styled.img.attrs({ alt: "Logo of Lenny Tattoo Nomad" })`
+export const Logo = styled.img.attrs({ alt: 'Logo of Lenny Tattoo Nomad' })`
   position: relative;
   z-index: 1;
   width: 200px;
   opacity: 0.6;
-  margin-top: 100px;
 
-  ${breakpoint.tablet} {
+  ${breakpoints.tablet} {
     width: 300px;
   }
 `;
 
-
-
-
 export const LogoPlaceHolder = styled.img.attrs({
-  alt: "Placeholder Logo Lenny Tattoo Nomad"
+  alt: 'Placeholder Logo Lenny Tattoo Nomad'
 })`
   opacity: 0.3;
   width: 200px;
-`;
 
+  ${breakpoints.tablet} {
+    width: 300px;
+  }
+`;
 
 export const Button = styled.button`
   display: flex;
@@ -54,13 +53,13 @@ export const Button = styled.button`
   cursor: pointer;
   font-weight: 300;
   transition: all 0.3s ease;
-  
+
   &:hover {
     background-color: white;
     color: hsl(0, 60%, 40%);
   }
-`
+`;
 
 export const PhoneIcon = styled(FaPhone)`
   font-size: 12px;
-`
+`;

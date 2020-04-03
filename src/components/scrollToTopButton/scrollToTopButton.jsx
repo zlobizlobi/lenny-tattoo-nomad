@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import * as Scroll from "react-scroll";
+import React, { useState } from 'react';
+import * as Scroll from 'react-scroll';
 
-import { Button, Arrow } from "./components";
+import { Button, Arrow } from './styles';
 
 const scroll = Scroll.animateScroll;
 
@@ -19,10 +19,10 @@ export const ScrollToTopButton = () => {
   const scrollToTop = () => scroll.scrollToTop();
 
   React.useEffect(() => {
-    window.addEventListener("scroll", handleOnScroll);
+    window.addEventListener('scroll', handleOnScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleOnScroll);
+      window.removeEventListener('scroll', handleOnScroll);
     };
   });
 

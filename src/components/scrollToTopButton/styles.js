@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { MdKeyboardArrowUp } from "react-icons/md";
-import { breakpoint } from "../../styles/breakpoints";
-import { arrowUp } from "./animations";
+import styled from 'styled-components';
+import { MdKeyboardArrowUp } from 'react-icons/md';
+import { breakpoints } from '../../styles/breakpoints';
+import { arrowUp } from './animations';
 
 export const Button = styled.button`
   padding: 5px;
-  border: 2px solid hsl(0, 60%, 35%);
+  border: none;
   border-radius: 50%;
   position: fixed;
   bottom: 36px;
@@ -15,10 +15,9 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  cursor: pointer;
+  background-color: #fff;
   transition: all 0.5s ease;
-  opacity: ${({ isDisplayed }) => (isDisplayed ? "1" : "0")};
+  opacity: ${({ isDisplayed }) => (isDisplayed ? '1' : '0')};
 
   :hover {
     background-color: white;
@@ -29,7 +28,7 @@ export const Button = styled.button`
     animation: ${arrowUp} 0.3s infinite alternate;
   }
 
-  ${breakpoint.mobileL} {
+  ${breakpoints.mobileL} {
     bottom: 36px;
     right: 20px;
     padding: 7px;
@@ -40,5 +39,5 @@ export const Arrow = styled(MdKeyboardArrowUp)`
   width: 25px;
   height: 25px;
   position: relative;
-  color: white;
+  color: hsl(0, 60%, 35%);
 `;

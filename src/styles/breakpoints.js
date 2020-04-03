@@ -8,7 +8,7 @@ export const sizes = {
   desktop: 2560
 };
 
-export const breakpoint = Object.keys(sizes).reduce((acc, cur) => {
+export const breakpoints = Object.keys(sizes).reduce((acc, cur) => {
   acc[cur] = `@media (min-width: ${sizes[cur]}px)`;
   return acc;
 }, {});

@@ -1,32 +1,31 @@
-import "firebase/storage";
-import * as Scroll from "react-scroll";
-import * as React from "react";
-import { Container } from "./components";
-import { Image, SectionContainer } from "../../components";
-import { useGetFirebaseImages } from "./hooks";
+import 'firebase/storage';
+import * as Scroll from 'react-scroll';
+import * as React from 'react';
+import { Container } from './components';
+import { Image, SectionContainer } from '../../components';
+import { useGetFirebaseImages } from './hooks';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
 export const Gallery = () => {
-
-  const [isOpen, setIsOpen] = React.useState(false)
-  const [photoIndex, setPhotoIndex] = React.useState(0)
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [photoIndex, setPhotoIndex] = React.useState(0);
 
   const firebaseImages = useGetFirebaseImages();
 
+  const handleOnClose = () => {
+    setIsOpen(!isOpen);
+  };
 
-  const handleOnCloseRequest = () => {
-    setIsOpen(!isOpen)
-  }
+  const handleOnMovePrev = () => {
+    setPhotoIndex(
+      (photoIndex + firebaseImages.length - 1) % firebaseImages.length
+    );
+  };
 
-  const handleOnMovePrevRequest = () => {
-    setPhotoIndex((photoIndex + firebaseImages.length - 1) % firebaseImages.length)
-  }
-
-  const handleOnMoveNextRequest = () => {
-    setPhotoIndex((photoIndex + 1) % firebaseImages.length)
-  }
-
+  const handleOnMoveNext = () => {
+    setPhotoIndex((photoIndex + 1) % firebaseImages.length);
+  };
 
   return (
     <SectionContainer>
@@ -47,10 +46,15 @@ export const Gallery = () => {
             <Lightbox
               mainSrc={firebaseImages[photoIndex]}
               nextSrc={firebaseImages[(photoIndex + 1) % firebaseImages.length]}
-              prevSrc={firebaseImages[(photoIndex + firebaseImages.length - 1) % firebaseImages.length]}
-              onCloseRequest={handleOnCloseRequest}
-              onMovePrevRequest={handleOnMovePrevRequest}
-              onMoveNextRequest={handleOnMoveNextRequest}
+              prevSrc={
+                firebaseImages[
+                  (photoIndex + firebaseImages.length - 1) %
+                    firebaseImages.length
+                ]
+              }
+              onCloseRequest={handleOnClose}
+              onMovePrevRequest={handleOnMovePrev}
+              onMoveNextRequest={handleOnMoveNext}
             />
           )}
         </Container>

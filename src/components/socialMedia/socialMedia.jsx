@@ -1,24 +1,27 @@
-import * as React from "react";
-import {
-  Number,
-  Divider,
-  Container,
-  IconAnchor,
-  IconContainer
-} from "./components";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import * as React from 'react';
+import { Divider, Container, Anchor } from './styles';
+import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { Flex } from '../flex';
 
 export const SocialMedia = () => (
-  <Container>
-    <Number href="tel:+ 47 939 39 343">+4793939343</Number>
+  <Container flexDir="column">
+    <Anchor href="tel:+ 47 939 39 343">+4793939343</Anchor>
     <Divider />
-    <IconContainer>
-      <IconAnchor target="_blank" aria-label="Go to Lenny's Instagram page" href="https://www.instagram.com/lenny.tattoo/">
+    <Flex>
+      <Anchor
+        target="_blank"
+        aria-label="Go to Lenny's Instagram page"
+        href="https://www.instagram.com/lenny.tattoo/"
+      >
         <FaInstagram />
-      </IconAnchor>
-      <IconAnchor target="_blank" aria-label="Go to Lenny's Facebook page" href="https://www.facebook.com/LennyTattoos/">
+      </Anchor>
+      <Anchor
+        target="_blank"
+        aria-label="Go to Lenny's Facebook page"
+        href="https://www.facebook.com/LennyTattoos/"
+      >
         <FaFacebook />
-      </IconAnchor>
-    </IconContainer>
-  </Container >
+      </Anchor>
+    </Flex>
+  </Container>
 );

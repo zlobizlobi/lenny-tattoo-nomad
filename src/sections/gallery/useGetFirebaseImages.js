@@ -1,12 +1,12 @@
-import * as React from "react";
-import { storageReference } from "../../../init-firebase";
+import { useEffect, useState } from 'react';
+import { storageReference } from '../../init-firebase';
 
 export const useGetFirebaseImages = () => {
-  const [firebaseImages, setImages] = React.useState([]);
+  const [firebaseImages, setImages] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     async function fetchData() {
-      const images = await storageReference.ref("images").listAll();
+      const images = await storageReference.ref('images').listAll();
 
       const imageUrls = await Promise.all(
         images.items.map(image => image.getDownloadURL())

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../styles/breakpoints';
+import { Flex as FlexComponent } from '../flex';
+import { Anchor as AnchorComponent } from '../anchor';
 
 export const Nav = styled.nav`
   transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -16,6 +18,7 @@ export const Nav = styled.nav`
   height: 100vh;
   width: 100vw;
   margin: 0;
+  padding-left: 40px;
 
   ${breakpoints.laptop} {
     flex-direction: row;
@@ -32,6 +35,27 @@ export const List = styled.ul`
 export const Heading = styled.h3`
   font-weight: 700;
   padding-bottom: 5px;
+  margin-bottom: 20px;
   border-bottom: 1px solid white;
   color: rgb(255, 255, 255);
+`;
+
+export const Flex = styled(FlexComponent)`
+  &:nth-child(1) {
+    margin: 0 0 30px 0;
+  }
+
+  ${breakpoints.tablet} {
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+  }
+`;
+
+export const Anchor = styled(AnchorComponent)`
+  margin-right: 10px;
+
+  &:last-child {
+    margin: 0;
+  }
 `;

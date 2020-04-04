@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import * as Scroll from 'react-scroll';
 import whitelogo from '../../../public/whitelogo.png';
 import {
@@ -8,7 +8,7 @@ import {
   LogoPlaceHolder,
   Button,
   PhoneIcon
-} from './components';
+} from './styles';
 import { useGetBannerVisualContent } from './useGetBannerVisualContent';
 
 export const Banner = () => {

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { breakpoints } from '../../styles/breakpoints';
+import { Flex } from '../../components';
 
-export const FooterContainer = styled.div`
+export const FooterContainer = styled(Flex)`
   background-color: black;
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
@@ -18,10 +18,9 @@ export const FooterContainer = styled.div`
 
 export const Link = styled.a`
   color: hsl(0, 60%, 40%);
-  font-weight: 900;
   text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 0.5px solid hsl(0, 60%, 40%);
+  padding-bottom: 2px;
+  border-bottom: 2px solid hsl(0, 60%, 40%);
 `;
 
 export const Image = styled.div`
@@ -31,22 +30,21 @@ export const Image = styled.div`
   width: 55px;
   height: 55px;
   flex-shrink: 0;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
 
   ${breakpoints.laptop} {
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
   }
 `;
 
-export const FooterTextContainer = styled.div`
-  display: inline-flex;
+export const FooterTextContainer = styled(Flex)`
   flex-direction: column;
   align-items: center;
   line-height: 25px;
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   word-spacing: 2.5px;
 
   ${breakpoints.laptop} {
-    margin-left: 20px;
+    align-items: flex-start;
   }
 `;

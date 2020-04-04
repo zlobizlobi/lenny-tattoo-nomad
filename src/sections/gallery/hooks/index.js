@@ -1,1 +1,0 @@
-export { useGetFirebaseImages } from "./useGetFirebaseImages";

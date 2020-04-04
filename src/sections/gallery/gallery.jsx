@@ -1,15 +1,16 @@
 import 'firebase/storage';
 import * as Scroll from 'react-scroll';
-import * as React from 'react';
-import { Container } from './components';
+import React, { useState } from 'react';
+import { Container } from './styles';
 import { Image, SectionContainer } from '../../components';
-import { useGetFirebaseImages } from './hooks';
+import { useGetFirebaseImages } from './useGetFirebaseImages';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
 export const Gallery = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const [photoIndex, setPhotoIndex] = React.useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [photoIndex, setPhotoIndex] = useState(0);
 
   const firebaseImages = useGetFirebaseImages();
 

@@ -1,10 +1,5 @@
-import * as React from "react";
-import {
-  FooterContainer,
-  Image,
-  FooterTextContainer,
-  Link
-} from "./components";
+import React from 'react';
+import { FooterContainer, Image, FooterTextContainer, Link } from './styles';
 
 export const Footer = () => (
   <FooterContainer>

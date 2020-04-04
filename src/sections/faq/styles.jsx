@@ -2,16 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { breakpoints } from '../../styles/breakpoints';
 
-export const FaqSectionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  ${breakpoints.laptop} {
-    flex-direction: row;
-  }
-`;
-
-const FaqAndAnswerContainer = styled.div`
+const Container = styled.div`
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -32,26 +23,35 @@ const FaqAndAnswerContainer = styled.div`
   }
 `;
 
-const FaqText = styled.span`
+export const FaqContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  ${breakpoints.laptop} {
+    flex-direction: row;
+  }
+`;
+
+const Text = styled.span`
   color: hsl(0, 60%, 35%);
   line-height: 30px;
   flex-wrap: wrap;
   font-size: 18px;
 `;
 
-const FaqQuestion = styled(FaqText)`
+const Question = styled(Text)`
   color: hsl(0, 60%, 35%);
   margin-bottom: 25px;
   font-weight: 100;
   font-size: 22px;
 `;
 
-export const FaqAndAnswer = ({ content }) => {
+export const Faq = ({ content }) => {
   const { answer, question } = content;
   return (
-    <FaqAndAnswerContainer>
-      <FaqQuestion>{question}</FaqQuestion>
-      <FaqText>{answer}</FaqText>
-    </FaqAndAnswerContainer>
+    <Container>
+      <Question>{question}</Question>
+      <Text>{answer}</Text>
+    </Container>
   );
 };

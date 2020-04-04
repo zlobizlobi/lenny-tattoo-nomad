@@ -12,12 +12,10 @@ export const Navbar = () => {
   };
 
   return (
-    <React.Fragment>
-      <Flex>
-        <Hamburger isOpen={isOpen} onChange={handleOnChange}></Hamburger>
-        <SocialMedia />
-        <SlideNav isOpen={isOpen} onClick={handleOnChange} />
-      </Flex>
-    </React.Fragment>
+    <Flex>
+      <Hamburger isOpen={isOpen} onChange={handleOnChange}></Hamburger>
+      <SocialMedia />
+      <SlideNav isOpen={isOpen} onClick={handleOnChange} />
+    </Flex>
   );
 };

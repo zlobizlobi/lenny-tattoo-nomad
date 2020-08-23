@@ -7,6 +7,7 @@ import {
   ColumnContainer
 } from '../../components';
 import { Container, Text, TextArea, Form, Input } from './styles';
+import styled from 'styled-components';
 
 export const Contact = () => (
   <SectionContainer>
@@ -18,14 +19,8 @@ export const Contact = () => (
             Want to know more or book an appointment? Don't be shy to call or
             send me a message.
           </Text>
-          <Form data-netlify="true" netlify-honeypot="bot-field">
+          <Form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
             <input type="hidden" name="form-name" value="contact" />
-            <input
-              type="text"
-              name="bot-input"
-              title="bot-input"
-              style={{ display: 'none' }}
-            />
             <Input
               name="name"
               type="text"
@@ -39,10 +34,15 @@ export const Contact = () => (
               title="email"
             />
             <TextArea name="message" placeholder="Write your message here..." />
+            <div data-netlify-recaptcha="true"></div>
             <SubmitButton>send</SubmitButton>
           </Form>
         </Container>
       </ColumnContainer>
     </Scroll.Element>
-  </SectionContainer>
+  </SectionContainer >
 );
+
+const HiddenInput = styled.input`
+  visibility: hidden;
+`

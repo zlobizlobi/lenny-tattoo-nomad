@@ -15,19 +15,37 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png" />
-  <title>Lenny | Tattoo Nomad</title>
+  <title>Lenny Tattoo Nomad | Home</title>
 </head>
 
 <body>
-  <form name="contact" hidden>
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
     <input type="text" name="name" />
     <input type="email" name="email" />
-    <input type="text" name="subject" />
     <textarea name="message"></textarea>
   </form>
 
   <div id="root"></div>
-
+  <script type="text/babel">
+    ReactDOM.render(
+      <form name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>,
+      document.getElementById("root")
+    );
+  </script>
 </body>
 
 </html>

@@ -60,10 +60,7 @@ export const TextArea = styled.textarea.attrs({ id: 'message' })`
   }
 `;
 
-export const Form = styled.form.attrs({
-  name: 'contact',
-  method: 'post'
-})`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: flex-start;

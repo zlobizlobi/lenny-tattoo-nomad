@@ -19,8 +19,8 @@ export const Contact = () => (
             Want to know more or book an appointment? Don't be shy to call or
             send me a message.
           </Text>
-          <Form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
-            <input type="hidden" name="form-name" value="contact" />
+          <Form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" form-name="contact" value="contact" />
             <Input
               name="name"
               type="text"
@@ -34,7 +34,6 @@ export const Contact = () => (
               title="email"
             />
             <TextArea name="message" placeholder="Write your message here..." />
-            <div data-netlify-recaptcha="true"></div>
             <SubmitButton>send</SubmitButton>
           </Form>
         </Container>

@@ -44,7 +44,7 @@ export const Input = styled.input`
   }
 `;
 
-export const TextArea = styled.textarea.attrs({ id: 'message' })`
+export const TextArea = styled.textarea`
   border: 2px solid #fff;
   border-radius: 1px;
   color: white;

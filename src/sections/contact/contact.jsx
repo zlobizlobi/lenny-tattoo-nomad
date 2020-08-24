@@ -7,7 +7,6 @@ import {
   ColumnContainer
 } from '../../components';
 import { Container, Text, TextArea, Form, Input } from './styles';
-import styled from 'styled-components';
 
 export const Contact = () => (
   <SectionContainer>

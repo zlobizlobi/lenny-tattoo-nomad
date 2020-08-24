@@ -41,7 +41,3 @@ export const Contact = () => (
     </Scroll.Element>
   </SectionContainer >
 );
-
-const HiddenInput = styled.input`
-  visibility: hidden;
-`

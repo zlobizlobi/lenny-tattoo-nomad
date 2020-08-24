@@ -28,7 +28,7 @@
   <div id="root"></div>
   <script type="text/babel">
     ReactDOM.render(
-      <form name="contact" method="post">
+      <form name="contact" method="post" netlify-honeypot="bot-field" netlify>
         <input type="hidden" form-name="contact" value="contact" />
         <input type="text" name="name" placeholder="what's your name..." title="name" />
         <input type="email" name="email" />

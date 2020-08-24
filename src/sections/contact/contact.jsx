@@ -19,7 +19,7 @@ export const Contact = () => (
             send me a message.
           </Text>
           <Form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" form-name="contact" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <Input
               name="name"
               type="text"
